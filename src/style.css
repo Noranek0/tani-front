@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@theme {
+  --color-body-bg: rgb(242, 244, 249);
+  --color-primary: rgb(3, 181, 98);
+  --color-secondary: rgb(127, 103, 257);
+  --color-warning: rgb(255, 169, 9);
+  --color-info: rgb(15, 188, 249);
+  --color-success: rgb(83, 196, 5);
+  --color-danger: rgb(253, 73, 99);
+}
+
+@layer components {
+  .scrollToTop {
+    @apply fixed bottom-5 right-5 w-10 h-10 rounded-md;
+    @apply text-primary border border-primary bg-primary/10;
+    @apply text-center items-center justify-center;
+    @apply blur-[30px] z-100 bg-center bg-no-repeat transition-colors duration-150 ease-linear;
+  }
+}
