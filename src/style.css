@@ -8,6 +8,22 @@
   --color-info: rgb(15, 188, 249);
   --color-success: rgb(83, 196, 5);
   --color-danger: rgb(253, 73, 99);
+  --color-light: rgb(246, 249, 249);
+  --color-dark: rgb(10, 10, 10);
+  --color-orange: rgb(254, 124, 88);
+  --color-pink: rgb(254, 84, 155);
+  --color-teal: rgb(0, 216, 216);
+  --color-purple: rgb(123, 118, 254);
+  --color-green: rgb(1, 239, 140);
+  --color-gray-1: #f9fafb;
+  --color-gray-2: #f2f4f5;
+  --color-gray-3: #e6eaeb;
+  --color-gray-4: #dbdfe1;
+  --color-gray-5: #949eb7;
+  --color-gray-6: #7987a1;
+  --color-gray-7: #4d5875;
+  --color-gray-8: #383853;
+  --color-gray-9: #323251;
 }
 
 @layer components {
@@ -16,5 +32,13 @@
     @apply text-primary border border-primary bg-primary/10;
     @apply text-center items-center justify-center;
     @apply blur-[30px] z-100 bg-center bg-no-repeat transition-colors duration-150 ease-linear;
+  }
+
+  .app-sidebar {
+    @apply bg-white z-99 transition-all duration-75 ease-in-out;
+  }
+
+  .landing-body .app-sidebar {
+    @apply lg:py-2 lg:px-0 lg:h-auto;
   }
 }
