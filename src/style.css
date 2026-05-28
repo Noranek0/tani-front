@@ -24,6 +24,12 @@
   --color-gray-7: #4d5875;
   --color-gray-8: #383853;
   --color-gray-9: #323251;
+  --color-menu: #e2e5e7;
+
+  --breakpoint-sm: 36rem;
+  --breakpoint-lg: 62rem;
+  --breakpoint-xl: 75rem;
+  --breakpoint-2xl: 88rem;
 }
 
 @layer components {
@@ -36,9 +42,43 @@
 
   .app-sidebar {
     @apply bg-white z-99 transition-all duration-75 ease-in-out;
+    @apply lg:data-[nav-layout=horizontal]:w-full;
+    @apply lg:data-[nav-layout=horizontal]:border-b border-b-menu;
+  }
+
+  .main-sidebar {
+    @apply relative h-screen pbs-2 mbs-17;
+    @apply lg:data-[nav-layout=horizontal]:mbs-0;
+    @apply lg:data-[nav-layout=horizontal]:pbe-12;
+    @apply lg:data-[nav-layout=horizontal]:my-0;
+    @apply lg:data-[nav-layout=horizontal]:mx-auto;
+    @apply lg:data-[nav-layout=horizontal]:w-[94%];
   }
 
   .landing-body .app-sidebar {
     @apply lg:py-2 lg:px-0 lg:h-auto;
+    @apply border-b-0;
+  }
+
+  .landing-body .app-sidebar .main-sidebar {
+    @apply lg:h-auto lg:w-full;
+  }
+
+  .landing-body .landing-page-wrapper .app-sidebar {
+    @apply lg:data-[nav-layout=horizontal]:relative;
+  }
+
+  .container {
+    @apply 2xl:max-w-330 xl:max-w-285 lg:max-w-240 md:max-w-180 sm:max-w-135;
+    @apply w-full mx-auto;
+  }
+
+  .app-sidebar .main-sidebar {
+    @apply lg:data-[nav-style=menu-click]:data-[nav-layout=horizontal]:overflow-visible;
+    @apply lg:data-[nav-layout=horizontal]:p-0;
+  }
+
+  .landing-body .main-menu-container {
+    @apply lg:flex lg:items-center lg:justify-between;
   }
 }

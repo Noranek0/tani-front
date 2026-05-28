@@ -1,5 +1,5 @@
 <template>
-    <aside class="app-sidebar sticky" id="sidebar">
+    <aside class="app-sidebar" id="sidebar">
 
         <div class="container px-0">
             <!-- Start::main-sidebar -->
