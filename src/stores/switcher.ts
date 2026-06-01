@@ -386,32 +386,34 @@ export const switcherStore = defineStore("switcher", {
       }
     },
     checkHoriMenu() {
-      let menuNav = document.querySelector(".main-sidebar") as HTMLElement;
-      let mainMenu = document.querySelector(".main-menu") as HTMLElement;
-      let slideLeft = document.querySelector(".slide-left") as HTMLElement;
-      let slideRight = document.querySelector(".slide-right") as HTMLElement;
-      let marginRightValue =
+      const menuNav = document.querySelector(".main-sidebar") as HTMLElement;
+      const mainMenu = document.querySelector(".main-menu") as HTMLElement;
+      const slideLeft = document.querySelector(".slide-left") as HTMLElement;
+      const slideRight = document.querySelector(".slide-right") as HTMLElement;
+      const marginRightValue =
         mainMenu &&
         Math.ceil(
           Number(
             window.getComputedStyle(mainMenu).marginInlineStart.split("px")[0],
           ),
         );
+
       // Show/Hide the arrows
       if (mainMenu && menuNav && slideRight && slideLeft) {
+        console.log(mainMenu, menuNav)
         if (mainMenu.scrollWidth > menuNav.offsetWidth) {
-          slideRight?.classList.remove("d-none");
-          slideLeft?.classList.add("d-none");
+          slideRight.classList.remove("hidden");
+          slideLeft.classList.add("hidden");
         } else {
-          slideRight?.classList.add("d-none");
-          slideLeft?.classList.add("d-none");
+          slideRight.classList.add("hidden");
+          slideLeft.classList.add("hidden");
           mainMenu.style.marginLeft = "0px";
           mainMenu.style.marginRight = "0px";
         }
         if (marginRightValue == 0) {
-          slideLeft?.classList.add("d-none");
+          slideLeft?.classList.add("hidden");
         } else {
-          slideLeft?.classList.remove("d-none");
+          slideLeft?.classList.remove("hidden");
         }
       }
     },

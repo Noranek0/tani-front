@@ -1,5 +1,6 @@
 <template>
     <div>
+        <CustomSwitcher />
         <router-view />
         <BackToTop />
     </div>
@@ -8,6 +9,7 @@
 <script setup lang="ts">
 import {onBeforeMount, onUnmounted} from 'vue'
 import BackToTop from '~/components/backtotop/BacktoTop.vue'
+import CustomSwitcher from '~/components/customswitcher/CustomSwitcher.vue'
 
 // Add the body class before the component is mounted
 onBeforeMount(() => {

@@ -144,8 +144,8 @@
                             <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z">
                             </path>
                         </svg></div>
-                    <div class="d-lg-flex d-none">
-                        <div class="btn-list d-lg-flex d-none mt-lg-2 mt-xl-0 mt-0">
+                    <div class="lg:flex hidden">
+                        <div class="btn-list lg:flex hidden mt-lg-2 mt-xl-0 mt-0">
                             <router-link to="/authentication/sign-in/sign-in-basic" class="btn btn-wave btn-secondary">
                                 Sign Up
                             </router-link>
