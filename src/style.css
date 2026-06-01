@@ -26,11 +26,28 @@
   --color-gray-9: #323251;
   --color-menu: #e2e5e7;
   --color-bs3-border: #eeedf3;
+  --color-bs3-menu-prime: #61748f;
 
   --breakpoint-sm: 36rem;
   --breakpoint-lg: 62rem;
   --breakpoint-xl: 75rem;
   --breakpoint-2xl: 88rem;
+}
+
+@custom-variant dark {
+  &:where([data-theme-mode="dark"], [data-theme-mode="dark"] *) {
+    @slot;
+  }
+}
+@custom-variant layout-horizontal {
+  &:where([data-nav-layout="horizontal"], [data-nav-layout="horizontal"] *) {
+    @slot;
+  }
+}
+@custom-variant nav-menu-click {
+  &:where([data-nav-style="menu-click"], [data-nav-style="menu-click"] *) {
+    @slot;
+  }
 }
 
 @layer components {
@@ -41,72 +58,75 @@
     @apply blur-[30px] z-100 bg-center bg-no-repeat transition-colors duration-150 ease-linear;
   }
 
-  [data-nav-layout="horizontal"] {
-    .app-sidebar {
-      @apply lg:w-full;
-      @apply lg:border-b lg:border-b-menu;
-
-      .main-sidebar {
-        @apply lg:p-0;
-      }
-
-      .main-menu {
-        @apply lg:mbe-0;
-      }
-
-      .slide {
-        @apply lg:static;
-      }
-    }
-
-    .landing-body .landing-page-wrapper .app-sidebar {
-      @apply lg:relative;
-    }
-
-    .landing-body .app-sidebar .main-menu > .slide {
-      @apply lg:m-0;
-    }
-
-    .main-sidebar {
-      @apply lg:mbs-0;
-      @apply lg:pbe-12;
-      @apply lg:my-0;
-      @apply lg:mx-auto;
-      @apply lg:w-[94%];
-    }
-
-    .main-menu {
-      @apply lg:flex;
-      @apply lg:transition-all duration-500 ease-in-out;
-    }
-  }
-
-  [data-nav-layout="horizontal"][data-nav-style="menu-click"] {
-    .app-sidebar .main-sidebar {
-      @apply lg:overflow-visible;
-    }
-
-    .app-sidebar .slide {
-      @apply lg:p-0;
-    }
-
-    .app-sidebar {
-      .side-menu__item {
-        @apply lg:text-center lg:flex lg:py-4 lg:ps-3 lg:pe-7;
-      }
-    }
-  }
-
   .app-sidebar {
     @apply bg-white z-99 transition-all duration-75 ease-in-out;
 
+    @variant layout-horizontal {
+      @apply lg:w-full;
+      @apply lg:border-b;
+      @apply lg:border-b-menu;
+    }
+
+    .main-sidebar {
+      @apply layout-horizontal:lg:p-0;
+      @apply layout-horizontal:nav-menu-click:lg:overflow-visible;
+    }
+
+    .main-menu {
+      @apply layout-horizontal:lg:mbe-0;
+    }
+
     .slide {
       @apply m-0 p-0 pr-2;
+      @apply layout-horizontal:lg:static;
+      @apply layout-horizontal:nav-menu-click:lg:p-0;
     }
+
+    .side-menu__item {
+      @apply relative flex items-center text-sm text-bs3-menu-prime font-medium;
+      @apply border border-transparent no-underline px-5;
+      padding-top: 0.65rem;
+      padding-bottom: 0.65rem;
+
+      @apply layout-horizontal:lg:w-full;
+      @apply layout-horizontal:lg:flex;
+      @apply layout-horizontal:lg:rounded-none lg:p-4;
+      @apply layout-horizontal:nav-menu-click:lg:text-center;
+      @apply layout-horizontal:nav-menu-click:lg:flex;
+      @apply layout-horizontal:nav-menu-click:lg:py-4;
+      @apply layout-horizontal:nav-menu-click:lg:ps-3;
+      @apply layout-horizontal:nav-menu-click:lg:pe-7;
+    }
+
+    .side-menu__label {
+      @apply relative text-sm leading-none whitespace-nowrap;
+      @apply text-bs3-menu-prime;
+
+      @apply layout-horizontal:nav-menu-click:lg:text-center;
+      @apply layout-horizontal:nav-menu-click:lg:block;
+    }
+  }
+
+  .landing-body .landing-page-wrapper .app-sidebar {
+    @apply layout-horizontal:lg:relative;
+  }
+
+  .landing-body .app-sidebar .main-menu > .slide {
+    @apply layout-horizontal:lg:m-0;
   }
 
   .main-sidebar {
     @apply relative h-screen pbs-2 mbs-17;
+    @apply layout-horizontal:lg:mbs-0;
+    @apply layout-horizontal:lg:pbe-12;
+    @apply layout-horizontal:lg:my-0;
+    @apply layout-horizontal:lg:mx-auto;
+    @apply layout-horizontal:lg:w-[94%];
+  }
+
+  .main-menu {
+    @apply layout-horizontal:lg:flex;
+    @apply layout-horizontal:lg:transition-all duration-500 ease-in-out;
   }
 
   .landing-body .app-sidebar {
@@ -123,6 +143,14 @@
       .main-menu {
         @apply items-center;
       }
+    }
+
+    .side-menu__item {
+      padding: 0.8rem 1rem;
+    }
+
+    .side-menu__label {
+      @apply font-medium;
     }
   }
   .container {

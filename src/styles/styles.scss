@@ -1,0 +1,62 @@
+// /* CUSTOM */
+@forward "custom/authentication";
+@forward "custom/custom";
+@forward "custom/dashboard_styles";
+@forward "custom/error";
+@forward "custom/header";
+@forward "custom/image";
+@forward "custom/plugins";
+@forward "custom/ribbons";
+@forward "custom/widgets";
+
+// /* MENU-STYLES */
+@forward "menu-styles/closed_menu";
+@forward "menu-styles/detached_menu";
+@forward "menu-styles/double_menu";
+@forward "menu-styles/horizontal";
+@forward "menu-styles/icon_click";
+@forward "menu-styles/icon_hover";
+@forward "menu-styles/icon_overlay";
+@forward "menu-styles/icontext";
+@forward "menu-styles/menu_click";
+@forward "menu-styles/menu_hover";
+@forward "menu-styles/vertical";
+
+// /* PAGES */
+@forward "pages/chat";
+@forward "pages/ecommerce";
+@forward "pages/file-manager";
+@forward "pages/landing";
+@forward "pages/mail";
+@forward "pages/task";
+
+
+// /* UTILITIES */
+@forward "util/avatars";
+@forward "util/background";
+@forward "util/border";
+@forward "util/opacity";
+@forward "util/typography";
+
+// /* Global */
+@forward "global/customstyles";
+@forward "global/select2";
+@forward "global/vue3colorpicker";
+@forward "global/tables";
+@forward "global/vue3-slider-component";
+@forward "global/vue-multiselect";
+@forward "global/dropzone";
+@forward "global/vuepic_vue-datepicker";
+@forward "global/vue3-datepicker";
+@forward "global/v-color-picker";
+@forward "global/vuetify";
+@forward "global/vue3-easy-data-table";
+@forward "global/charts";
+@forward "global/pscroll";
+@forward "global/range-slider";
+@forward "global/jsVector";
+@forward "global/custom";
+
+/*Plus Jakarta*/
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
