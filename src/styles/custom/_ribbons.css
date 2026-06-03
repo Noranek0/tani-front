@@ -1,0 +1,452 @@
+@layer components {
+  .ribbon {
+    @apply w-20 h-20 overflow-hidden absolute z-2;
+    @apply after:absolute after:-z-1 after:block;
+    @apply before:absolute before:-z-1 before:block;
+
+    span {
+      @apply absolute block w-30 py-1.5 px-0 z-2;
+      @apply text-white text-center text-xs font-medium font-sans;
+      @apply leading-none uppercase;
+
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    &.ribbon-primary {
+      @apply before:border-3 before:border-black/60 dark:before:border-white/60;
+      @apply after:border-3 after:border-black/60 dark:after:border-white/60;
+
+      span {
+        @apply bg-primary;
+      }
+    }
+    &.ribbon-secondary {
+      @apply before:border-3 before:border-black/60 dark:before:border-white/60;
+      @apply after:border-3 after:border-black/60 dark:after:border-white/60;
+
+      span {
+        @apply bg-secondary;
+      }
+    }
+    &.ribbon-warning {
+      @apply before:border-3 before:border-black/60 dark:before:border-white/60;
+      @apply after:border-3 after:border-black/60 dark:after:border-white/60;
+
+      span {
+        @apply bg-warning;
+      }
+    }
+    &.ribbon-info {
+      @apply before:border-3 before:border-black/60 dark:before:border-white/60;
+      @apply after:border-3 after:border-black/60 dark:after:border-white/60;
+
+      span {
+        @apply bg-info;
+      }
+    }
+    &.ribbon-success {
+      @apply before:border-3 before:border-black/60 dark:before:border-white/60;
+      @apply after:border-3 after:border-black/60 dark:after:border-white/60;
+
+      span {
+        @apply bg-success;
+      }
+    }
+    &.ribbon-danger {
+      @apply before:border-3 before:border-black/60 dark:before:border-white/60;
+      @apply after:border-3 after:border-black/60 dark:after:border-white/60;
+
+      span {
+        @apply bg-danger;
+      }
+    }
+    &.ribbon-orange {
+      @apply before:border-3 before:border-black/60 dark:before:border-white/60;
+      @apply after:border-3 after:border-black/60 dark:after:border-white/60;
+
+      span {
+        @apply bg-orange;
+      }
+    }
+  }
+
+  /* top left */
+  .ribbon-top-left {
+    @apply -top-1.75 -inset-s-1.75;
+    @apply before:border-t-transparent before:border-l-transparent;
+    @apply after:border-t-transparent after:border-l-transparent;
+    @apply before:top-0 before:z-1 before:inset-e-0;
+    @apply after:bottom-0 after:z-1 after:inset-s-0;
+
+    span {
+      @apply top-5 -inset-e-3 ltr:-rotate-45 rtl:rotate-45;
+    }
+  }
+  /* top left */
+
+  /* top right */
+  .ribbon-top-right {
+    @apply -top-1.75 -inset-e-1.75;
+    @apply before:border-t-transparent before:border-r-transparent;
+    @apply after:border-t-transparent after:border-r-transparent;
+    @apply before:top-0 before:z-1 before:inset-s-0;
+    @apply after:bottom-0 after:z-1 after:inset-e-0;
+
+    span {
+      @apply top-5 -inset-s-3 ltr:rotate-45 rtl:rotate-315;
+    }
+  }
+  /* top right */
+
+  /* bottom right */
+  .ribbon-bottom-right {
+    @apply -bottom-1.75 -inset-e-1.75;
+    @apply before:border-b-transparent before:border-r-transparent;
+    @apply after:border-b-transparent after:border-r-transparent;
+    @apply before:bottom-0 before:z-1 before:inset-s-0;
+    @apply after:top-0 after:z-1 after:inset-e-0;
+
+    span {
+      @apply bottom-5 -inset-s-3 ltr:rotate-315 rtl:rotate-45;
+    }
+  }
+  /* bottom right */
+
+  /* bottom left */
+  .ribbon-bottom-left {
+    @apply -bottom-1.75 -inset-s-1.75;
+    @apply before:border-b-transparent before:border-l-transparent;
+    @apply after:border-b-transparent after:border-l-transparent;
+    @apply before:bottom-0 before:z-1 before:inset-e-0;
+    @apply after:top-0 after:z-1 after:inset-s-0;
+
+    span {
+      @apply bottom-5 -inset-e-3 ltr:rotate-45 rtl:rotate-315;
+    }
+  }
+  /* bottom left */
+
+  .ribbon-2 {
+    @apply inline-block text-white absolute;
+    @apply after:absolute before:absolute;
+    @apply after:w-0 before:w-0 after:h-0 before:h-0;
+
+    &.ribbon-primary {
+      @apply bg-primary before:border-t-10 before:border-t-black/80;
+      @apply dark:before:border-t-white/80;
+    }
+    &.ribbon-secondary {
+      @apply bg-secondary before:border-t-10 before:border-t-black/80;
+      @apply dark:before:border-t-white/80;
+    }
+    &.ribbon-success {
+      @apply bg-success before:border-t-10 before:border-t-black/80;
+      @apply dark:before:border-t-white/80;
+    }
+    &.ribbon-info {
+      @apply bg-info before:border-t-10 before:border-t-black/80;
+      @apply dark:before:border-t-white/80;
+    }
+    &.ribbon-warning {
+      @apply bg-warning before:border-t-10 before:border-t-black/80;
+      @apply dark:before:border-t-white/80;
+    }
+    &.ribbon-danger {
+      @apply bg-danger before:border-t-10 before:border-t-black/80;
+      @apply dark:before:border-t-white/80;
+    }
+    &.ribbon-orange {
+      @apply bg-orange before:border-t-10 before:border-t-black/80;
+      @apply dark:before:border-t-white/80;
+    }
+    &.ribbon-left {
+      @apply py-1.25 pr-10 pl-5 top-2.5 -inset-s-2.5;
+      @apply after:border-e-12 after:border-e-white;
+      @apply after:border-t-14 after:border-t-transparent;
+      @apply after:border-b-16 after:border-b-transparent;
+      @apply after:inset-e-0 after:top-0;
+      @apply before:border-s-10 before:border-s-transparent;
+      @apply before:inset-s-0 before:-bottom-2.5;
+    }
+    &.ribbon-right {
+      @apply py-1.25 pr-5 pl-10 top-2.5 -inset-e-2.5;
+      @apply after:border-s-12 after:border-s-white;
+      @apply after:border-t-14 after:border-t-transparent;
+      @apply after:border-b-16 after:border-b-transparent;
+      @apply after:inset-s-0 after:top-0;
+      @apply before:border-e-10 before:border-e-transparent;
+      @apply before:inset-e-0 before:-bottom-2.5;
+    }
+  }
+
+  .ribbon-3 {
+    @apply absolute -inset-bs-2 text-white;
+    @apply after:absolute after:w-0 after:h-0 after:z-6;
+    @apply after:border-s-16 after:border-s-transparent;
+    @apply after:border-e-17 after:border-e-transparent;
+
+    &.top-left {
+      @apply rounded-ss-[10px] inset-s-2.5;
+      span {
+        @apply after:-inset-e-1.75;
+        @apply ltr:after:rounded-tr-[50px];
+        @apply rtl:after:rounded-tl-[50px];
+      }
+    }
+    &.top-right {
+      @apply rounded-se-[10px] inset-e-2.5;
+      span {
+        @apply after:-inset-s-1.75;
+        @apply ltr:after:rounded-tl-[50px];
+        @apply rtl:after:rounded-tr-[50px];
+      }
+    }
+    span {
+      @apply relative block text-center text-[13px];
+      @apply leading-none z-6 p-2.5 w-8.25;
+      @apply after:absolute after:w-1.75 after:h-1.75;
+      @apply after:inset-bs-0;
+    }
+
+    &.ribbon-success {
+      @apply bg-success after:border-bs-10 after:border-bs-success;
+      span {
+        @apply after:bg-primary;
+      }
+    }
+    &.ribbon-primary {
+      @apply bg-primary after:border-bs-10 after:border-bs-primary;
+      span {
+        @apply after:bg-primary;
+      }
+    }
+    &.ribbon-secondary {
+      @apply bg-secondary after:border-bs-10 after:border-bs-secondary;
+      span {
+        @apply after:bg-secondary;
+      }
+    }
+    &.ribbon-warning {
+      @apply bg-warning after:border-bs-10 after:border-bs-warning;
+      span {
+        @apply after:bg-warning;
+      }
+    }
+    &.ribbon-info {
+      @apply bg-info after:border-bs-10 after:border-bs-info;
+      span {
+        @apply after:bg-info;
+      }
+    }
+    &.ribbon-danger {
+      @apply bg-danger after:border-bs-10 after:border-bs-danger;
+      span {
+        @apply after:bg-danger;
+      }
+    }
+  }
+
+  .ribbon-4 {
+    @apply absolute inset-bs-0 text-white w-7.5;
+    @apply after:absolute after:w-0 after:h-0 after:z-6;
+    @apply after:border-be-8 after:border-be-transparent;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+
+    span {
+      @apply relative block text-center text-xs leading-none;
+      @apply py-3 px-0.5 z-6;
+    }
+    &.top-left {
+      @apply inset-s-2.5 after:inset-s-0;
+    }
+    &.top-right {
+      @apply inset-e-2.5 after:inset-e-0;
+    }
+    &.ribbon-primary {
+      @apply after:border-s-15 after:border-s-primary;
+      @apply after:border-e-15 after:border-e-primary;
+      span {
+        @apply bg-primary;
+      }
+    }
+    &.ribbon-secondary {
+      @apply after:border-s-15 after:border-s-secondary;
+      @apply after:border-e-15 after:border-e-secondary;
+      span {
+        @apply bg-secondary;
+      }
+    }
+    &.ribbon-warning {
+      @apply after:border-s-15 after:border-s-warning;
+      @apply after:border-e-15 after:border-e-warning;
+      span {
+        @apply bg-warning;
+      }
+    }
+    &.ribbon-info {
+      @apply after:border-s-15 after:border-s-info;
+      @apply after:border-e-15 after:border-e-info;
+      span {
+        @apply bg-info;
+      }
+    }
+    &.ribbon-success {
+      @apply after:border-s-15 after:border-s-success;
+      @apply after:border-e-15 after:border-e-success;
+      span {
+        @apply bg-success;
+      }
+    }
+    &.ribbon-danger {
+      @apply after:border-s-15 after:border-s-danger;
+      @apply after:border-e-15 after:border-e-danger;
+      span {
+        @apply bg-danger;
+      }
+    }
+  }
+
+  .ribbon-5 {
+    @apply absolute w-22.5 h-22.5 text-white text-xs font-semibold;
+    @apply p-1.25 flex items-end justify-center;
+    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.2);
+
+    &.ribbon-primary {
+      @apply bg-primary;
+    }
+    &.ribbon-secondary {
+      @apply bg-secondary;
+    }
+    &.ribbon-warning {
+      @apply bg-warning;
+    }
+    &.ribbon-info {
+      @apply bg-info;
+    }
+    &.ribbon-success {
+      @apply bg-success;
+    }
+    &.ribbon-danger {
+      @apply bg-danger;
+    }
+    &.ribbon-dark {
+      @apply bg-dark;
+    }
+    &.ribbon-orange {
+      @apply bg-orange;
+    }
+    &.top-left {
+      top: -2.8125rem;
+      inset-inline-start: -2.8125rem;
+      @apply ltr:rotate-315 rtl:-rotate-315;
+    }
+    &.top-right {
+      top: -2.8125rem;
+      inset-inline-end: -2.8125rem;
+      @apply ltr:rotate-45 rtl:-rotate-45;
+    }
+    &.bottom-left {
+      bottom: -2.8125rem;
+      inset-inline-start: -2.8125rem;
+      @apply ltr:rotate-225 rtl:-rotate-225;
+    }
+    &.bottom-right {
+      bottom: -2.8125rem;
+      inset-inline-end: -2.8125rem;
+      @apply ltr:rotate-135 rtl:-rotate-135;
+    }
+  }
+
+  .ribbon-6 {
+    @apply absolute text-white z-6 inset-bs-2.5;
+    @apply py-0.5 px-2 text-[13px];
+    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.2);
+
+    &.ribbon-primary {
+      @apply bg-primary;
+      &.ribbon-left {
+        @apply after:border-s-12 after:border-s-primary;
+      }
+      &.ribbon-right {
+        @apply after:border-e-12 after:border-e-primary;
+      }
+    }
+    &.ribbon-secondary {
+      @apply bg-secondary;
+      &.ribbon-left {
+        @apply after:border-s-12 after:border-s-secondary;
+      }
+      &.ribbon-right {
+        @apply after:border-e-12 after:border-e-secondary;
+      }
+    }
+    &.ribbon-warning {
+      @apply bg-warning;
+      &.ribbon-left {
+        @apply after:border-s-12 after:border-s-warning;
+      }
+      &.ribbon-right {
+        @apply after:border-e-12 after:border-e-warning;
+      }
+    }
+    &.ribbon-info {
+      @apply bg-info;
+      &.ribbon-left {
+        @apply after:border-s-12 after:border-s-info;
+      }
+      &.ribbon-right {
+        @apply after:border-e-12 after:border-e-info;
+      }
+    }
+    &.ribbon-success {
+      @apply bg-success;
+      &.ribbon-left {
+        @apply after:border-s-12 after:border-s-success;
+      }
+      &.ribbon-right {
+        @apply after:border-e-12 after:border-e-success;
+      }
+    }
+    &.ribbon-danger {
+      @apply bg-danger;
+      &.ribbon-left {
+        @apply after:border-s-12 after:border-s-danger;
+      }
+      &.ribbon-right {
+        @apply after:border-e-12 after:border-e-danger;
+      }
+    }
+    &.ribbon-dark {
+      @apply bg-dark;
+      &.ribbon-left {
+        @apply after:border-s-12 after:border-s-dark;
+      }
+      &.ribbon-right {
+        @apply after:border-e-12 after:border-e-dark;
+      }
+    }
+    &.ribbon-orange {
+      @apply bg-orange;
+      &.ribbon-left {
+        @apply after:border-s-12 after:border-s-orange;
+      }
+      &.ribbon-right {
+        @apply after:border-e-12 after:border-e-orange;
+      }
+    }
+
+    &.ribbon-left {
+      @apply inset-s-0;
+      @apply after:absolute after:inset-be-0 after:inset-bs-0;
+      @apply after:w-0 after:border-bs-transparent after:border-be-transparent;
+      @apply after:-inset-e-3 after:border-bs-12 after:border-be-11;
+    }
+    &.ribbon-right {
+      @apply inset-e-0;
+      @apply after:absolute after:inset-be-0 after:inset-bs-0;
+      @apply after:w-0 after:border-bs-transparent after:border-be-transparent;
+      @apply after:-inset-s-3 after:border-be-12 after:border-bs-11;
+    }
+  }
+}
