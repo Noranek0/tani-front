@@ -1,0 +1,16 @@
+@layer components {
+  .error-bg {
+    @apply relative w-full h-full inset-be-0 inset-bs-0 inset-e-0 inset-s-0;
+    @apply bg-radial from-transparent via-transparent to-primary/30;
+    @apply before:absolute before:w-full before:h-full before:-z-1 before:opacity-5;
+    @apply before:bg-center before:bg-repeat before:bg-[url(/images/media/svg/pattern-5.svg)];
+    @apply before:bg-size-[inherit];
+  }
+  .error-text {
+    @apply text-[9rem] font-medium leading-none;
+    @apply max-sm:text-5xl;
+  }
+  .error-main-img {
+    @apply w-30 h-auto;
+  }
+}

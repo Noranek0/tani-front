@@ -1,0 +1,61 @@
+@layer components {
+  .card-img-overlay-profile {
+    @apply absolute bg-primary/50 h-50 w-full;
+    @apply text-white p-6;
+  }
+
+  #chart-1,
+  #chart-2,
+  #chart-3,
+  #chart-4 {
+    @apply absolute bottom-9.5 inset-e-4;
+  }
+
+  .visit-gender {
+    @apply relative;
+    @apply before:absolute before:w-1 before:h-3;
+    @apply before:-inset-s-2.5 before:inset-bs-1;
+    @apply before:rounded-lg;
+
+    &.male {
+      @apply before:bg-primary;
+    }
+
+    &.female {
+      @apply before:bg-secondary;
+    }
+  }
+
+  #chart-10,
+  #chart-11,
+  #chart-12,
+  #chart-13 {
+    @apply absolute -inset-bs-2 inset-e-4;
+  }
+
+  .widgets-task-list {
+    @apply list-none relative mbe-0;
+    @apply before:absolute before:top-1 before:bottom-0 before:h-9/10;
+    @apply before:inset-s-2.25 before:border-x before:border-dashed;
+    @apply before:border-x-bs3-border;
+
+    li {
+      @apply relative mbe-4.75;
+      @apply before:absolute before:w-2.25 before:h-2.25 before:rounded-full;
+      @apply before:inset-bs-1.75 before:-inset-s-6.75 before:bg-white;
+      @apply last:mbe-0;
+
+      @apply nth-[1]:before:border-2 nth-[1]:before:border-primary;
+      @apply nth-[2]:before:border-2 nth-[2]:before:border-secondary;
+      @apply nth-[3]:before:border-2 nth-[3]:before:border-success;
+      @apply nth-[4]:before:border-2 nth-[4]:before:border-orange;
+      @apply nth-[5]:before:border-2 nth-[5]:before:border-info;
+      @apply nth-[6]:before:border-2 nth-[6]:before:border-warning;
+    }
+  }
+  #activecustomers {
+    .apexcharts-text.apexcharts-datalabel-label {
+      @apply fill-bs3-muted;
+    }
+  }
+}
