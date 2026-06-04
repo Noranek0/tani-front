@@ -189,6 +189,8 @@
 @custom-variant dark (&:where([data-theme-mode="dark"], [data-theme-mode="dark"] *));
 @custom-variant light (&:where([data-theme-mode="light"], [data-theme-mode="light"] *));
 
+@custom-variant nav-horizontal (&:where([data-nav-layout="horizontal"], [data-nav-layout="horizontal"] *));
+
 @custom-variant header-dark (&:where([data-header-styles="dark"], [data-header-styles="dark"] *));
 @custom-variant header-color (&:where([data-header-styles="color"], [data-header-styles="color"] *));
 @custom-variant header-gradient (&:where([data-header-styles="gradient"], [data-header-styles="gradient"] *));

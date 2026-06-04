@@ -1,0 +1,277 @@
+@reference "../base.css";
+
+@layer components {
+  @variant nav-horizontal {
+    .app-sidebar {
+      @apply lg:shadow-base;
+    }
+    .app-sidebar .side-menu__item {
+      &.active,
+      &:hover {
+        @apply lg:bg-transparent lg:shadow-none!;
+        .side-menu__icon {
+          @apply lg:text-primary lg:fill-primary;
+        }
+        .side-menu__label,
+        .side-menu__angle {
+          @apply lg:text-primary;
+        }
+      }
+    }
+
+    .app-sidebar .side-menu__icon {
+      @apply lg:w-[0.9rem] lg:h-[0.9rem] lg:text-[0.9rem];
+    }
+
+    .sidemenu-layout-styles {
+      @apply lg:hidden;
+    }
+
+    .main-menu {
+      @apply lg:flex lg:transition-all lg:duration-500 lg:ease-in-out;
+      &.container {
+        @apply lg:inline-flex;
+      }
+      /* flex-wrap: wrap; */
+    }
+
+    .app-sidebar .slide-menu.child1 .side-menu__item,
+    .app-sidebar .slide-menu.child2 .side-menu__item {
+      @apply lg:py-[0.45rem] lg:px-4;
+    }
+
+    .side-menu__label .badge {
+      @apply lg:hidden;
+    }
+    .mega-menu {
+      @apply lg:columns-3;
+    }
+
+    .app-header {
+      @apply lg:z-104 lg:shadow-none lg:ps-0!;
+    }
+
+    .app-content {
+      @apply lg:ms-0! lg:mbs-28 lg:min-h-[calc(100vh-10.5rem)];
+      > .container-fluid {
+        @apply lg:w-94/100 lg:ms-auto lg:me-auto;
+      }
+    }
+
+    .app-sidebar {
+      .main-sidebar,
+      .simplebar-mask {
+        @apply lg:overflow-visible!;
+      }
+      .main-menu > .slide {
+        @apply lg:my-0 lg:mx-0.75;
+      }
+      .main-sidebar {
+        @apply lg:shadow-none;
+      }
+      .slide-menu {
+        &.child1,
+        &.child2,
+        &.child3 {
+          .side-menu__item {
+            @apply lg:before:hidden;
+          }
+        }
+      }
+    }
+
+    .simplebar-offset {
+      @apply lg:pos-inherit!;
+    }
+    .simplebar-wrapper {
+      @apply lg:w-full;
+    }
+    .main-sidebar .simplebar-vertical {
+      @apply lg:invisible!;
+    }
+    .main-sidebar,
+    .main-header-container {
+      @apply lg:w-94/100 lg:my-0 lg:mx-auto;
+    }
+
+    .horizontal-logo {
+      @apply lg:py-4 lg:px-0 lg:block;
+
+      .header-logo {
+        .desktop-logo {
+          @apply lg:block;
+        }
+        .desktop-dark,
+        .toggle-logo,
+        .toggle-dark {
+          @apply lg:hidden;
+        }
+      }
+    }
+    .main-header-container .sidemenu-toggle {
+      @apply lg:hidden;
+    }
+    .app-sidebar {
+      @apply lg:w-full! lg:h-auto lg:border-be lg:border-be-bs3-menu;
+      @apply lg:inset-bs-17;
+
+      .slide-menu.child1,
+      .slide-menu.child2,
+      .slide-menu.child3 {
+        li {
+          @apply lg:ps-2;
+        }
+        .side-menu__item {
+          @apply lg:before:inset-bs-4;
+        }
+      }
+      .simplebar-content {
+        @apply lg:p-0! lg:overflow-hidden;
+      }
+      .simplebar-content-wrapper {
+        @apply lg:h-auto lg:overflow-visible!;
+      }
+      .main-sidebar {
+        /* height: 3rem !important; */
+        @apply lg:p-0;
+      }
+      .slide.has-sub .slide-menu {
+        &.child1 {
+          @apply lg:inset-s-6! lg:py-0.75 lg:px-0;
+        }
+        &.child2,
+        &.child3 {
+          @apply lg:inset-e-full lg:py-0.75 lg:px-0;
+        }
+        &.active {
+          @apply lg:inset-s-auto! lg:inset-e-auto!;
+        }
+      }
+      .slide-menu.child1 {
+        @apply lg:absolute!;
+      }
+      .side-menu__item {
+        @apply lg:flex lg:w-full lg:p-[0.92rem] lg:rounded-none;
+      }
+      .side-menu__angle {
+        @apply lg:block lg:inset-e-[0.45rem];
+      }
+      .side-menu__icon {
+        @apply lg:me-1 lg:mbe-0;
+      }
+      .slide.has-sub .slide-menu.child1 {
+        @apply lg:bg-white lg:inset-bs-full! lg:min-w-48;
+      }
+      .slide {
+        @apply lg:p-0;
+      }
+      .slide-menu {
+        &.child1 {
+          @apply lg:rounded-b-sm;
+          .slide.has-sub,
+          .slide {
+            @apply lg:w-full lg:flex lg:py-0 lg:px-0.75;
+          }
+        }
+        &.child2,
+        &.child3 {
+          @apply lg:rounded-sm;
+        }
+      }
+      .slide,
+      .slide.has-sub {
+        @apply lg:static;
+        .slide-menu {
+          &.child1,
+          &.child2,
+          &.child3 {
+            @apply lg:shadow-[0_0_0.375rem] lg:shadow-black/10 lg:dark:shadow-white/10;
+          }
+        }
+      }
+      .main-menu {
+        @apply lg:mbe-0;
+      }
+    }
+
+    .main-sidebar-header {
+      @apply lg:hidden!;
+    }
+
+    .main-sidebar {
+      @apply lg:mbs-0 lg:pbe-12;
+    }
+
+    .slide__category {
+      @apply lg:hidden;
+    }
+
+    /* horizontal arrows */
+    .main-menu-container .slide-left {
+      @apply lg:inset-s-5.75;
+    }
+    .main-menu-container .slide-left,
+    .main-menu-container .slide-right {
+      @apply rtl:rotate-180;
+      @apply lg:absolute lg:p-1.25 lg:flex lg:items-center lg:justify-center;
+      @apply lg:z-1 lg:cursor-pointer lg:border lg:border-bs3-border;
+      @apply lg:rounded-[3.125rem] lg:text-white lg:top-2;
+    }
+
+    .main-menu-container .slide-left,
+    .main-menu-container .slide-right {
+      @apply lg:absolute lg:p-1.25 lg:flex lg:items-center lg:justify-center;
+      @apply lg:z-1 lg:cursor-pointer lg:border lg:border-bs3-border;
+      @apply lg:rounded-[3.125rem] lg:text-white lg:bg-white lg:top-1.5;
+    }
+
+    .main-menu-container {
+      .slide-right {
+        @apply lg:-inset-e-2/100;
+      }
+      .slide-left {
+        @apply lg:-inset-s-2/100;
+      }
+    }
+
+    .app-sidebar {
+      @apply lg:page-classic:border-be;
+      @apply lg:page-classic:border-be-bs3-border;
+      @apply lg:page-modern:border-be-bs3-menu;
+    }
+
+    &[data-menu-styles="transparent"][data-theme-mode="dark"][data-icon-overlay="open"]
+      .app-sidebar {
+      @apply lg:hover:blur-none;
+    }
+    &[data-menu-styles="transparent"][data-theme-mode="dark"] .app-sidebar {
+      @apply lg:blur-xl;
+    }
+    &[data-nav-style="menu-click"],
+    &[data-nav-style="menu-hover"],
+    &[data-nav-style="icon-click"],
+    &[data-nav-style="icon-hover"] {
+      .app-sidebar {
+        .slide.has-sub .slide-menu {
+          &.child1 {
+            &.force-left {
+              @apply lg:inset-e-0!;
+            }
+          }
+          &.child2,
+          &.child3 {
+            &.force-left {
+              @apply lg:-inset-s-full!;
+            }
+          }
+        }
+      }
+    }
+
+    &[data-menu-position="scrollable"] {
+      .app-sidebar {
+        @apply max-lg:h-full;
+      }
+    }
+  }
+}
