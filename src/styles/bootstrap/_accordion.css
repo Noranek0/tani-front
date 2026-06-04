@@ -9,13 +9,9 @@
     @apply after:bg-gray-1 after:bg-none;
 
     @apply focus:border-primary/30 focus:shadow-none;
+    @apply not-[.collapsed]:text-dark not-[.collapsed]:bg-bs3-background not-[.collapsed]:shadow-none;
+    @apply not-[.collapsed]:after:bg-none;
 
-    &:not(.collapsed) {
-      @apply text-dark bg-gray-1 shadow-none;
-    }
-    &:not(.collapsed)::after {
-      @apply bg-none;
-    }
     &:after {
       content: "\EA78";
       font-family: remixicon !important;
@@ -39,6 +35,315 @@
     .accordion-item {
       @apply not-first-of-type:mbs-2;
       @apply overflow-hidden rounded-lg border-bs border-bs-bs3-border;
+    }
+  }
+
+  .accordion {
+    &.accordion-primary {
+      .accordion-button {
+        @apply bg-primary/10 text-primary;
+        @apply after:bg-primary after:text-white;
+
+        &.collapsed {
+          @apply bg-white text-dark;
+          @apply after:bg-bs3-background after:text-dark;
+        }
+      }
+    }
+    &.accordion-secondary {
+      .accordion-button {
+        @apply bg-secondary/10 text-secondary;
+        @apply after:bg-secondary after:text-white;
+
+        &.collapsed {
+          @apply bg-white text-dark;
+          @apply after:bg-bs3-background after:text-dark;
+        }
+      }
+    }
+    &.accordion-success {
+      .accordion-button {
+        @apply bg-success/10 text-success;
+        @apply after:bg-success after:text-white;
+
+        &.collapsed {
+          @apply bg-white text-dark;
+          @apply after:bg-bs3-background after:text-dark;
+        }
+      }
+    }
+    &.accordion-danger {
+      .accordion-button {
+        @apply bg-danger/10 text-danger;
+        @apply after:bg-danger after:text-white;
+
+        &.collapsed {
+          @apply bg-white text-dark;
+          @apply after:bg-bs3-background after:text-dark;
+        }
+      }
+    }
+    &.accordion-warning {
+      .accordion-button {
+        @apply bg-warning/10 text-warning;
+        @apply after:bg-warning after:text-white;
+
+        &.collapsed {
+          @apply bg-white text-dark;
+          @apply after:bg-bs3-background after:text-dark;
+        }
+      }
+    }
+    &.accordion-info {
+      .accordion-button {
+        @apply bg-info/10 text-info;
+        @apply after:bg-info after:text-white;
+
+        &.collapsed {
+          @apply bg-white text-dark;
+          @apply after:bg-bs3-background after:text-dark;
+        }
+      }
+    }
+  }
+
+  .accordion {
+    &.accordion-solid-primary {
+      .accordion-button {
+        @apply bg-primary text-white;
+        @apply after:bg-white text-primary;
+
+        &.collapsed {
+          @apply bg-white text-dark;
+          @apply after:bg-bs3-background after:text-dark;
+        }
+      }
+    }
+    &.accordion-solid-secondary {
+      .accordion-button {
+        @apply bg-secondary text-white;
+        @apply after:bg-white text-secondary;
+
+        &.collapsed {
+          @apply bg-white text-dark;
+          @apply after:bg-bs3-background after:text-dark;
+        }
+      }
+    }
+    &.accordion-solid-success {
+      .accordion-button {
+        @apply bg-success text-white;
+        @apply after:bg-white text-success;
+
+        &.collapsed {
+          @apply bg-white text-dark;
+          @apply after:bg-bs3-background after:text-dark;
+        }
+      }
+    }
+    &.accordion-solid-danger {
+      .accordion-button {
+        @apply bg-danger text-white;
+        @apply after:bg-white text-danger;
+
+        &.collapsed {
+          @apply bg-white text-dark;
+          @apply after:bg-bs3-background after:text-dark;
+        }
+      }
+    }
+    &.accordion-solid-warning {
+      .accordion-button {
+        @apply bg-warning text-white;
+        @apply after:bg-white text-warning;
+
+        &.collapsed {
+          @apply bg-white text-dark;
+          @apply after:bg-bs3-background after:text-dark;
+        }
+      }
+    }
+    &.accordion-solid-info {
+      .accordion-button {
+        @apply bg-info text-white;
+        @apply after:bg-white text-info;
+
+        &.collapsed {
+          @apply bg-white text-dark;
+          @apply after:bg-bs3-background after:text-dark;
+        }
+      }
+    }
+  }
+
+  .accordion {
+    &.accordion-border-primary {
+      .accordion-item {
+        @apply border border-primary;
+      }
+      .accordion-button {
+        @apply bg-white text-primary border-be-0;
+        @apply after:bg-white after:text-primary after:border;
+        @apply after:border-primary;
+
+        @apply not-[.collapsed]:border-be;
+        @apply not-[.collapsed]:border-be-primary;
+      }
+    }
+    &.accordion-border-secondary {
+      .accordion-item {
+        @apply border border-secondary;
+      }
+      .accordion-button {
+        @apply bg-white text-secondary border-be-0;
+        @apply after:bg-white after:text-secondary after:border;
+        @apply after:border-secondary;
+
+        @apply not-[.collapsed]:border-be;
+        @apply not-[.collapsed]:border-be-secondary;
+      }
+    }
+    &.accordion-border-success {
+      .accordion-item {
+        @apply border border-success;
+      }
+      .accordion-button {
+        @apply bg-white text-success border-be-0;
+        @apply after:bg-white after:text-success after:border;
+        @apply after:border-success;
+
+        @apply not-[.collapsed]:border-be;
+        @apply not-[.collapsed]:border-be-success;
+      }
+    }
+    &.accordion-border-danger {
+      .accordion-item {
+        @apply border border-danger;
+      }
+      .accordion-button {
+        @apply bg-white text-danger border-be-0;
+        @apply after:bg-white after:text-danger after:border;
+        @apply after:border-danger;
+
+        @apply not-[.collapsed]:border-be;
+        @apply not-[.collapsed]:border-be-danger;
+      }
+    }
+    &.accordion-border-warning {
+      .accordion-item {
+        @apply border border-warning;
+      }
+      .accordion-button {
+        @apply bg-white text-warning border-be-0;
+        @apply after:bg-white after:text-warning after:border;
+        @apply after:border-warning;
+
+        @apply not-[.collapsed]:border-be;
+        @apply not-[.collapsed]:border-be-warning;
+      }
+    }
+    &.accordion-border-info {
+      .accordion-item {
+        @apply border border-info;
+      }
+      .accordion-button {
+        @apply bg-white text-info border-be-0;
+        @apply after:bg-white after:text-info after:border;
+        @apply after:border-info;
+
+        @apply not-[.collapsed]:border-be;
+        @apply not-[.collapsed]:border-be-info;
+      }
+    }
+  }
+
+  .accordion {
+    &.accordionicon-none {
+      .accordion-button {
+        @apply after:hidden;
+      }
+    }
+  }
+
+  .accordion {
+    &.accordionicon-left {
+      .accordion-button {
+        @apply ps-10 after:absolute after:inset-s-2.5;
+      }
+    }
+  }
+
+  .accordion {
+    &.accordion-customicon1 {
+      .accordion-button {
+        &:after {
+          content: "\EA13";
+          font-family: remixicon !important;
+        }
+        &:not(.collapsed)::after {
+          content: "\F1AF";
+          font-family: remixicon !important;
+        }
+      }
+    }
+  }
+
+  .customized-accordion {
+    .accordion-item {
+      &.custom-accordion-primary {
+        .accordion-button {
+          @apply bg-primary/10 border-s-4 border-s-primary/60;
+          @apply after:bg-primary/60 after:text-white;
+        }
+        .accordion-body {
+          @apply bg-primary/10 pbs-0 border-s-4 border-s-primary/60;
+        }
+      }
+      &.custom-accordion-secondary {
+        .accordion-button {
+          @apply bg-secondary/10 border-s-4 border-s-secondary/60;
+          @apply after:bg-secondary/60 after:text-white;
+        }
+        .accordion-body {
+          @apply bg-secondary/10 pbs-0 border-s-4 border-s-secondary/60;
+        }
+      }
+      &.custom-accordion-warning {
+        .accordion-button {
+          @apply bg-warning/10 border-s-4 border-s-warning/60;
+          @apply after:bg-warning/60 after:text-white;
+        }
+        .accordion-body {
+          @apply bg-warning/10 pbs-0 border-s-4 border-s-warning/60;
+        }
+      }
+      &.custom-accordion-info {
+        .accordion-button {
+          @apply bg-info/10 border-s-4 border-s-info/60;
+          @apply after:bg-info/60 after:text-white;
+        }
+        .accordion-body {
+          @apply bg-info/10 pbs-0 border-s-4 border-s-info/60;
+        }
+      }
+      &.custom-accordion-success {
+        .accordion-button {
+          @apply bg-success/10 border-s-4 border-s-success/60;
+          @apply after:bg-success/60 after:text-white;
+        }
+        .accordion-body {
+          @apply bg-success/10 pbs-0 border-s-4 border-s-success/60;
+        }
+      }
+      &.custom-accordion-danger {
+        .accordion-button {
+          @apply bg-danger/10 border-s-4 border-s-danger/60;
+          @apply after:bg-danger/60 after:text-white;
+        }
+        .accordion-body {
+          @apply bg-danger/10 pbs-0 border-s-4 border-s-danger/60;
+        }
+      }
     }
   }
 }
