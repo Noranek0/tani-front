@@ -1,3 +1,4 @@
 /* BOOTSTRAP */
 @import "./bootstrap/_accordion";
+@import "./bootstrap/_alerts";
 @import "./bootstrap/_tooltips";

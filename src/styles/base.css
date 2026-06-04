@@ -31,6 +31,7 @@
   --color-bs3-menu-prime: #61748f;
   --color-bs3-background: #f9fafb;
 
+  --breakpoint-xs: 25rem; /* 400px */
   --breakpoint-sm: 36rem; /* 576px */
   --breakpoint-lg: 62rem; /* 992px */
   --breakpoint-xl: 75rem; /* 1200px */
