@@ -1,0 +1,95 @@
+@reference "../base.css";
+
+@layer components {
+  .page-header-breadcrumb {
+    .breadcrumb-item + .breadcrumb-item::before {
+      content: var(--bs-breadcrumb-divider, "\ea65");
+      font-family: "tabler-icons" !important;
+    }
+  }
+  [dir="rtl"] {
+    .page-header-breadcrumb {
+      .breadcrumb-item + .breadcrumb-item::before {
+        content: var(--bs-breadcrumb-divider, "\ea64");
+        font-family: "tabler-icons" !important;
+      }
+    }
+  }
+
+  .breadcrumb {
+    .breadcrumb-item {
+      a {
+        @apply text-primary;
+      }
+
+      &.active {
+        @apply text-dark font-medium;
+      }
+    }
+  }
+  .page-header-breadcrumb {
+    .breadcrumb-icon svg {
+      @apply w-4 h-4;
+    }
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    @apply text-bs3-muted;
+  }
+  .breadcrumb-example1 {
+    .breadcrumb-item + .breadcrumb-item::before {
+      @apply text-bs3-muted;
+      content: var(--bs-breadcrumb-divider, "\ea65");
+      font-family: "tabler-icons" !important;
+    }
+  }
+  .breadcrumb-style1 {
+    .breadcrumb-item + .breadcrumb-item::before {
+      @apply text-bs3-muted;
+      content: var(--bs-breadcrumb-divider, "\ea1c");
+      font-family: "tabler-icons" !important;
+    }
+  }
+  .breadcrumb-style2 {
+    .breadcrumb-item + .breadcrumb-item::before {
+      @apply text-bs3-muted;
+      content: var(--bs-breadcrumb-divider, "\ea61");
+      font-family: "tabler-icons" !important;
+    }
+  }
+  .embedded-breadcrumb {
+    @apply before:opacity-70;
+  }
+  [dir="rtl"] {
+    .breadcrumb-example1 {
+      .breadcrumb-item + .breadcrumb-item::before {
+        content: var(--bs-breadcrumb-divider, "\ea64");
+      }
+    }
+    .breadcrumb-style1 {
+      .breadcrumb-item + .breadcrumb-item::before {
+        content: var(--bs-breadcrumb-divider, "\ea1b");
+      }
+    }
+    .breadcrumb-style2 {
+      .breadcrumb-item + .breadcrumb-item::before {
+        content: var(--bs-breadcrumb-divider, "\ea60");
+      }
+    }
+    .embedded-breadcrumb {
+      @apply before:-scale-x-100 before:ps-2 before:pe-2!;
+    }
+  }
+  /* End:: Breadcrumb Styles */
+
+  /* Start:: Breadcrumb input */
+  .form-control.breadcrumb-input {
+    @apply min-w-50 border border-bs3-border;
+    @apply focus:border focus:border-bs3-border;
+
+    box-shadow: 0px 2px 0px rgba(118, 138, 254, 0.03);
+    &:focus {
+      box-shadow: 0px 2px 0px rgba(118, 138, 254, 0.03);
+    }
+  }
+  /* End:: Breadcrumb input */
+}
