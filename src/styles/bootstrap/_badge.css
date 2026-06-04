@@ -1,0 +1,108 @@
+@reference "../base.css";
+
+@layer components {
+  .app-sidebar .badge {
+    @apply py-[0.15rem] px-[0.3rem] font-semibold rounded-sm;
+  }
+  .badge {
+    @apply py-1 px-1.75 font-semibold rounded-sm;
+  }
+  .badge-sm {
+    @apply font-normal text-[0.625rem];
+  }
+  .min-w-badge {
+    @apply min-w-20
+  }
+  .btn {
+    &.btn-outline-primary {
+      .badge {
+        @apply bg-primary text-white;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        .badge {
+          @apply bg-white text-dark;
+        }
+      }
+    }
+    &.btn-outline-secondary {
+      .badge {
+        @apply bg-secondary text-white;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        .badge {
+          @apply bg-white text-dark;
+        }
+      }
+    }
+    &.btn-outline-warning {
+      .badge {
+        @apply bg-warning text-white;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        .badge {
+          @apply bg-white text-dark;
+        }
+      }
+    }
+    &.btn-outline-info {
+      .badge {
+        @apply bg-info text-white;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        .badge {
+          @apply bg-white text-dark;
+        }
+      }
+    }
+    &.btn-outline-success {
+      .badge {
+        @apply bg-success text-white;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        .badge {
+          @apply bg-white text-dark;
+        }
+      }
+    }
+    &.btn-outline-danger {
+      .badge {
+        @apply bg-danger text-white;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        .badge {
+          @apply bg-white text-dark;
+        }
+      }
+    }
+  }
+  .custom-badge {
+    @apply text-[0.7rem] font-normal;
+  }
+  .icon-badge {
+    @apply relative;
+    .icon {
+      @apply w-8 h-8 fill-bs3-muted text-[2rem];
+    }
+    .badge {
+      @apply absolute -inset-e-2;
+    }
+  }
+  .text-badge {
+    @apply relative;
+    .badge {
+      @apply absolute -inset-e-4 -inset-bs-4;
+    }
+  }
+}
