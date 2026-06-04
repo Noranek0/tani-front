@@ -1,0 +1,176 @@
+@reference "../base.css";
+
+@layer components {
+  .tooltip {
+    &.tooltip-primary {
+      .tooltip-inner {
+        @apply bg-primary;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before,
+      &.bs-tooltip-top .tooltip-arrow::before {
+        @apply border-t-primary;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before,
+      &.bs-tooltip-end .tooltip-arrow::before {
+        @apply border-r-primary;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before,
+      &.bs-tooltip-start .tooltip-arrow::before {
+        @apply border-l-primary;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before,
+      &.bs-tooltip-end .tooltip-arrow::before {
+        @apply border-b-primary;
+      }
+    }
+    &.tooltip-secondary {
+      .tooltip-inner {
+        @apply bg-secondary;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before,
+      &.bs-tooltip-top .tooltip-arrow::before {
+        @apply border-t-secondary;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before,
+      &.bs-tooltip-end .tooltip-arrow::before {
+        @apply border-r-secondary;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before,
+      &.bs-tooltip-start .tooltip-arrow::before {
+        @apply border-l-secondary;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before,
+      &.bs-tooltip-end .tooltip-arrow::before {
+        @apply border-b-secondary;
+      }
+    }
+    &.tooltip-warning {
+      .tooltip-inner {
+        @apply bg-warning;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before,
+      &.bs-tooltip-top .tooltip-arrow::before {
+        @apply border-t-warning;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before,
+      &.bs-tooltip-end .tooltip-arrow::before {
+        @apply border-r-warning;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before,
+      &.bs-tooltip-start .tooltip-arrow::before {
+        @apply border-l-warning;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before,
+      &.bs-tooltip-end .tooltip-arrow::before {
+        @apply border-b-warning;
+      }
+    }
+    &.tooltip-info {
+      .tooltip-inner {
+        @apply bg-info;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before,
+      &.bs-tooltip-top .tooltip-arrow::before {
+        @apply border-t-info;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before,
+      &.bs-tooltip-end .tooltip-arrow::before {
+        @apply border-r-info;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before,
+      &.bs-tooltip-start .tooltip-arrow::before {
+        @apply border-l-info;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before,
+      &.bs-tooltip-end .tooltip-arrow::before {
+        @apply border-b-info;
+      }
+    }
+    &.tooltip-success {
+      .tooltip-inner {
+        @apply bg-success;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before,
+      &.bs-tooltip-top .tooltip-arrow::before {
+        @apply border-t-success;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before,
+      &.bs-tooltip-end .tooltip-arrow::before {
+        @apply border-r-success;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before,
+      &.bs-tooltip-start .tooltip-arrow::before {
+        @apply border-l-success;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before,
+      &.bs-tooltip-end .tooltip-arrow::before {
+        @apply border-b-success;
+      }
+    }
+    &.tooltip-danger {
+      .tooltip-inner {
+        @apply bg-danger;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before,
+      &.bs-tooltip-top .tooltip-arrow::before {
+        @apply border-t-danger;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before,
+      &.bs-tooltip-end .tooltip-arrow::before {
+        @apply border-r-danger;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before,
+      &.bs-tooltip-start .tooltip-arrow::before {
+        @apply border-l-danger;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before,
+      &.bs-tooltip-end .tooltip-arrow::before {
+        @apply border-b-danger;
+      }
+    }
+    &.tooltip-dark {
+      .tooltip-inner {
+        @apply bg-dark;
+        @apply text-white;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before,
+      &.bs-tooltip-top .tooltip-arrow::before {
+        @apply border-t-dark;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before,
+      &.bs-tooltip-end .tooltip-arrow::before {
+        @apply border-r-dark;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before,
+      &.bs-tooltip-start .tooltip-arrow::before {
+        @apply border-l-dark;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before,
+      &.bs-tooltip-end .tooltip-arrow::before {
+        @apply border-b-dark;
+      }
+    }
+    &.tooltip-light {
+      .tooltip-inner {
+        @apply bg-light;
+        @apply text-white;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before,
+      &.bs-tooltip-top .tooltip-arrow::before {
+        @apply border-t-light;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before,
+      &.bs-tooltip-end .tooltip-arrow::before {
+        @apply border-r-light;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before,
+      &.bs-tooltip-start .tooltip-arrow::before {
+        @apply border-l-light;
+      }
+      &.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before,
+      &.bs-tooltip-end .tooltip-arrow::before {
+        @apply border-b-light;
+      }
+    }
+  }
+}

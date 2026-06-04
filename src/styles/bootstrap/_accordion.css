@@ -1,0 +1,44 @@
+@reference "../base.css";
+@layer components {
+  .accordion-button {
+    @apply bg-white text-dark py-3 px-4;
+    @apply text-sm font-medium;
+
+    @apply after:flex after:justify-center after:items-center;
+    @apply after:text-base after:leading-none after:text-dark;
+    @apply after:bg-gray-1 after:bg-none;
+
+    @apply focus:border-primary/30 focus:shadow-none;
+
+    &:not(.collapsed) {
+      @apply text-dark bg-gray-1 shadow-none;
+    }
+    &:not(.collapsed)::after {
+      @apply bg-none;
+    }
+    &:after {
+      content: "\EA78";
+      font-family: remixicon !important;
+      border-radius: 3.125rem;
+    }
+  }
+
+  .accordion-body {
+    @apply py-3 px-4 text-bs3-muted;
+    font-size: 0.8125rem;
+  }
+
+  .accordion-item {
+    @apply text-dark bg-white border border-bs3-border;
+
+    @apply last-of-type:rounded-b-md;
+    @apply first-of-type:rounded-t-md;
+  }
+
+  .accordions-items-seperate {
+    .accordion-item {
+      @apply not-first-of-type:mbs-2;
+      @apply overflow-hidden rounded-lg border-bs border-bs-bs3-border;
+    }
+  }
+}
