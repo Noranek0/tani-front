@@ -1,3 +1,4 @@
+@reference "../base.css";
 @layer components {
   .error-bg {
     @apply relative w-full h-full inset-be-0 inset-bs-0 inset-e-0 inset-s-0;

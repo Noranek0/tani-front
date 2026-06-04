@@ -30,10 +30,11 @@
   --color-bs3-input-border: #e2e6f1;
   --color-bs3-menu-prime: #61748f;
 
-  --breakpoint-sm: 36rem;
-  --breakpoint-lg: 62rem;
-  --breakpoint-xl: 75rem;
-  --breakpoint-2xl: 88rem;
+  --breakpoint-sm: 36rem; /* 576px */
+  --breakpoint-lg: 62rem; /* 992px */
+  --breakpoint-xl: 75rem; /* 1200px */
+  --breakpoint-2xl: 88rem; /* 1408px */
+  --breakpoint-3xl: 100rem; /* 1600px */
 
   --animate-fall: fall 2s linear;
   --animate-diagonal-fall: diagonal-fall 2s linear;
@@ -177,40 +178,20 @@
   }
 }
 
-@custom-variant dark {
-  &:where([data-theme-mode="dark"], [data-theme-mode="dark"] *) {
-    @slot;
-  }
-}
+@custom-variant dark (&:where([data-theme-mode="dark"], [data-theme-mode="dark"] *));
+@custom-variant light (&:where([data-theme-mode="light"], [data-theme-mode="light"] *));
 
-@custom-variant vertical-closed {
-  &:where([data-vertical-style="closed"], [data-vertical-style="closed"] *) {
-    @slot;
-  }
-}
+@custom-variant header-dark (&:where([data-header-styles="dark"], [data-header-styles="dark"] *));
+@custom-variant header-color (&:where([data-header-styles="color"], [data-header-styles="color"] *));
+@custom-variant header-gradient (&:where([data-header-styles="gradient"], [data-header-styles="gradient"] *));
+@custom-variant header-light (&:where([data-header-styles="light"], [data-header-styles="light"] *));
 
-@custom-variant toggled-open {
-  &:where([data-toggled="close-menu-open"], [data-toggled="close-menu-open"] *) {
-    @slot;
-  }
-}
+@custom-variant vertical-closed (&:where([data-vertical-style="closed"], [data-vertical-style="closed"] *));
+@custom-variant vertical-detached (&:where([data-vertical-style="detached"], [data-vertical-style="detached"] *));
 
-@custom-variant toggled-closed {
-  &:where([data-toggled="close-menu-close"], [data-toggled="close-menu-close"] *) {
-    @slot;
-  }
-}
+@custom-variant toggled-open (&:where([data-toggled="close-menu-open"], [data-toggled="close-menu-open"] *));
+@custom-variant toggled-closed (&:where([data-toggled="close-menu-close"], [data-toggled="close-menu-close"] *));
+@custom-variant toggled-detachedclosed (&:where([data-toggled="detached-close"], [data-toggled="detached-close"] *));
 
-/* CUSTOM */
-@import "./custom/_authentication.css";
-@import "./custom/_error.css";
-@import "./custom/_header.css";
-@import "./custom/_ribbons.css";
-@import "./custom/_widgets.css";
-
-/* MENU-STYLES */
-
-/* PAGES */
-
-/* Global */
-@import "./global/_charts.css";
+@custom-variant page-classic (&:where([data-page-style="classic"], [data-page-style="classic"] *));
+@custom-variant page-modern (&:where([data-page-style="modern"], [data-page-style="modern"] *));

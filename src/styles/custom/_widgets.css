@@ -1,3 +1,4 @@
+@reference "../base.css";
 @layer components {
   .card-img-overlay-profile {
     @apply absolute bg-primary/50 h-50 w-full;

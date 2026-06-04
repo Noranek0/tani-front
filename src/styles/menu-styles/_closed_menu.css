@@ -1,0 +1,18 @@
+@reference "../base.css";
+
+@layer components {
+  .app-sidebar {
+    @apply vertical-closed:toggled-closed:hidden;
+    @apply vertical-closed:toggled-open:block;
+  }
+
+  .app-content {
+    @apply lg:vertical-closed:toggled-closed:ms-0;
+    @apply lg:vertical-closed:toggled-open:ms-60;
+  }
+
+  .app-header {
+    @apply lg:vertical-closed:toggled-closed:ps-0;
+    @apply lg:vertical-closed:toggled-open:ps-60;
+  }
+}

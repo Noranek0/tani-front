@@ -1,0 +1,8 @@
+@layer components {
+  .apexcharts-tooltip.apexcharts-theme-light,
+  .apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title,
+  .apexcharts-xaxistooltip,
+  .apexcharts-yaxistooltip {
+    @apply bg-white text-dark border border-bs3-input-border;
+  }
+}

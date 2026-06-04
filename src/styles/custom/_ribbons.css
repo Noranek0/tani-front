@@ -1,3 +1,4 @@
+@reference "../base.css";
 @layer components {
   .ribbon {
     @apply w-20 h-20 overflow-hidden absolute z-2;

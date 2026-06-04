@@ -1,3 +1,4 @@
+@reference "../base.css";
 @layer components {
   .authentication {
     @apply min-h-screen;
