@@ -1,0 +1,101 @@
+@reference "../base.css";
+
+@layer components {
+  @variant vertical-icontext {
+    @variant toggled-iconclose {
+      .app-sidebar {
+        .slide .side-menu__label {
+          .badge {
+            @apply lg:nav-vertical:hidden;
+          }
+        }
+      }
+      .app-content {
+        @apply lg:ms-36;
+      }
+      &[data-icon-text="open"] {
+        .app-header {
+          @apply lg:ps-36;
+        }
+        .app-sidebar {
+          @apply lg:w-60;
+
+          .main-sidebar-header {
+            @apply lg:w-60;
+          }
+          .side-menu__icon {
+            @apply lg:mbe-0 lg:me-3;
+          }
+          .slide {
+            @apply lg:py-0 lg:pr-2.5 lg:pl-0;
+          }
+          .slide-menu {
+            &.child1,
+            .child2,
+            .child3 {
+              li {
+                @apply lg:p-0;
+              }
+            }
+            &.child1 li {
+              @apply lg:ps-9;
+            }
+            &.child2 li {
+              @apply lg:ps-6;
+            }
+            &.child3 li {
+              @apply lg:ps-4;
+            }
+          }
+
+          .slide .side-menu__label {
+            .badge {
+              @apply lg:nav-vertical:block;
+            }
+          }
+        }
+      }
+      &:not([data-icon-text="open"]) {
+        .app-sidebar {
+          @apply lg:absolute lg:w-36;
+          .main-sidebar {
+            @apply lg:overflow-visible!;
+          }
+          .main-sidebar-header {
+            @apply lg:w-36 justify-center;
+          }
+          .side-menu__icon {
+            @apply lg:me-0 lg:mbe-2;
+          }
+          .slide {
+            @apply lg:p-0;
+          }
+          .slide__category,
+          .side-menu__angle {
+            @apply lg:hidden;
+          }
+          .slide.has-sub.open {
+            .slide-menu {
+              @apply lg:hidden!;
+            }
+          }
+          .side-menu__item {
+            @apply lg:rounded-none;
+          }
+          .side-menu__item,
+          .side-menu__label {
+            @apply lg:block lg:text-center;
+          }
+        }
+        &[data-menu-position="fixed"] {
+          .app-sidebar {
+            @apply lg:fixed;
+          }
+        }
+        .app-header {
+          @apply lg:ps-36;
+        }
+      }
+    }
+  }
+}
