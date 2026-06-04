@@ -1,0 +1,213 @@
+@reference "../base.css";
+
+@layer components {
+  @variant vertical-doublemenu {
+    .slide-menu.double-menu-active {
+      @apply lg:block!;
+    }
+
+    .app-sidebar {
+      @apply lg:w-20;
+
+      .main-sidebar {
+        @apply lg:overflow-visible lg:h-full lg:shadow-none lg:mbs-0;
+        @apply lg:toggled-doubleclosed:shadow-base;
+
+        .slide.side-menu__label1 {
+          @apply lg:toggled-doubleopen:border-e lg:toggled-doubleopen:border-e-bs3-border;
+        }
+      }
+      .slide.has-sub .slide-menu {
+        @apply lg:toggled-doubleclosed:hidden!;
+      }
+      .slide-menu.child1 {
+        @apply lg:pbe-12;
+      }
+      .main-sidebar-header {
+        @apply lg:w-20 lg:blur-[30px] lg:justify-center;
+        .header-logo {
+          .toggle-logo {
+            @apply lg:block!;
+          }
+          .desktop-dark,
+          .desktop-logo,
+          .toggle-dark {
+            @apply lg:hidden!;
+          }
+        }
+      }
+      .main-menu-container {
+        @apply lg:mbs-15;
+      }
+      .main-menu > .slide {
+        @apply lg:p-0 lg:pe-[0.6rem];
+      }
+      .category-name,
+      .side-menu__label,
+      .side-menu__angle {
+        @apply lg:hidden;
+      }
+      .side-menu__icon {
+        @apply lg:fill-bs3-menu-prime lg:text-bs3-menu-prime;
+        @apply lg:me-0;
+      }
+      .side-menu__item {
+        @apply lg:py-[0.65rem] lg:px-7;
+
+        &:hover,
+        &.active {
+          .side-menu__icon {
+            @apply lg:text-primary lg:fill-primary;
+          }
+        }
+      }
+      .slide__category {
+        @apply lg:hidden;
+      }
+      .simplebar-content-wrapper {
+        @apply lg:pos-inherit;
+      }
+      .simplebar-mask {
+        @apply lg:pos-inherit;
+      }
+      .simplebar-placeholder {
+        @apply lg:h-auto!;
+      }
+    }
+
+    .app-header {
+      @apply lg:ps-68;
+      @apply lg:toggled-doubleclosed:ps-20;
+    }
+    .app-content {
+      @apply lg:ms-68;
+      @apply lg:toggled-doubleclosed:ms-20;
+    }
+
+    .slide.has-sub .slide-menu {
+      @apply lg:absolute! lg:inset-s-20! lg:shadow-none;
+      @apply lg:h-full! lg:transition-none! lg:inset-e-0;
+      @apply lg:bg-white lg:border-e lg:border-e-bs3-menu;
+
+      &.child2,
+      &.child3 {
+        @apply lg:relative! lg:inset-s-0! lg:h-auto! lg:inset-bs-0!;
+        @apply lg:border-e-0;
+
+        .slide {
+          &:nth-child(2) {
+            @apply lg:pbs-0;
+          }
+        }
+      }
+    }
+
+    .slide-menu {
+      &.child1,
+      &.child2,
+      &.child3 {
+        .slide {
+          @apply lg:ps-0;
+          .side-menu__item {
+            @apply lg:text-start lg:before:hidden;
+          }
+        }
+        .side-menu__angle {
+          @apply lg:block lg:inset-e-4 lg:inset-bs-[0.65rem];
+        }
+      }
+      &.child2,
+      &.child3 {
+        @apply lg:min-w-40;
+      }
+      &.child1 {
+        @apply lg:min-w-48;
+        .slide {
+          &:nth-child(2) {
+            @apply lg:pbs-3;
+          }
+        }
+      }
+    }
+
+    .side-menu__label1 {
+      @apply lg:block! lg:w-48 lg:h-17 lg:py-6 lg:px-4;
+      @apply lg:text-bs3-menu-prime lg:border-be lg:border-be-bs3-menu;
+      @apply lg:font-medium lg:text-md;
+    }
+
+    .slide-menu {
+      @apply lg:hidden;
+
+      &.double-menu-active {
+        @apply lg:absolute lg:top-0 lg:h-full!;
+        @apply lg:visible! lg:rounded-none! lg:border-bs-0;
+        @apply lg:overflow-x-hidden lg:overflow-y-scroll;
+      }
+    }
+
+    @variant dark {
+      .app-sidebar .main-sidebar-header {
+        .header-logo {
+          .desktop-logo,
+          .desktop-dark,
+          .toggle-logo {
+            @apply lg:hidden!;
+          }
+          .toggle-dark {
+            @apply lg:block!;
+          }
+        }
+      }
+      &[data-menu-styles="light"] {
+        .app-sidebar .main-sidebar-header {
+          .header-logo {
+            .desktop-logo,
+            .desktop-dark,
+            .toggle-dark {
+              @apply lg:hidden!;
+            }
+            .toggle-logo {
+              @apply lg:block!;
+            }
+          }
+        }
+      }
+
+      .slide.has-sub .slide-menu {
+        @apply lg:page-classic:border-e lg:page-classic:border-e-bs3-border;
+      }
+    }
+
+    @variant light {
+      &[data-menu-styles="dark"],
+      &[data-menu-styles="color"],
+      &[data-menu-styles="gradient"] {
+        .app-sidebar .main-sidebar-header {
+          .header-logo {
+            .desktop-logo,
+            .desktop-dark,
+            .toggle-logo {
+              @apply lg:hidden!;
+            }
+            .toggle-dark {
+              @apply lg:block!;
+            }
+          }
+        }
+      }
+    }
+
+    [data-menu-styles="light"] {
+      .app-sidebar {
+        .side-menu__item.active .side-menu__icon {
+          @apply fill-white! text-white!;
+        }
+      }
+    }
+  }
+
+  .app-sidebar .main-menu .slide .custome-tooltip {
+    @apply max-lg:hidden!;
+  }
+}

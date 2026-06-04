@@ -1,3 +1,4 @@
 /* MENU-STYLES */
 @import "./menu-styles/_closed_menu.css";
 @import "./menu-styles/_detached_menu.css";
+@import "./menu-styles/_double_menu.css";

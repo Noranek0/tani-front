@@ -41,6 +41,10 @@
   --animate-ring: ring 4s 0.7s ease-in-out infinite;
   --animate-pulse: pulse-pink 2s infinite;
 
+  --text-md: 0.9375rem;
+
+  --shadow-base: 0px .125rem .25rem rgba(0,0,0,0.05);
+
   @keyframes ring {
     0% {
       transform: rotate(0);
@@ -178,6 +182,10 @@
   }
 }
 
+@utility pos-inherit {
+  position: inherit;
+}
+
 @custom-variant dark (&:where([data-theme-mode="dark"], [data-theme-mode="dark"] *));
 @custom-variant light (&:where([data-theme-mode="light"], [data-theme-mode="light"] *));
 
@@ -188,10 +196,13 @@
 
 @custom-variant vertical-closed (&:where([data-vertical-style="closed"], [data-vertical-style="closed"] *));
 @custom-variant vertical-detached (&:where([data-vertical-style="detached"], [data-vertical-style="detached"] *));
+@custom-variant vertical-doublemenu (&:where([data-vertical-style="doublemenu"], [data-vertical-style="doublemenu"] *));
 
 @custom-variant toggled-open (&:where([data-toggled="close-menu-open"], [data-toggled="close-menu-open"] *));
 @custom-variant toggled-closed (&:where([data-toggled="close-menu-close"], [data-toggled="close-menu-close"] *));
 @custom-variant toggled-detachedclosed (&:where([data-toggled="detached-close"], [data-toggled="detached-close"] *));
+@custom-variant toggled-doubleopen (&:where([data-toggled="double-menu-open"], [data-toggled="double-menu-open"] *));
+@custom-variant toggled-doubleclosed (&:where([data-toggled="double-menu-close"], [data-toggled="double-menu-close"] *));
 
 @custom-variant page-classic (&:where([data-page-style="classic"], [data-page-style="classic"] *));
 @custom-variant page-modern (&:where([data-page-style="modern"], [data-page-style="modern"] *));
