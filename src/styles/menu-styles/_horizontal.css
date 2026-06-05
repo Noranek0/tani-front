@@ -1,7 +1,7 @@
 @reference "../base.css";
 
 @layer components {
-  @variant nav-horizontal {
+  [data-nav-layout="horizontal"] {
     .app-sidebar {
       @apply lg:shadow-base;
     }
