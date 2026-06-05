@@ -3,4 +3,10 @@
 @import "./menu-styles/_detached_menu.css";
 @import "./menu-styles/_double_menu.css";
 @import "./menu-styles/_horizontal.css";
+@import "./menu-styles/_icon_click.css";
+@import "./menu-styles/_icon_hover.css";
+@import "./menu-styles/_icon_overlay.css";
 @import "./menu-styles/_icontext.css";
+@import "./menu-styles/_menu_click.css";
+@import "./menu-styles/_menu_hover.css";
+@import "./menu-styles/_vertical.css";
