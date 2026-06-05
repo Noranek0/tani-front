@@ -6,6 +6,7 @@ import('./styles/custom.css');
 import('./styles/global.css');
 import('./styles/menu-styles.css');
 import('./styles/pages.css');
+import('./styles/util.css');
 import App from "./App.vue";
 import { createPinia } from "pinia";
 import router from "~/router";
