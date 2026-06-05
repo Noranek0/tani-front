@@ -407,7 +407,7 @@ select, select option {
     width: 9rem;
     height: 3rem;
   }
-  [data-toggled=icon-overlay-close][data-vertical-style=overlay]:not[data-icon-overlay=open] .app-sidebar .slide {
+  [data-toggled=icon-overlay-close][data-vertical-style=overlay]:not([data-icon-overlay=open]) .app-sidebar .slide {
     padding: 0;
   }
 }
