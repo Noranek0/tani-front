@@ -1,0 +1,416 @@
+:root {
+  --body-bg-rgb: 242, 244, 249;
+  --primary-rgb: 3, 181, 98;
+  --secondary-rgb: 127, 103, 257;
+  --warning-rgb: 255, 169, 9;
+  --info-rgb: 15, 188, 249;
+  --success-rgb: 83, 196, 5;
+  --danger-rgb: 253, 73, 99;
+  --light-rgb: 246, 249, 249;
+  --dark-rgb: 10, 10, 10;
+  --orange-rgb: 254, 124, 88;
+  --pink-rgb: 254, 84, 155;
+  --teal-rgb: 0, 216, 216;
+  --purple-rgb: 123, 118, 254;
+  --green-rgb: 1, 239, 140;
+  --default-body-bg-color: rgb(var(--body-bg-rgb));
+  --primary-color: rgb(var(--primary-rgb));
+  --primary-border: rgb(var(--primary-rgb));
+  --primary01: rgba(var(--primary-rgb), 0.1);
+  --primary02: rgba(var(--primary-rgb), 0.2);
+  --primary03: rgba(var(--primary-rgb), 0.3);
+  --primary04: rgba(var(--primary-rgb), 0.4);
+  --primary05: rgba(var(--primary-rgb), 0.5);
+  --primary06: rgba(var(--primary-rgb), 0.6);
+  --primary07: rgba(var(--primary-rgb), 0.7);
+  --primary08: rgba(var(--primary-rgb), 0.8);
+  --primary09: rgba(var(--primary-rgb), 0.9);
+  --primary005: rgba(var(--primary-rgb), 0.05);
+  --default-font-family: "Plus Jakarta Sans", sans-serif;
+  --default-font-weight: 400;
+  --default-text-color: #010101;
+  --default-border: #eeedf3;
+  --default-background: #f9fafb;
+  --menu-bg: #fff;
+  --menu-prime-color: #61748f;
+  --menu-border-color: #e2e5e7;
+  --header-bg: #fff;
+  --header-prime-color: #61748f;
+  --header-border-color: #e2e5e7;
+  --custom-white: #fff;
+  --custom-black: #000;
+  --bootstrap-card-border: #e2e5e7;
+  --list-hover-focus-bg: #f5f6f7;
+  --text-muted: #8d9eb5;
+  --input-border: #e2e6f1;
+  --form-control-bg: #ffffff;
+  --bs-link-color-rgb: var(--default-text-color);
+  /* Gray set */
+  --gray-1: #f9fafb;
+  --gray-2: #f2f4f5;
+  --gray-3: #e6eaeb;
+  --gray-4: #dbdfe1;
+  --gray-5: #949eb7;
+  --gray-6: #7987a1;
+  --gray-7: #4d5875;
+  --gray-8: #383853;
+  --gray-9: #323251;
+  /* White set */
+  --white-1: rgba(255, 255, 255, 0.1);
+  --white-2: rgba(255, 255, 255, 0.2);
+  --white-3: rgba(255, 255, 255, 0.3);
+  --white-4: rgba(255, 255, 255, 0.4);
+  --white-5: rgba(255, 255, 255, 0.5);
+  --white-6: rgba(255, 255, 255, 0.6);
+  --white-7: rgba(255, 255, 255, 0.7);
+  --white-8: rgba(255, 255, 255, 0.8);
+  --white-9: rgba(255, 255, 255, 0.9);
+  /* Black set */
+  --black-1: rgba(0, 0, 0, 0.1);
+  --black-2: rgba(0, 0, 0, 0.2);
+  --black-3: rgba(0, 0, 0, 0.3);
+  --black-4: rgba(0, 0, 0, 0.4);
+  --black-5: rgba(0, 0, 0, 0.5);
+  --black-6: rgba(0, 0, 0, 0.6);
+  --black-7: rgba(0, 0, 0, 0.7);
+  --black-8: rgba(0, 0, 0, 0.8);
+  --black-9: rgba(0, 0, 0, 0.9);
+}
+
+/*Font Family*/
+/*Font Size*/
+/*Font Weight*/
+/*Body & Text colors*/
+/*Default Background Color*/
+/*Border Color*/
+/*Border Radius*/
+/*Box Shadow*/
+/* Header Variables */
+/*Menu Variables*/
+/*Color Variables*/
+/* social icons colors */
+/*gradient variables*/
+/*gray set*/
+/*white set*/
+/*black set*/
+/* dark mode */
+[data-theme-mode=dark] {
+  --body-bg-rgb: 25, 25, 28;
+  --body-bg-rgb2: 45, 45, 48;
+  --menu-bg: rgb(var(--body-bg-rgb));
+  --menu-border-color: rgba(255, 255, 255, 0.1);
+  --menu-prime-color: rgba(255,255,255,0.4);
+  --header-bg: rgb(var(--body-bg-rgb));
+  --header-prime-color: rgba(255,255,255,0.4);
+  --header-border-color: rgba(255, 255, 255, 0.1);
+  --custom-white: rgb(var(--body-bg-rgb));
+  --custom-black: #fff;
+  --default-border: rgba(255, 255, 255, 0.1);
+  --default-text-color: rgba(255, 255, 255, 0.8);
+  --light-rgb: 43, 46, 49;
+  --dark-rgb: 240, 245, 248;
+  --bootstrap-card-border: rgba(255, 255, 255, 0.1);
+  --list-hover-focus-bg: rgba(255, 255, 255, 0.1);
+  --default-background: rgb(var(--body-bg-rgb2));
+  --default-body-bg-color: rgb(var(--body-bg-rgb2));
+  --text-muted: rgba(255, 255, 255, 0.5);
+  --input-border: rgba(255, 255, 255, 0.1);
+  --form-control-bg: rgb(var(--body-bg-rgb));
+  color-scheme: dark;
+  /* Gray Set */
+  --gray-1: #110f0f;
+  --gray-2: #17171c;
+  --gray-3: #393946;
+  --gray-4: #505062;
+  --gray-5: #73738c;
+  --gray-6: #8f8fa3;
+  --gray-7: #ababba;
+  --gray-8: #c7c7d1;
+  --gray-9: #e3e3e8;
+  /* white set */
+  --white-1: rgba(0, 0, 0, 0.1);
+  --white-2: rgba(0, 0, 0, 0.2);
+  --white-3: rgba(0, 0, 0, 0.3);
+  --white-4: rgba(0, 0, 0, 0.4);
+  --white-5: rgba(0, 0, 0, 0.5);
+  --white-6: rgba(0, 0, 0, 0.6);
+  --white-7: rgba(0, 0, 0, 0.7);
+  --white-8: rgba(0, 0, 0, 0.8);
+  --white-9: rgba(0, 0, 0, 0.9);
+  /* black set */
+  --black-1: rgba(255, 255, 255, 0.1);
+  --black-2: rgba(255, 255, 255, 0.2);
+  --black-3: rgba(255, 255, 255, 0.3);
+  --black-4: rgba(255, 255, 255, 0.4);
+  --black-5: rgba(255, 255, 255, 0.5);
+  --black-6: rgba(255, 255, 255, 0.6);
+  --black-7: rgba(255, 255, 255, 0.7);
+  --black-8: rgba(255, 255, 255, 0.8);
+  --black-9: rgba(255, 255, 255, 0.9);
+}
+
+/* Start:: mail-app */
+.main-mail-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.mail-navigation,
+.total-mails,
+.mail-recepients {
+  background-color: var(--custom-white);
+  height: calc(100vh - 7rem);
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.mail-info-body {
+  max-height: calc(100vh - 8.3rem);
+}
+
+@media (min-width: 1400px) {
+  .total-mails .mail-msg .mail-msg-content {
+    display: inline-block;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1489.98px) {
+  .responsive-mail-action-icons .dropdown {
+    display: block;
+  }
+  .responsive-mail-action-icons .close-button {
+    display: none;
+  }
+  .mail-action-icons {
+    display: none;
+  }
+}
+@media (max-width: 1399.98px) {
+  .responsive-mail-action-icons {
+    display: block;
+    display: flex;
+  }
+  .mail-action-icons {
+    display: none;
+  }
+}
+@media (max-width: 575.98px) {
+  .mail-recepients {
+    display: none;
+  }
+}
+@media (min-width: 1489px) {
+  .responsive-mail-action-icons {
+    display: none;
+  }
+}
+@media (max-width: 991.98px) {
+  .mail-navigation {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .mail-navigation {
+    min-width: 20rem;
+    max-width: 20rem;
+  }
+}
+.total-mails {
+  width: 100%;
+}
+.total-mails .mail-messages {
+  max-height: calc(100vh - 12.65rem);
+}
+.total-mails .mail-messages li {
+  padding: 1.1rem 1.25rem 0.625rem 1.25rem;
+  border-bottom: 1px solid var(--default-border);
+  border-inline-start: 2px solid transparent;
+}
+.total-mails .mail-messages li.active {
+  background-color: var(--primary005);
+  border-inline-start: 2px solid var(--primary-color);
+}
+.total-mails .mail-messages li:last-child {
+  border-bottom: 0;
+}
+.total-mails .mail-messages li .avatar.mail-msg-avatar {
+  width: 2rem;
+  height: 2rem;
+}
+.total-mails .mail-messages li .avatar.mail-msg-avatar.online:before, .total-mails .mail-messages li .avatar.mail-msg-avatar.offline:before {
+  width: 0.55rem;
+  height: 0.55rem;
+}
+.total-mails .mail-messages li .mail-msg .mail-starred i {
+  color: var(--text-muted);
+  opacity: 0.5;
+}
+.total-mails .mail-messages li .mail-msg .mail-starred.true i {
+  color: rgb(var(--warning-rgb));
+  opacity: 1;
+}
+
+.mail-recepients {
+  min-width: 4.4rem;
+  max-width: 4.4rem;
+}
+.mail-recepients .total-mail-recepients {
+  max-height: calc(100vh - 12.4rem);
+}
+.mail-recepients .mail-recepeint-person .avatar {
+  width: 2rem;
+  height: 2rem;
+  margin-block-end: 1rem;
+}
+.mail-recepients .mail-recepeint-person .avatar.online:before, .mail-recepients .mail-recepeint-person .avatar.offline:before {
+  width: 0.55rem;
+  height: 0.55rem;
+}
+.mail-recepients .mail-recepeint-person:last-child {
+  margin-block-end: 0;
+}
+
+.mail-navigation ul.mail-main-nav {
+  max-height: calc(100vh - 17rem);
+  padding: 1rem;
+  margin-block-end: 0;
+}
+.mail-navigation ul.mail-main-nav li {
+  padding: 0.5rem;
+  border-radius: var(--default-border);
+  border-radius: 0.25rem;
+  font-weight: 500;
+}
+.mail-navigation ul.mail-main-nav li.active {
+  color: var(--primary-color);
+  border: 1px dashed var(--primary-color);
+  background-color: var(--primary005);
+  border-inline-start: 4px solid var(--primary-color);
+}
+.mail-navigation ul.mail-main-nav li.active div {
+  color: var(--primary-color);
+}
+.mail-navigation ul.mail-main-nav li:hover div {
+  color: var(--primary-color);
+}
+
+@media (min-width: 576px) {
+  .mail-msg-content {
+    width: 100%;
+  }
+}
+@media (max-width: 575.98px) {
+  .mail-msg-content {
+    max-width: 180px;
+  }
+}
+.mails-information {
+  width: 100%;
+}
+.mails-information .mail-info-header {
+  padding: 0.75rem;
+  border-block-end: 1px solid var(--default-border);
+}
+.mails-information .mail-info-footer {
+  padding: 0.75rem;
+  border-block-start: 1px solid var(--default-border);
+}
+.mails-information .mail-attachment {
+  padding: 0.25rem;
+  width: 12rem;
+  height: 2.75rem;
+  border: 1px solid var(--default-border);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.mails-information .mail-attachment .attachment-icon svg,
+.mails-information .mail-attachment .attachment-icon i {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 2rem;
+  margin-inline-end: 0.5rem;
+}
+.mails-information .mail-attachment .attachment-name {
+  max-width: 7rem;
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.mail-reply .ql-toolbar.ql-snow .ql-formats {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#mail-compose-editor .ql-editor {
+  min-height: 12.62rem !important;
+}
+
+.mail-compose .ql-toolbar.ql-snow .ql-formats {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.offcanvas.offcanvas-end.mail-info-offcanvas {
+  width: 50rem;
+}
+
+/* End:: mail-app */
+/* Start:: mail-settings */
+.mail-notification-settings, .mail-security-settings {
+  width: 60%;
+}
+
+@media (max-width: 575.98px) {
+  #account-settings .btn-group label {
+    font-size: 0.625rem;
+  }
+}
+.choices__list--dropdown .choices__item--selectable,
+.choices__list[aria-expanded] .choices__item--selectable {
+  padding: 10px !important;
+}
+
+.choices__list--dropdown .choices__item--selectable::after,
+.choices__list[aria-expanded] .choices__item--selectable::after {
+  display: none;
+}
+
+/* End:: mail-settings */
+.mail-messages {
+  box-shadow: inset 0px -3px 9px var(--black-1);
+}
+
+.total-mails .mail-messages .mail-starred i {
+  color: var(--text-muted);
+  opacity: 0.5;
+}
+
+.total-mails .mail-messages .mail-important i {
+  color: var(--text-muted);
+  opacity: 0.5;
+}
+
+.total-mails .mail-messages .mail-important i {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.total-mails .mail-messages .mail-starred.true i {
+  color: rgb(var(--warning-rgb));
+  opacity: 1;
+}
+
+.mail-messages .table tbody tr.mail-selected {
+  border-inline-start: 2px solid var(--primary-color);
+}
+
+.mail-messages .table tbody tr.mail-selected td {
+  background-color: var(--default-background);
+}
+
+.mail-action-icons .btn-close {
+  width: 1.6rem !important;
+  height: 1.6rem !important;
+  opacity: 0.9 !important;
+}

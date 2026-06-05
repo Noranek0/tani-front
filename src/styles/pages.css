@@ -1,0 +1,7 @@
+/* PAGES */
+@import "./pages/_chat";
+@import "./pages/_ecommerce";
+@import "./pages/_file-manager";
+@import "./pages/_landing";
+@import "./pages/_mail";
+@import "./pages/_task";

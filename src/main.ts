@@ -4,6 +4,7 @@ import('./styles/base.css');
 import('./styles/bootstrap.css');
 import('./styles/custom.css');
 import('./styles/menu-styles.css');
+import('./styles/pages.css');
 import App from "./App.vue";
 import { createPinia } from "pinia";
 import router from "~/router";
