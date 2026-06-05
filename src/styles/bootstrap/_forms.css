@@ -1,0 +1,1380 @@
+:root {
+  --body-bg-rgb: 242, 244, 249;
+  --primary-rgb: 3, 181, 98;
+  --secondary-rgb: 127, 103, 257;
+  --warning-rgb: 255, 169, 9;
+  --info-rgb: 15, 188, 249;
+  --success-rgb: 83, 196, 5;
+  --danger-rgb: 253, 73, 99;
+  --light-rgb: 246, 249, 249;
+  --dark-rgb: 10, 10, 10;
+  --orange-rgb: 254, 124, 88;
+  --pink-rgb: 254, 84, 155;
+  --teal-rgb: 0, 216, 216;
+  --purple-rgb: 123, 118, 254;
+  --green-rgb: 1, 239, 140;
+  --default-body-bg-color: rgb(var(--body-bg-rgb));
+  --primary-color: rgb(var(--primary-rgb));
+  --primary-border: rgb(var(--primary-rgb));
+  --primary01: rgba(var(--primary-rgb), 0.1);
+  --primary02: rgba(var(--primary-rgb), 0.2);
+  --primary03: rgba(var(--primary-rgb), 0.3);
+  --primary04: rgba(var(--primary-rgb), 0.4);
+  --primary05: rgba(var(--primary-rgb), 0.5);
+  --primary06: rgba(var(--primary-rgb), 0.6);
+  --primary07: rgba(var(--primary-rgb), 0.7);
+  --primary08: rgba(var(--primary-rgb), 0.8);
+  --primary09: rgba(var(--primary-rgb), 0.9);
+  --primary005: rgba(var(--primary-rgb), 0.05);
+  --default-font-family: "Plus Jakarta Sans", sans-serif;
+  --default-font-weight: 400;
+  --default-text-color: #010101;
+  --default-border: #eeedf3;
+  --default-background: #f9fafb;
+  --menu-bg: #fff;
+  --menu-prime-color: #61748f;
+  --menu-border-color: #e2e5e7;
+  --header-bg: #fff;
+  --header-prime-color: #61748f;
+  --header-border-color: #e2e5e7;
+  --custom-white: #fff;
+  --custom-black: #000;
+  --bootstrap-card-border: #e2e5e7;
+  --list-hover-focus-bg: #f5f6f7;
+  --text-muted: #8d9eb5;
+  --input-border: #e2e6f1;
+  --form-control-bg: #ffffff;
+  --bs-link-color-rgb: var(--default-text-color);
+  /* Gray set */
+  --gray-1: #f9fafb;
+  --gray-2: #f2f4f5;
+  --gray-3: #e6eaeb;
+  --gray-4: #dbdfe1;
+  --gray-5: #949eb7;
+  --gray-6: #7987a1;
+  --gray-7: #4d5875;
+  --gray-8: #383853;
+  --gray-9: #323251;
+  /* White set */
+  --white-1: rgba(255, 255, 255, 0.1);
+  --white-2: rgba(255, 255, 255, 0.2);
+  --white-3: rgba(255, 255, 255, 0.3);
+  --white-4: rgba(255, 255, 255, 0.4);
+  --white-5: rgba(255, 255, 255, 0.5);
+  --white-6: rgba(255, 255, 255, 0.6);
+  --white-7: rgba(255, 255, 255, 0.7);
+  --white-8: rgba(255, 255, 255, 0.8);
+  --white-9: rgba(255, 255, 255, 0.9);
+  /* Black set */
+  --black-1: rgba(0, 0, 0, 0.1);
+  --black-2: rgba(0, 0, 0, 0.2);
+  --black-3: rgba(0, 0, 0, 0.3);
+  --black-4: rgba(0, 0, 0, 0.4);
+  --black-5: rgba(0, 0, 0, 0.5);
+  --black-6: rgba(0, 0, 0, 0.6);
+  --black-7: rgba(0, 0, 0, 0.7);
+  --black-8: rgba(0, 0, 0, 0.8);
+  --black-9: rgba(0, 0, 0, 0.9);
+}
+
+/*Font Family*/
+/*Font Size*/
+/*Font Weight*/
+/*Body & Text colors*/
+/*Default Background Color*/
+/*Border Color*/
+/*Border Radius*/
+/*Box Shadow*/
+/* Header Variables */
+/*Menu Variables*/
+/*Color Variables*/
+/* social icons colors */
+/*gradient variables*/
+/*gray set*/
+/*white set*/
+/*black set*/
+/* dark mode */
+[data-theme-mode=dark] {
+  --body-bg-rgb: 25, 25, 28;
+  --body-bg-rgb2: 45, 45, 48;
+  --menu-bg: rgb(var(--body-bg-rgb));
+  --menu-border-color: rgba(255, 255, 255, 0.1);
+  --menu-prime-color: rgba(255,255,255,0.4);
+  --header-bg: rgb(var(--body-bg-rgb));
+  --header-prime-color: rgba(255,255,255,0.4);
+  --header-border-color: rgba(255, 255, 255, 0.1);
+  --custom-white: rgb(var(--body-bg-rgb));
+  --custom-black: #fff;
+  --default-border: rgba(255, 255, 255, 0.1);
+  --default-text-color: rgba(255, 255, 255, 0.8);
+  --light-rgb: 43, 46, 49;
+  --dark-rgb: 240, 245, 248;
+  --bootstrap-card-border: rgba(255, 255, 255, 0.1);
+  --list-hover-focus-bg: rgba(255, 255, 255, 0.1);
+  --default-background: rgb(var(--body-bg-rgb2));
+  --default-body-bg-color: rgb(var(--body-bg-rgb2));
+  --text-muted: rgba(255, 255, 255, 0.5);
+  --input-border: rgba(255, 255, 255, 0.1);
+  --form-control-bg: rgb(var(--body-bg-rgb));
+  color-scheme: dark;
+  /* Gray Set */
+  --gray-1: #110f0f;
+  --gray-2: #17171c;
+  --gray-3: #393946;
+  --gray-4: #505062;
+  --gray-5: #73738c;
+  --gray-6: #8f8fa3;
+  --gray-7: #ababba;
+  --gray-8: #c7c7d1;
+  --gray-9: #e3e3e8;
+  /* white set */
+  --white-1: rgba(0, 0, 0, 0.1);
+  --white-2: rgba(0, 0, 0, 0.2);
+  --white-3: rgba(0, 0, 0, 0.3);
+  --white-4: rgba(0, 0, 0, 0.4);
+  --white-5: rgba(0, 0, 0, 0.5);
+  --white-6: rgba(0, 0, 0, 0.6);
+  --white-7: rgba(0, 0, 0, 0.7);
+  --white-8: rgba(0, 0, 0, 0.8);
+  --white-9: rgba(0, 0, 0, 0.9);
+  /* black set */
+  --black-1: rgba(255, 255, 255, 0.1);
+  --black-2: rgba(255, 255, 255, 0.2);
+  --black-3: rgba(255, 255, 255, 0.3);
+  --black-4: rgba(255, 255, 255, 0.4);
+  --black-5: rgba(255, 255, 255, 0.5);
+  --black-6: rgba(255, 255, 255, 0.6);
+  --black-7: rgba(255, 255, 255, 0.7);
+  --black-8: rgba(255, 255, 255, 0.8);
+  --black-9: rgba(255, 255, 255, 0.9);
+}
+
+.form-control {
+  border-color: var(--input-border);
+  color: var(--default-text-color);
+  background-color: var(--form-control-bg);
+  font-size: 0.8125rem;
+  font-weight: var(--default-font-weight);
+  line-height: 1.7;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+}
+.form-control:focus {
+  border-color: var(--primary05);
+  background-color: var(--custom-white);
+  box-shadow: 0 0 4px var(--primary05);
+  color: var(--default-text-color);
+}
+.form-control.border-dotted {
+  border-style: dotted;
+}
+.form-control.border-dashed {
+  border-style: dashed;
+}
+
+.form-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--default-text-color);
+}
+
+.form-text {
+  color: var(--text-muted);
+}
+
+.form-control-light {
+  background-color: rgb(var(--light-rgb));
+  border: 0;
+}
+.form-control-light:focus {
+  background-color: rgb(var(--light-rgb));
+}
+
+.form-control-primary {
+  background-color: var(--primary01);
+  border: 0;
+  color: var(--primary-color);
+}
+.form-control-primary:focus {
+  background-color: var(--primary01);
+  color: var(--primary-color);
+}
+
+.form-input-color {
+  height: 2.25rem;
+  width: 2.25rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  padding: 0;
+}
+
+.form-floating > .form-control-plaintext ~ label,
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  color: var(--text-muted);
+}
+
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after {
+  background-color: transparent;
+}
+
+.form-select {
+  background-color: var(--form-control-bg);
+  border: 1px solid var(--input-border);
+  color: var(--default-text-color);
+  font-size: 0.825rem;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-size: 1.25rem;
+}
+.form-select option {
+  background-color: transparent;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.25rem;
+}
+.form-select option:checked {
+  background-color: var(--primary02);
+  color: var(--primary-color);
+}
+
+.form-check-input {
+  width: 1.1em;
+  height: 1.1em;
+  background-color: var(--custom-white);
+  border: 1px solid var(--input-border);
+}
+.form-check-input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.form-check-input.form-checked-outline:checked {
+  background-color: transparent;
+  border-color: var(--primary-color);
+}
+.form-check-input.form-checked-gray:checked {
+  background-color: var(--gray-3);
+  border-color: var(--gray-3);
+}
+.form-check-input.form-checked-secondary:checked {
+  background-color: rgb(var(--secondary-rgb));
+  border-color: rgb(var(--secondary-rgb));
+}
+.form-check-input.form-checked-warning:checked {
+  background-color: rgb(var(--warning-rgb));
+  border-color: rgb(var(--warning-rgb));
+}
+.form-check-input.form-checked-info:checked {
+  background-color: rgb(var(--info-rgb));
+  border-color: rgb(var(--info-rgb));
+}
+.form-check-input.form-checked-success:checked {
+  background-color: rgb(var(--success-rgb));
+  border-color: rgb(var(--success-rgb));
+}
+.form-check-input.form-checked-danger:checked {
+  background-color: rgb(var(--danger-rgb));
+  border-color: rgb(var(--danger-rgb));
+}
+.form-check-input.form-checked-orange:checked {
+  background-color: rgb(var(--orange-rgb));
+  border-color: rgb(var(--orange-rgb));
+}
+.form-check-input.form-checked-light:checked {
+  background-color: rgb(var(--light-rgb));
+  border-color: rgb(var(--light-rgb));
+}
+.form-check-input.form-checked-dark:checked {
+  background-color: rgb(var(--dark-rgb));
+  border-color: rgb(var(--dark-rgb));
+}
+.form-check-input:focus {
+  box-shadow: none;
+}
+
+.form-checked-outline:checked[type=checkbox] {
+  background-image: none;
+  position: relative;
+  background-color: transparent;
+}
+.form-checked-outline:checked[type=checkbox]:before {
+  content: "\f633";
+  font-family: bootstrap-icons !important;
+  position: absolute;
+  color: var(--primary-color);
+  width: 0.625rem;
+  height: 0.625rem;
+  inset-block-start: -1px;
+  inset-inline-start: 0px;
+  font-size: 0.688rem;
+}
+.form-checked-outline:checked[type=checkbox].form-checked-secondary:before {
+  color: rgb(var(--secondary-rgb));
+}
+.form-checked-outline:checked[type=checkbox].form-checked-warning:before {
+  color: rgb(var(--warning-rgb));
+}
+.form-checked-outline:checked[type=checkbox].form-checked-info:before {
+  color: rgb(var(--info-rgb));
+}
+.form-checked-outline:checked[type=checkbox].form-checked-success:before {
+  color: rgb(var(--success-rgb));
+}
+.form-checked-outline:checked[type=checkbox].form-checked-danger:before {
+  color: rgb(var(--danger-rgb));
+}
+.form-checked-outline:checked[type=checkbox].form-checked-light:before {
+  color: rgb(var(--light-rgb));
+}
+.form-checked-outline:checked[type=checkbox].form-checked-dark:before {
+  color: rgb(var(--dark-rgb));
+}
+
+.form-checked-outline:checked[type=radio] {
+  background-image: none;
+  position: relative;
+  background-color: transparent;
+}
+.form-checked-outline:checked[type=radio]:before {
+  content: "\f309";
+  font-family: bootstrap-icons !important;
+  position: absolute;
+  color: var(--primary-color);
+  width: 0.625rem;
+  height: 0.625rem;
+  inset-block-start: -1.08rem;
+  inset-inline-start: -0.59rem;
+  font-size: 2rem;
+}
+.form-checked-outline:checked[type=radio].form-checked-secondary:before {
+  color: rgb(var(--secondary-rgb));
+}
+.form-checked-outline:checked[type=radio].form-checked-warning:before {
+  color: rgb(var(--warning-rgb));
+}
+.form-checked-outline:checked[type=radio].form-checked-info:before {
+  color: rgb(var(--info-rgb));
+}
+.form-checked-outline:checked[type=radio].form-checked-success:before {
+  color: rgb(var(--success-rgb));
+}
+.form-checked-outline:checked[type=radio].form-checked-danger:before {
+  color: rgb(var(--danger-rgb));
+}
+.form-checked-outline:checked[type=radio].form-checked-light:before {
+  color: rgb(var(--light-rgb));
+}
+.form-checked-outline:checked[type=radio].form-checked-dark:before {
+  color: rgb(var(--dark-rgb));
+}
+
+fieldset:disabled .btn {
+  color: #fff;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.form-select:focus {
+  border-color: var(--primary05);
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  background-color: none;
+  border-color: none;
+  outline: 0;
+}
+
+.btn-check:active + .btn:focus,
+.btn-check:checked + .btn:focus,
+.btn.active:focus,
+.btn.show:focus,
+.btn:active:focus {
+  box-shadow: none;
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  background-color: rgb(var(--light-rgb));
+  color: var(--default-text-color);
+}
+
+.form-control-plaintext {
+  color: var(--default-text-color);
+}
+
+.form-control::-webkit-file-upload-button {
+  color: var(--default-text-color);
+  background-color: var(--default-background);
+}
+
+.form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
+  background-color: var(--default-background);
+}
+
+/* Start::placeholder */
+.form-control::-webkit-input-placeholder {
+  font-size: 0.8rem;
+  font-weight: 400;
+  opacity: 0.6;
+  color: var(--default-text-color);
+  padding-inline-start: 0px;
+  transition: padding-inline-start 0.1s ease-in;
+}
+.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 0.8rem;
+  font-weight: 400;
+  opacity: 0.6;
+  color: var(--default-text-color);
+}
+.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 0.8rem;
+  font-weight: 400;
+  opacity: 0.6;
+  color: var(--default-text-color);
+}
+.form-control:-ms-input-placeholder {
+  font-size: 0.8rem;
+  font-weight: 400;
+  opacity: 0.6;
+  color: var(--default-text-color);
+}
+
+/* End::placeholder */
+/* Start:: sizes */
+.form-control-sm {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.8rem !important;
+  line-height: inherit;
+  border-radius: 0.25rem;
+}
+
+.form-control-lg {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.form-check-md .form-check-input {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+.form-check-md.form-switch .form-check-input {
+  width: 2.25rem;
+}
+.form-check-md label {
+  margin-inline-start: 0.5rem;
+  font-size: 0.95rem;
+  margin-block-start: 2px;
+}
+
+.form-check-lg .form-check-input {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+.form-check-lg.form-switch .form-check-input {
+  width: 2.5rem;
+}
+.form-check-lg label {
+  margin-inline-start: 0.5rem;
+  font-size: 1rem;
+  margin-block-start: 3px;
+}
+
+/* End:: sizes */
+/* Start:: toggle switches-1 */
+.toggle {
+  width: 3.75rem;
+  height: 1.563rem;
+  background-color: rgb(var(--light-rgb));
+  margin-inline-start: 0.625rem;
+  margin-block-end: 0.313rem;
+  padding: 0.125rem;
+  border-radius: 0.188rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+.toggle span {
+  position: absolute;
+  inset-block-start: 0.188rem;
+  inset-block-end: 0.25rem;
+  inset-inline-start: 0.2rem;
+  display: block;
+  width: 1.25rem;
+  border-radius: 0.125rem;
+  background-color: var(--custom-white);
+  box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.toggle span::before {
+  content: "on";
+  inset-inline-start: -1.563rem;
+}
+.toggle span::after {
+  content: "off";
+  inset-inline-end: -1.813rem;
+  color: var(--text-muted);
+}
+.toggle span::before, .toggle span::after {
+  position: absolute;
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  inset-block-start: 0.188rem;
+  line-height: 1.38;
+  transition: all 0.2s ease;
+}
+.toggle.on {
+  background-color: var(--primary03);
+}
+.toggle.on span {
+  background-color: var(--primary-color);
+}
+.toggle.on span::before {
+  color: var(--primary-color);
+}
+.toggle.on.toggle-secondary {
+  background-color: rgba(var(--secondary-rgb), 0.3);
+}
+.toggle.on.toggle-secondary span {
+  background-color: rgb(var(--secondary-rgb));
+}
+.toggle.on.toggle-secondary span::before {
+  color: rgb(var(--secondary-rgb));
+}
+.toggle.on.toggle-warning {
+  background-color: rgba(var(--warning-rgb), 0.3);
+}
+.toggle.on.toggle-warning span {
+  background-color: rgb(var(--warning-rgb));
+}
+.toggle.on.toggle-warning span::before {
+  color: rgb(var(--warning-rgb));
+}
+.toggle.on.toggle-info {
+  background-color: rgba(var(--info-rgb), 0.3);
+}
+.toggle.on.toggle-info span {
+  background-color: rgb(var(--info-rgb));
+}
+.toggle.on.toggle-info span::before {
+  color: rgb(var(--info-rgb));
+}
+.toggle.on.toggle-success {
+  background-color: rgba(var(--success-rgb), 0.3);
+}
+.toggle.on.toggle-success span {
+  background-color: rgb(var(--success-rgb));
+}
+.toggle.on.toggle-success span::before {
+  color: rgb(var(--success-rgb));
+}
+.toggle.on.toggle-danger {
+  background-color: rgba(var(--danger-rgb), 0.3);
+}
+.toggle.on.toggle-danger span {
+  background-color: rgb(var(--danger-rgb));
+}
+.toggle.on.toggle-danger span::before {
+  color: rgb(var(--danger-rgb));
+}
+.toggle.on.toggle-light {
+  background-color: rgba(var(--light-rgb), 0.3);
+}
+.toggle.on.toggle-light span {
+  background-color: rgb(var(--light-rgb));
+}
+.toggle.on.toggle-light span::before, .toggle.on.toggle-light span::after {
+  color: var(--text-muted);
+}
+.toggle.on.toggle-dark {
+  background-color: rgba(var(--dark-rgb), 0.3);
+}
+.toggle.on.toggle-dark span {
+  background-color: rgb(var(--dark-rgb));
+}
+.toggle.on.toggle-dark span::before {
+  color: var(--custom-white);
+}
+.toggle.on span {
+  inset-inline-start: 2.313rem;
+}
+.toggle.on.toggle-sm span {
+  inset-inline-start: 2.313rem;
+}
+.toggle.on.toggle-sm span::before {
+  inset-block-start: -1px;
+  inset-inline-start: -1.563rem;
+}
+.toggle.on.toggle-lg span {
+  inset-inline-start: 2.563rem;
+}
+.toggle.on.toggle-lg span::before {
+  inset-block-start: 0.5rem;
+  inset-inline-start: -1.75rem;
+}
+.toggle.toggle-sm {
+  height: 1.063rem;
+  width: 3.125rem;
+}
+.toggle.toggle-sm span {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+.toggle.toggle-sm span::after {
+  inset-inline-end: -1.875rem;
+  inset-block-start: -1px;
+}
+.toggle.toggle-lg {
+  height: 2.125rem;
+  width: 4.5rem;
+}
+.toggle.toggle-lg span {
+  width: 1.75rem;
+}
+.toggle.toggle-lg span::after {
+  inset-block-start: 0.5rem;
+  inset-inline-end: -1.938rem;
+}
+
+/* End:: toggle switches-1 */
+/* Start:: toggle switches-2 */
+.custom-toggle-switch > input[type=checkbox] {
+  display: none;
+}
+
+.custom-toggle-switch > label {
+  cursor: pointer;
+  height: 0;
+  position: relative;
+  width: 2.5rem;
+}
+
+.label-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.label-secondary {
+  background: rgb(var(--secondary-rgb));
+  color: #fff;
+}
+
+.label-warning {
+  background: rgb(var(--warning-rgb));
+  color: #fff;
+}
+
+.label-info {
+  background: rgb(var(--info-rgb));
+  color: #fff;
+}
+
+.label-success {
+  background: rgb(var(--success-rgb));
+  color: #fff;
+}
+
+.label-danger {
+  background: rgb(var(--danger-rgb));
+  color: #fff;
+}
+
+.label-light {
+  background: rgb(var(--light-rgb));
+  color: #fff;
+}
+
+.label-dark {
+  background: rgb(var(--dark-rgb));
+  color: #fff;
+}
+
+.custom-toggle-switch > input[type=checkbox]:checked + label::before {
+  background: inherit;
+  opacity: 0.5;
+}
+
+.custom-toggle-switch > label::before {
+  background: var(--text-muted);
+  box-shadow: inset 0px 0px 0.625rem var(--white-5);
+  border-radius: 0.5rem;
+  content: "";
+  height: 1rem;
+  margin-block-start: -0.5rem;
+  position: absolute;
+  opacity: 0.3;
+  transition: all 0.4s ease-in-out;
+  width: 2.5rem;
+}
+.custom-toggle-switch > label::after {
+  background: var(--custom-white);
+  border-radius: 1rem;
+  box-shadow: 0 0 0.313rem rgba(228, 229, 237, 0.8);
+  content: "";
+  height: 1.5rem;
+  inset-inline-start: -0.25rem;
+  margin-block-start: -0.5rem;
+  position: absolute;
+  inset-block-start: -0.25rem;
+  transition: all 0.3s ease-in-out;
+  width: 1.5rem;
+}
+
+.custom-toggle-switch > input[type=checkbox]:checked + label::after {
+  background: inherit;
+  inset-inline-start: 50%;
+}
+
+.custom-toggle-switch.toggle-sm > label::before {
+  height: 10px;
+  width: 27px;
+  border-radius: 10px;
+}
+
+.custom-toggle-switch.toggle-sm input[type=checkbox]:checked + label::after {
+  inset-inline-start: 13px;
+}
+
+.custom-toggle-switch.toggle-sm > label::after {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+}
+
+.custom-toggle-switch.toggle-lg > label::before {
+  height: 27px;
+  width: 55px;
+  border-radius: 20px;
+}
+
+.custom-toggle-switch.toggle-lg input[type=checkbox]:checked + label::after {
+  inset-inline-start: 77%;
+}
+
+.custom-toggle-switch.toggle-lg > label::after {
+  height: 35px;
+  width: 35px;
+  margin-block-start: -8px;
+  border-radius: 50%;
+}
+
+/* End:: toggle switches-2 */
+/* Start:: floating labels */
+.form-floating > .form-control,
+.form-floating > .form-control-plaintext,
+.form-floating > .form-select {
+  height: calc(3.5rem - 4px);
+}
+
+.form-floating.floating-primary label {
+  color: var(--primary-color);
+  opacity: 1;
+}
+.form-floating.floating-primary input {
+  border: 1px solid var(--primary-color);
+}
+.form-floating.floating-primary > .form-control:focus ~ label {
+  color: var(--primary-color) !important;
+}
+.form-floating.floating-secondary label {
+  color: rgb(var(--secondary-rgb));
+  opacity: 1;
+}
+.form-floating.floating-secondary input {
+  border: 1px solid rgb(var(--secondary-rgb));
+}
+.form-floating.floating-secondary > .form-control:focus ~ label {
+  color: rgb(var(--secondary-rgb)) !important;
+}
+.form-floating.floating-warning label {
+  color: rgb(var(--warning-rgb));
+  opacity: 1;
+}
+.form-floating.floating-warning input {
+  border: 1px solid rgb(var(--warning-rgb));
+}
+.form-floating.floating-warning > .form-control:focus ~ label {
+  color: rgb(var(--warning-rgb)) !important;
+}
+.form-floating.floating-info label {
+  color: rgb(var(--info-rgb));
+  opacity: 1;
+}
+.form-floating.floating-info input {
+  border: 1px solid rgb(var(--info-rgb));
+}
+.form-floating.floating-info > .form-control:focus ~ label {
+  color: rgb(var(--info-rgb)) !important;
+}
+.form-floating.floating-success label {
+  color: rgb(var(--success-rgb));
+  opacity: 1;
+}
+.form-floating.floating-success input {
+  border: 1px solid rgb(var(--success-rgb));
+}
+.form-floating.floating-success > .form-control:focus ~ label {
+  color: rgb(var(--success-rgb)) !important;
+}
+.form-floating.floating-danger label {
+  color: rgb(var(--danger-rgb));
+  opacity: 1;
+}
+.form-floating.floating-danger input {
+  border: 1px solid rgb(var(--danger-rgb));
+}
+.form-floating.floating-danger > .form-control:focus ~ label {
+  color: rgb(var(--danger-rgb)) !important;
+}
+
+.form-floating > .form-control-plaintext ~ label::after,
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.form-floating > .form-select ~ label::after {
+  background-color: var(--custom-white);
+  border-radius: 0.5rem;
+}
+
+/* End:: floating labels */
+/* Start:: form valildation */
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+  border-color: var(--primary-color);
+  box-shadow: none;
+}
+
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  border-color: var(--primary-color);
+}
+
+/* End:: form valildation */
+/* Start:: color picker */
+.form-control-color {
+  width: 1.75rem;
+  height: 1.75rem;
+  overflow: hidden;
+  padding: 0;
+}
+
+.example-picker .pcr-button {
+  border-radius: 0.35rem !important;
+  overflow: hidden;
+}
+
+/* End:: color picker */
+/* Start:: rtl */
+[dir=rtl] [type=email],
+[dir=rtl] [type=number],
+[dir=rtl] [type=tel],
+[dir=rtl] [type=url] {
+  direction: rtl;
+}
+
+/* End:: rtl */
+/* Start:: form validations */
+.form-select.is-invalid:not([multiple]):not([size]) {
+  padding-right: 1.125rem;
+  background-size: 16px 28px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+/* End:: form validations */
+/* Start:: input group */
+.invoice-quantity-container .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: 0;
+}
+
+.input-group.input-btn-outline .form-control:focus {
+  z-index: 2;
+}
+
+/* End:: input group */
+/* Start:: range slider */
+input[type=range]::-webkit-slider-runnable-track {
+  background-color: rgb(var(--light-rgb));
+}
+
+/* End:: range slider */
+/* Start:: form outline checkbox */
+[dir=rtl] .form-checked-outline:checked[type=checkbox]:before {
+  inset-inline-start: 2px !important;
+}
+
+/* End:: form outline checkbox */
+/* Start:: from check */
+.form-check {
+  min-height: inherit !important;
+}
+
+/* End:: from check */
+/* Start:: Col Form Label */
+.col-form-label-lg,
+.col-form-label-sm,
+.col-form-label {
+  font-weight: 400;
+}
+
+/* End:: Col Form Label */
+#exampleColorInput::-webkit-color-swatch-wrapper {
+  direction: rtl; /* Set the direction to RTL */
+}
+
+[dir=rtl] input[type=week], [dir=rtl] input[type=month], [dir=rtl] input[type=date], [dir=rtl] input[type=datetime-local], [dir=rtl] input[type=time] {
+  text-align: end;
+}
+
+/* Start:: form wizard */
+.wizard-tab {
+  transition: all 0.3s ease-in;
+  display: none;
+}
+.wizard-tab .wizard-nav {
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 0.3s ease-in;
+  margin-block-start: 60px;
+  padding-inline: 1.5rem;
+}
+.wizard-tab .wizard-nav .wizard-step {
+  cursor: pointer;
+}
+.wizard-tab .wizard-nav .wizard-step.nav-buttons {
+  cursor: default;
+}
+.wizard-tab .wizard-nav .wizard-step.nav-buttons span {
+  cursor: default;
+}
+.wizard-tab .wizard-nav.tabs .wizard-step {
+  position: relative;
+  font-size: 14px;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  text-align: center;
+  border-bottom: 1px solid var(--gray-3);
+  padding: 0.5rem 1rem;
+}
+.wizard-tab .wizard-nav.tabs .wizard-step.active {
+  border: 1px solid var(--gray-3);
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom: 0px;
+}
+.wizard-tab .wizard-nav.progress {
+  height: auto;
+  overflow: auto;
+  line-height: 1.5;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+}
+.wizard-tab .wizard-nav.progress .wizard-step {
+  position: relative;
+  font-size: 14px;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  text-align: center;
+  border: 1px solid var(--gray-3);
+  background-color: rgb(var(--success-rgb));
+  color: #fff;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in;
+}
+.wizard-tab .wizard-nav.progress .wizard-step.active ~ .wizard-step {
+  background-color: var(--custom-white);
+  color: #000;
+}
+.wizard-tab .wizard-nav.dots .wizard-step {
+  position: relative;
+  font-size: 14px;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  text-align: center;
+  transition: all 0.3s ease-in;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:last-child:before {
+  display: none;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:last-child:after {
+  display: none;
+}
+.wizard-tab .wizard-nav.dots .wizard-step span {
+  cursor: pointer;
+  font-weight: 500;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:nth-of-type(1).dot {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.1s;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:nth-of-type(2).dot {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.2s;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:nth-of-type(3).dot {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.3s;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:nth-of-type(4).dot {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.4s;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:nth-of-type(5).dot {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.5s;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:nth-of-type(6).dot {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.6s;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:nth-of-type(7).dot {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.7s;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:nth-of-type(8).dot {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.8s;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:nth-of-type(9).dot {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.9s;
+}
+.wizard-tab .wizard-nav.dots .wizard-step .dot {
+  content: "";
+  position: absolute;
+  top: -20px;
+  inset-inline-start: 50%;
+  z-index: 3;
+  height: 10px;
+  width: 10px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--custom-white);
+  transition: all 0.5s ease-in-out;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:nth-of-type(1):before {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.1s;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:nth-of-type(2):before {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.2s;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:nth-of-type(3):before {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.3s;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:nth-of-type(4):before {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.4s;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:nth-of-type(5):before {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.5s;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:nth-of-type(6):before {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.6s;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:nth-of-type(7):before {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.7s;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:nth-of-type(8):before {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.8s;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:nth-of-type(9):before {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.9s;
+}
+.wizard-tab .wizard-nav.dots .wizard-step:before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  inset-inline-start: 50%;
+  width: 100%;
+  height: 2px;
+  z-index: 2;
+  background: rgb(var(--secondary-rgb));
+}
+.wizard-tab .wizard-nav.dots .wizard-step:after {
+  content: "";
+  position: absolute;
+  top: -16px;
+  inset-inline-start: 50%;
+  width: 100%;
+  height: 2px;
+  background: var(--gray-3);
+  z-index: 1;
+}
+.wizard-tab .wizard-nav.dots .wizard-step.active ~ .wizard-step .dot {
+  background: var(--gray-3);
+}
+.wizard-tab .wizard-nav.dots .wizard-step.active ~ .wizard-step:before {
+  background: var(--gray-3);
+  width: 0%;
+}
+.wizard-tab .wizard-nav.dots .wizard-step.active ~ .wizard-step:after {
+  background: var(--gray-3);
+}
+.wizard-tab .wizard-nav.dots .wizard-step.active .dot {
+  background-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--primary02);
+}
+.wizard-tab .wizard-nav.dots .wizard-step.active:before {
+  background: var(--gray-3);
+}
+.wizard-tab .wizard-nav.dots .wizard-step.active:after {
+  background: var(--gray-3);
+}
+.wizard-tab .wizard-content {
+  transition: all 0.3s ease-in;
+  padding: 3rem;
+}
+.wizard-tab .wizard-content .wizard-step {
+  transition: all 0.3s ease-in;
+  display: none;
+}
+.wizard-tab .wizard-content .wizard-step.active {
+  display: block;
+}
+.wizard-tab .wizard-buttons {
+  transition: all 0.3s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.wizard-tab .wizard-buttons .wizard-btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.15rem;
+  transition: all 0.3s ease-in;
+  margin: 0 10px;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.wizard-tab .wizard-buttons .wizard-btn:hover {
+  background-color: rgba(25, 143, 209, 0.8);
+}
+.wizard-tab .wizard-buttons .wizard-btn:disabled {
+  cursor: not-allowed !important;
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+.wizard.vertical {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  transition: all 0.3s ease-in;
+}
+.wizard.vertical .wizard-nav {
+  flex-direction: column;
+  flex: 1;
+  padding: 0 3rem;
+  transition: all 0.3s linear;
+}
+.wizard.vertical .wizard-nav .wizard-step:before {
+  top: 7px;
+  inset-inline-start: -12px;
+  width: 2px;
+  height: 100%;
+}
+.wizard.vertical .wizard-nav .wizard-step:after {
+  top: 7px;
+  inset-inline-start: -12px;
+  width: 2px;
+  height: 100%;
+}
+.wizard.vertical .wizard-nav .wizard-step .dot {
+  top: 7px;
+  inset-inline-start: -15px;
+}
+.wizard.vertical .wizard-nav .wizard-step.active ~ .wizard-step:before {
+  height: 0%;
+}
+.wizard.vertical .wizard-content {
+  width: 75%;
+  transition: all 0.3s ease-in;
+  padding: 0 0 3rem 0;
+}
+.wizard.vertical .wizard-buttons {
+  flex-basis: 100%;
+  transition: all 0.3s ease-in;
+}
+
+.highlight-error {
+  outline: 1px solid rgb(var(--danger-rgb));
+}
+
+@media screen and (min-width: 1024px) {
+  .wizard.vertical .wizard-nav {
+    max-width: 250px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wizard.vertical .wizard-nav .wizard-step {
+    text-align: left;
+    padding-inline-start: 1rem;
+  }
+  .wizard.vertical .wizard-content {
+    padding: 2rem 0;
+  }
+}
+.wizard.wizard-tab .wizard-nav.dots .wizard-step.active ~ .wizard-step:before {
+  width: 35%;
+  padding: 25px;
+  background: transparent;
+}
+
+.wizard.wizard-tab .wizard-nav.dots .wizard-step:before {
+  content: "";
+  position: absolute;
+  top: -16px;
+}
+
+.wizard.wizard-tab .wizard-nav.dots .wizard-step .dot {
+  top: -25px;
+  inset-inline-start: 46%;
+  height: 20px;
+  width: 20px;
+}
+
+.wizard.wizard-tab .wizard-nav.dots .wizard-step.active ~ .wizard-step .dot {
+  background: var(--custom-white);
+  border: 2px solid var(--gray-3);
+}
+
+.wizard-btn.btn.finish {
+  display: none !important;
+}
+
+.wizard.wizard-tab .wizard-buttons {
+  border-top: 1px solid var(--default-border);
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.wizard.wizard-tab .wizard-buttons .wizard-btn {
+  margin: 0px;
+  padding: 0.5rem 0.85rem;
+  min-width: 100px;
+  border-radius: 0.35rem;
+}
+
+.wizard.wizard-tab .wizard-buttons .wizard-btn:hover {
+  background-color: var(--primary-color);
+}
+
+.wizard.wizard-tab .wizard-buttons .wizard-btn:disabled {
+  opacity: 0;
+}
+
+.wizard-tab .wizard-buttons .wizard-btn.prev {
+  background-color: rgb(var(--light-rgb));
+  color: var(--default-text-color);
+}
+.wizard-tab .wizard-buttons .wizard-btn.prev:hover {
+  background-color: rgb(var(--light-rgb));
+}
+
+.payment-card-container {
+  position: relative;
+  padding: 0.625rem;
+  border: 1px solid var(--input-border);
+  border-radius: 0.3rem;
+}
+.payment-card-container .form-check-input {
+  position: absolute;
+  inset-inline-end: 0.75rem;
+  inset-block-start: 1.2rem;
+}
+
+@media (max-width: 575.98px) {
+  .wizard-tab .wizard-nav {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .wizard.wizard-tab .wizard-nav.dots .wizard-step:before {
+    top: 1.5rem !important;
+    width: 2px !important;
+    height: 100%;
+    inset-inline-start: 2.55rem;
+  }
+  .wizard.wizard-tab .wizard-nav.dots .wizard-step:after {
+    top: 1.5rem !important;
+    width: 2px !important;
+    height: 100%;
+    inset-inline-start: 2.55rem;
+  }
+  .wizard.wizard-tab .wizard-nav.dots .wizard-step .dot {
+    top: 6px !important;
+    inset-inline-start: 2.25rem !important;
+    width: 12px !important;
+    height: 12px !important;
+  }
+  .wizard-tab .wizard-nav.dots .wizard-step {
+    text-align: start !important;
+    padding-inline-start: 4rem !important;
+  }
+}
+/* End:: form wizard */
+.form-check-md .form-checked-outline:checked[type=checkbox]::before {
+  inset-block-start: 0px !important;
+  inset-inline-start: 1px;
+  font-size: 0.788rem !important;
+}

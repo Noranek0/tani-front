@@ -1,0 +1,726 @@
+:root {
+  --body-bg-rgb: 242, 244, 249;
+  --primary-rgb: 3, 181, 98;
+  --secondary-rgb: 127, 103, 257;
+  --warning-rgb: 255, 169, 9;
+  --info-rgb: 15, 188, 249;
+  --success-rgb: 83, 196, 5;
+  --danger-rgb: 253, 73, 99;
+  --light-rgb: 246, 249, 249;
+  --dark-rgb: 10, 10, 10;
+  --orange-rgb: 254, 124, 88;
+  --pink-rgb: 254, 84, 155;
+  --teal-rgb: 0, 216, 216;
+  --purple-rgb: 123, 118, 254;
+  --green-rgb: 1, 239, 140;
+  --default-body-bg-color: rgb(var(--body-bg-rgb));
+  --primary-color: rgb(var(--primary-rgb));
+  --primary-border: rgb(var(--primary-rgb));
+  --primary01: rgba(var(--primary-rgb), 0.1);
+  --primary02: rgba(var(--primary-rgb), 0.2);
+  --primary03: rgba(var(--primary-rgb), 0.3);
+  --primary04: rgba(var(--primary-rgb), 0.4);
+  --primary05: rgba(var(--primary-rgb), 0.5);
+  --primary06: rgba(var(--primary-rgb), 0.6);
+  --primary07: rgba(var(--primary-rgb), 0.7);
+  --primary08: rgba(var(--primary-rgb), 0.8);
+  --primary09: rgba(var(--primary-rgb), 0.9);
+  --primary005: rgba(var(--primary-rgb), 0.05);
+  --default-font-family: "Plus Jakarta Sans", sans-serif;
+  --default-font-weight: 400;
+  --default-text-color: #010101;
+  --default-border: #eeedf3;
+  --default-background: #f9fafb;
+  --menu-bg: #fff;
+  --menu-prime-color: #61748f;
+  --menu-border-color: #e2e5e7;
+  --header-bg: #fff;
+  --header-prime-color: #61748f;
+  --header-border-color: #e2e5e7;
+  --custom-white: #fff;
+  --custom-black: #000;
+  --bootstrap-card-border: #e2e5e7;
+  --list-hover-focus-bg: #f5f6f7;
+  --text-muted: #8d9eb5;
+  --input-border: #e2e6f1;
+  --form-control-bg: #ffffff;
+  --bs-link-color-rgb: var(--default-text-color);
+  /* Gray set */
+  --gray-1: #f9fafb;
+  --gray-2: #f2f4f5;
+  --gray-3: #e6eaeb;
+  --gray-4: #dbdfe1;
+  --gray-5: #949eb7;
+  --gray-6: #7987a1;
+  --gray-7: #4d5875;
+  --gray-8: #383853;
+  --gray-9: #323251;
+  /* White set */
+  --white-1: rgba(255, 255, 255, 0.1);
+  --white-2: rgba(255, 255, 255, 0.2);
+  --white-3: rgba(255, 255, 255, 0.3);
+  --white-4: rgba(255, 255, 255, 0.4);
+  --white-5: rgba(255, 255, 255, 0.5);
+  --white-6: rgba(255, 255, 255, 0.6);
+  --white-7: rgba(255, 255, 255, 0.7);
+  --white-8: rgba(255, 255, 255, 0.8);
+  --white-9: rgba(255, 255, 255, 0.9);
+  /* Black set */
+  --black-1: rgba(0, 0, 0, 0.1);
+  --black-2: rgba(0, 0, 0, 0.2);
+  --black-3: rgba(0, 0, 0, 0.3);
+  --black-4: rgba(0, 0, 0, 0.4);
+  --black-5: rgba(0, 0, 0, 0.5);
+  --black-6: rgba(0, 0, 0, 0.6);
+  --black-7: rgba(0, 0, 0, 0.7);
+  --black-8: rgba(0, 0, 0, 0.8);
+  --black-9: rgba(0, 0, 0, 0.9);
+}
+
+/*Font Family*/
+/*Font Size*/
+/*Font Weight*/
+/*Body & Text colors*/
+/*Default Background Color*/
+/*Border Color*/
+/*Border Radius*/
+/*Box Shadow*/
+/* Header Variables */
+/*Menu Variables*/
+/*Color Variables*/
+/* social icons colors */
+/*gradient variables*/
+/*gray set*/
+/*white set*/
+/*black set*/
+/* dark mode */
+[data-theme-mode=dark] {
+  --body-bg-rgb: 25, 25, 28;
+  --body-bg-rgb2: 45, 45, 48;
+  --menu-bg: rgb(var(--body-bg-rgb));
+  --menu-border-color: rgba(255, 255, 255, 0.1);
+  --menu-prime-color: rgba(255,255,255,0.4);
+  --header-bg: rgb(var(--body-bg-rgb));
+  --header-prime-color: rgba(255,255,255,0.4);
+  --header-border-color: rgba(255, 255, 255, 0.1);
+  --custom-white: rgb(var(--body-bg-rgb));
+  --custom-black: #fff;
+  --default-border: rgba(255, 255, 255, 0.1);
+  --default-text-color: rgba(255, 255, 255, 0.8);
+  --light-rgb: 43, 46, 49;
+  --dark-rgb: 240, 245, 248;
+  --bootstrap-card-border: rgba(255, 255, 255, 0.1);
+  --list-hover-focus-bg: rgba(255, 255, 255, 0.1);
+  --default-background: rgb(var(--body-bg-rgb2));
+  --default-body-bg-color: rgb(var(--body-bg-rgb2));
+  --text-muted: rgba(255, 255, 255, 0.5);
+  --input-border: rgba(255, 255, 255, 0.1);
+  --form-control-bg: rgb(var(--body-bg-rgb));
+  color-scheme: dark;
+  /* Gray Set */
+  --gray-1: #110f0f;
+  --gray-2: #17171c;
+  --gray-3: #393946;
+  --gray-4: #505062;
+  --gray-5: #73738c;
+  --gray-6: #8f8fa3;
+  --gray-7: #ababba;
+  --gray-8: #c7c7d1;
+  --gray-9: #e3e3e8;
+  /* white set */
+  --white-1: rgba(0, 0, 0, 0.1);
+  --white-2: rgba(0, 0, 0, 0.2);
+  --white-3: rgba(0, 0, 0, 0.3);
+  --white-4: rgba(0, 0, 0, 0.4);
+  --white-5: rgba(0, 0, 0, 0.5);
+  --white-6: rgba(0, 0, 0, 0.6);
+  --white-7: rgba(0, 0, 0, 0.7);
+  --white-8: rgba(0, 0, 0, 0.8);
+  --white-9: rgba(0, 0, 0, 0.9);
+  /* black set */
+  --black-1: rgba(255, 255, 255, 0.1);
+  --black-2: rgba(255, 255, 255, 0.2);
+  --black-3: rgba(255, 255, 255, 0.3);
+  --black-4: rgba(255, 255, 255, 0.4);
+  --black-5: rgba(255, 255, 255, 0.5);
+  --black-6: rgba(255, 255, 255, 0.6);
+  --black-7: rgba(255, 255, 255, 0.7);
+  --black-8: rgba(255, 255, 255, 0.8);
+  --black-9: rgba(255, 255, 255, 0.9);
+}
+
+caption {
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.table {
+  --bs-table-bg: var(--custom-white);
+  color: var(--default-text-color);
+  border-color: var(--default-border);
+  margin-block-end: 0;
+}
+.table tbody tr th {
+  font-weight: 500;
+}
+.table th,
+.table td {
+  padding: 0.75rem 1.15rem;
+  vertical-align: middle;
+  line-height: 1.462;
+  font-size: 0.813rem;
+  font-weight: 500;
+}
+.table thead tr th {
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+.table.table-sm > :not(caption) > * > * {
+  padding: 0.3rem;
+}
+.table.table-dark {
+  color: var(--white-7);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.table.table-primary {
+  background-color: #fff;
+  color: #000;
+  border-color: var(--bs-table-border-color);
+  --bs-table-bg: rgba(var(--primary-rgb), 0.1);
+  --bs-table-border-color: rgba(var(--primary-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--primary-rgb), 0.2);
+  --bs-table-active-bg: rgba(var(--primary-rgb), 0.2);
+  --bs-table-hover-bg: rgba(var(--primary-rgb), 0.2);
+}
+.table.table-primary > :not(caption) > * > * {
+  --bs-table-bg: rgba(var(--primary-rgb), 0.1);
+  color: #000;
+}
+.table.table-primary.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgba(var(--primary-rgb), 0.2);
+  color: #000;
+}
+.table.table-primary.table.table-hover > tbody > tr:hover > * {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgba(var(--primary-rgb), 0.4);
+  color: #fff;
+}
+.table.table-primary .table-active {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgb(var(--primary-rgb));
+  color: #fff;
+}
+.table.table-secondary {
+  background-color: #fff;
+  color: #000;
+  border-color: var(--bs-table-border-color);
+  --bs-table-bg: rgba(var(--secondary-rgb), 0.1);
+  --bs-table-border-color: rgba(var(--secondary-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--secondary-rgb), 0.2);
+  --bs-table-active-bg: rgba(var(--secondary-rgb), 0.2);
+  --bs-table-hover-bg: rgba(var(--secondary-rgb), 0.2);
+}
+.table.table-secondary > :not(caption) > * > * {
+  --bs-table-bg: rgba(var(--secondary-rgb), 0.1);
+  color: #000;
+}
+.table.table-secondary.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgba(var(--secondary-rgb), 0.2);
+  color: #000;
+}
+.table.table-secondary.table.table-hover > tbody > tr:hover > * {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgba(var(--secondary-rgb), 0.4);
+  color: #fff;
+}
+.table.table-secondary .table-active {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgb(var(--secondary-rgb));
+  color: #fff;
+}
+.table.table-warning {
+  background-color: #fff;
+  color: #000;
+  border-color: var(--bs-table-border-color);
+  --bs-table-bg: rgba(var(--warning-rgb), 0.1);
+  --bs-table-border-color: rgba(var(--warning-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--warning-rgb), 0.2);
+  --bs-table-active-bg: rgba(var(--warning-rgb), 0.2);
+  --bs-table-hover-bg: rgba(var(--warning-rgb), 0.2);
+}
+.table.table-warning > :not(caption) > * > * {
+  --bs-table-bg: rgba(var(--warning-rgb), 0.1);
+  color: #000;
+}
+.table.table-warning.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgba(var(--warning-rgb), 0.2);
+  color: #000;
+}
+.table.table-warning.table.table-hover > tbody > tr:hover > * {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgba(var(--warning-rgb), 0.4);
+  color: #fff;
+}
+.table.table-warning .table-active {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgb(var(--warning-rgb));
+  color: #fff;
+}
+.table.table-success {
+  background-color: #fff;
+  color: #000;
+  border-color: var(--bs-table-border-color);
+  --bs-table-bg: rgba(var(--success-rgb), 0.1);
+  --bs-table-border-color: rgba(var(--success-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--success-rgb), 0.2);
+  --bs-table-active-bg: rgba(var(--success-rgb), 0.2);
+  --bs-table-hover-bg: rgba(var(--success-rgb), 0.2);
+}
+.table.table-success > :not(caption) > * > * {
+  --bs-table-bg: rgba(var(--success-rgb), 0.1);
+  color: #000;
+}
+.table.table-success.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgba(var(--success-rgb), 0.2);
+  color: #000;
+}
+.table.table-success.table.table-hover > tbody > tr:hover > * {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgba(var(--success-rgb), 0.4);
+  color: #fff;
+}
+.table.table-success .table-active {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgb(var(--success-rgb));
+  color: #fff;
+}
+.table.table-danger {
+  background-color: #fff;
+  color: #000;
+  border-color: var(--bs-table-border-color);
+  --bs-table-bg: rgba(var(--danger-rgb), 0.1);
+  --bs-table-border-color: rgba(var(--danger-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--danger-rgb), 0.2);
+  --bs-table-active-bg: rgba(var(--danger-rgb), 0.2);
+  --bs-table-hover-bg: rgba(var(--danger-rgb), 0.2);
+}
+.table.table-danger > :not(caption) > * > * {
+  --bs-table-bg: rgba(var(--danger-rgb), 0.1);
+  color: #000;
+}
+.table.table-danger.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgba(var(--danger-rgb), 0.2);
+  color: #000;
+}
+.table.table-danger.table.table-hover > tbody > tr:hover > * {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgba(var(--danger-rgb), 0.4);
+  color: #fff;
+}
+.table.table-danger .table-active {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgb(var(--danger-rgb));
+  color: #fff;
+}
+.table.table-info {
+  background-color: #fff;
+  color: #000;
+  border-color: var(--bs-table-border-color);
+  --bs-table-bg: rgba(var(--info-rgb), 0.1);
+  --bs-table-border-color: rgba(var(--info-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--info-rgb), 0.2);
+  --bs-table-active-bg: rgba(var(--info-rgb), 0.2);
+  --bs-table-hover-bg: rgba(var(--info-rgb), 0.2);
+}
+.table.table-info > :not(caption) > * > * {
+  --bs-table-bg: rgba(var(--info-rgb), 0.1);
+  color: #000;
+}
+.table.table-info.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgba(var(--info-rgb), 0.2);
+  color: #000;
+}
+.table.table-info.table.table-hover > tbody > tr:hover > * {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgba(var(--info-rgb), 0.4);
+  color: #fff;
+}
+.table.table-info .table-active {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgb(var(--info-rgb));
+  color: #fff;
+}
+.table.table-light {
+  background-color: #fff;
+  color: #000;
+  border-color: var(--bs-table-border-color);
+  --bs-table-bg: rgba(var(--light-rgb), 0.1);
+  --bs-table-border-color: rgba(var(--light-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--light-rgb), 0.2);
+  --bs-table-active-bg: rgba(var(--light-rgb), 0.2);
+  --bs-table-hover-bg: rgba(var(--light-rgb), 0.2);
+}
+.table.table-light > :not(caption) > * > * {
+  --bs-table-bg: rgba(var(--light-rgb), 0.1);
+  color: #000;
+}
+.table.table-light.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgba(var(--light-rgb), 0.2);
+  color: #000;
+}
+.table.table-light.table.table-hover > tbody > tr:hover > * {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgba(var(--light-rgb), 0.4);
+  color: #fff;
+}
+.table.table-light .table-active {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgb(var(--light-rgb));
+  color: #fff;
+}
+.table.table-dark {
+  background-color: #fff;
+  color: #000;
+  border-color: var(--bs-table-border-color);
+  --bs-table-bg: rgba(var(--dark-rgb), 0.1);
+  --bs-table-border-color: rgba(var(--dark-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--dark-rgb), 0.2);
+  --bs-table-active-bg: rgba(var(--dark-rgb), 0.2);
+  --bs-table-hover-bg: rgba(var(--dark-rgb), 0.2);
+}
+.table.table-dark > :not(caption) > * > * {
+  --bs-table-bg: rgba(var(--dark-rgb), 0.1);
+  color: #000;
+}
+.table.table-dark.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgba(var(--dark-rgb), 0.2);
+  color: #000;
+}
+.table.table-dark.table.table-hover > tbody > tr:hover > * {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgba(var(--dark-rgb), 0.4);
+  color: #fff;
+}
+.table.table-dark .table-active {
+  background-color: var(--bs-table-accent-bg);
+  --bs-table-accent-bg: rgb(var(--dark-rgb));
+  color: #fff;
+}
+.table.table-bordered.border-primary tbody,
+.table.table-bordered.border-primary td,
+.table.table-bordered.border-primary tfoot,
+.table.table-bordered.border-primary th,
+.table.table-bordered.border-primary thead,
+.table.table-bordered.border-primary tr {
+  border-color: rgba(var(--primary-rgb), 0.1);
+}
+.table.table-bordered.border-info tbody,
+.table.table-bordered.border-info td,
+.table.table-bordered.border-info tfoot,
+.table.table-bordered.border-info th,
+.table.table-bordered.border-info thead,
+.table.table-bordered.border-info tr {
+  border-color: rgba(var(--info-rgb), 0.1);
+}
+.table.table-bordered.border-secondary tbody,
+.table.table-bordered.border-secondary td,
+.table.table-bordered.border-secondary tfoot,
+.table.table-bordered.border-secondary th,
+.table.table-bordered.border-secondary thead,
+.table.table-bordered.border-secondary tr {
+  border-color: rgba(var(--secondary-rgb), 0.1);
+}
+.table.table-bordered.border-warning tbody,
+.table.table-bordered.border-warning td,
+.table.table-bordered.border-warning tfoot,
+.table.table-bordered.border-warning th,
+.table.table-bordered.border-warning thead,
+.table.table-bordered.border-warning tr {
+  border-color: rgba(var(--warning-rgb), 0.1);
+}
+.table.table-bordered.border-success tbody,
+.table.table-bordered.border-success td,
+.table.table-bordered.border-success tfoot,
+.table.table-bordered.border-success th,
+.table.table-bordered.border-success thead,
+.table.table-bordered.border-success tr {
+  border-color: rgba(var(--success-rgb), 0.1);
+}
+.table.table-bordered.border-danger tbody,
+.table.table-bordered.border-danger td,
+.table.table-bordered.border-danger tfoot,
+.table.table-bordered.border-danger th,
+.table.table-bordered.border-danger thead,
+.table.table-bordered.border-danger tr {
+  border-color: rgba(var(--danger-rgb), 0.1);
+}
+.table.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-accent-bg: rgba(var(--light-rgb), 0.5);
+  color: var(--default-text-color);
+  --bs-table-bg-type: rgba(var(--light-rgb), 0.5);
+}
+.table.table-striped-columns > :not(caption) > tr > :nth-child(2n) {
+  --bs-table-accent-bg: rgba(var(--dark-rgb), 0.025);
+  color: var(--default-text-color);
+}
+.table tbody.table-group-divider {
+  border-top: 1px solid var(--default-border);
+}
+.table.table-hover > tbody > tr:hover > * {
+  --bs-table-accent-bg: var(--default-background);
+  --bs-table-bg-state: var(--default-background);
+  color: var(--default-text-color);
+}
+.table .table-active {
+  --bs-table-accent-bg: rgb(var(--light-rgb));
+  color: var(--default-text-color);
+  --bs-table-bg-state: rgb(var(--light-rgb));
+}
+.table thead.table-primary {
+  background-color: #fff;
+  color: var(--bs-table-color);
+  --bs-table-color: #000 !important;
+  --bs-table-bg: rgba(var(--primary-rgb), 0.1) !important;
+  --bs-table-border-color: rgba(var(--primary-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--primary-rgb), 0.5);
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: rgba(var(--primary-rgb), 0.5);
+  --bs-table-hover-bg: rgba(var(--primary-rgb), 0.5);
+  color: var(--bs-table-color);
+  border-color: var(--bs-table-border-color);
+}
+.table thead.table-secondary {
+  background-color: #fff;
+  color: var(--bs-table-color);
+  --bs-table-color: #000 !important;
+  --bs-table-bg: rgba(var(--secondary-rgb), 0.1) !important;
+  --bs-table-border-color: rgba(var(--secondary-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--secondary-rgb), 0.5);
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: rgba(var(--secondary-rgb), 0.5);
+  --bs-table-hover-bg: rgba(var(--secondary-rgb), 0.5);
+  color: var(--bs-table-color);
+  border-color: var(--bs-table-border-color);
+}
+.table thead.table-warning {
+  background-color: #fff;
+  color: var(--bs-table-color);
+  --bs-table-color: #000 !important;
+  --bs-table-bg: rgba(var(--warning-rgb), 0.1) !important;
+  --bs-table-border-color: rgba(var(--warning-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--warning-rgb), 0.5);
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: rgba(var(--warning-rgb), 0.5);
+  --bs-table-hover-bg: rgba(var(--warning-rgb), 0.5);
+  color: var(--bs-table-color);
+  border-color: var(--bs-table-border-color);
+}
+.table thead.table-success {
+  background-color: #fff;
+  color: var(--bs-table-color);
+  --bs-table-color: #000 !important;
+  --bs-table-bg: rgba(var(--success-rgb), 0.1) !important;
+  --bs-table-border-color: rgba(var(--success-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--success-rgb), 0.5);
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: rgba(var(--success-rgb), 0.5);
+  --bs-table-hover-bg: rgba(var(--success-rgb), 0.5);
+  color: var(--bs-table-color);
+  border-color: var(--bs-table-border-color);
+}
+.table thead.table-danger {
+  background-color: #fff;
+  color: var(--bs-table-color);
+  --bs-table-color: #000 !important;
+  --bs-table-bg: rgba(var(--danger-rgb), 0.1) !important;
+  --bs-table-border-color: rgba(var(--danger-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--danger-rgb), 0.5);
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: rgba(var(--danger-rgb), 0.5);
+  --bs-table-hover-bg: rgba(var(--danger-rgb), 0.5);
+  color: var(--bs-table-color);
+  border-color: var(--bs-table-border-color);
+}
+.table thead.table-info {
+  background-color: #fff;
+  color: var(--bs-table-color);
+  --bs-table-color: #000 !important;
+  --bs-table-bg: rgba(var(--info-rgb), 0.1) !important;
+  --bs-table-border-color: rgba(var(--info-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--info-rgb), 0.5);
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: rgba(var(--info-rgb), 0.5);
+  --bs-table-hover-bg: rgba(var(--info-rgb), 0.5);
+  color: var(--bs-table-color);
+  border-color: var(--bs-table-border-color);
+}
+.table thead.table-light {
+  background-color: #fff;
+  color: var(--bs-table-color);
+  --bs-table-color: #000 !important;
+  --bs-table-bg: rgba(var(--light-rgb), 0.1) !important;
+  --bs-table-border-color: rgba(var(--light-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--light-rgb), 0.5);
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: rgba(var(--light-rgb), 0.5);
+  --bs-table-hover-bg: rgba(var(--light-rgb), 0.5);
+  color: var(--bs-table-color);
+  border-color: var(--bs-table-border-color);
+}
+.table thead.table-dark {
+  background-color: #fff;
+  color: var(--bs-table-color);
+  --bs-table-color: #000 !important;
+  --bs-table-bg: rgba(var(--dark-rgb), 0.1) !important;
+  --bs-table-border-color: rgba(var(--dark-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--dark-rgb), 0.5);
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: rgba(var(--dark-rgb), 0.5);
+  --bs-table-hover-bg: rgba(var(--dark-rgb), 0.5);
+  color: var(--bs-table-color);
+  border-color: var(--bs-table-border-color);
+}
+
+.table-primary {
+  --bs-table-color: #000;
+  --bs-table-bg: rgba(var(--primary-rgb), 0.1);
+  --bs-table-border-color: rgba(var(--primary-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--primary-rgb), 0.3);
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: rgba(var(--primary-rgb), 0.3);
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: rgba(var(--primary-rgb), 0.3);
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: rgba(var(--primary-rgb), 0.1);
+  background-color: #fff;
+}
+
+.table-secondary {
+  --bs-table-color: #000;
+  --bs-table-bg: rgba(var(--secondary-rgb), 0.1);
+  --bs-table-border-color: rgba(var(--secondary-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--secondary-rgb), 0.3);
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: rgba(var(--secondary-rgb), 0.3);
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: rgba(var(--secondary-rgb), 0.3);
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: rgba(var(--secondary-rgb), 0.1);
+  background-color: #fff;
+}
+
+.table-warning {
+  --bs-table-color: #000;
+  --bs-table-bg: rgba(var(--warning-rgb), 0.1);
+  --bs-table-border-color: rgba(var(--warning-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--warning-rgb), 0.3);
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: rgba(var(--warning-rgb), 0.3);
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: rgba(var(--warning-rgb), 0.3);
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: rgba(var(--warning-rgb), 0.1);
+  background-color: #fff;
+}
+
+.table-success {
+  --bs-table-color: #000;
+  --bs-table-bg: rgba(var(--success-rgb), 0.1);
+  --bs-table-border-color: rgba(var(--success-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--success-rgb), 0.3);
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: rgba(var(--success-rgb), 0.3);
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: rgba(var(--success-rgb), 0.3);
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: rgba(var(--success-rgb), 0.1);
+  background-color: #fff;
+}
+
+.table-info {
+  --bs-table-color: #000;
+  --bs-table-bg: rgba(var(--info-rgb), 0.1);
+  --bs-table-border-color: rgba(var(--info-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--info-rgb), 0.3);
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: rgba(var(--info-rgb), 0.3);
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: rgba(var(--info-rgb), 0.3);
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: rgba(var(--info-rgb), 0.1);
+  background-color: #fff;
+}
+
+.table-danger {
+  --bs-table-color: #000;
+  --bs-table-bg: rgba(var(--danger-rgb), 0.1);
+  --bs-table-border-color: rgba(var(--danger-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--danger-rgb), 0.3);
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: rgba(var(--danger-rgb), 0.3);
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: rgba(var(--danger-rgb), 0.3);
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: rgba(var(--danger-rgb), 0.1);
+  background-color: #fff;
+}
+
+.table-dark {
+  --bs-table-color: #000;
+  --bs-table-bg: rgba(var(--dark-rgb), 0.1);
+  --bs-table-border-color: rgba(var(--dark-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--dark-rgb), 0.3);
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: rgba(var(--dark-rgb), 0.3);
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: rgba(var(--dark-rgb), 0.3);
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: rgba(var(--dark-rgb), 0.1);
+  background-color: #fff;
+}
+
+.table-light {
+  --bs-table-color: #000;
+  --bs-table-bg: rgba(var(--light-rgb), 0.1);
+  --bs-table-border-color: rgba(var(--light-rgb), 0.1);
+  --bs-table-striped-bg: rgba(var(--light-rgb), 0.3);
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: rgba(var(--light-rgb), 0.3);
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: rgba(var(--light-rgb), 0.3);
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: rgba(var(--light-rgb), 0.1);
+  background-color: #fff;
+}
+
+[data-theme-mode=dark] .table-dark {
+  border-color: rgba(0, 0, 0, 0.025);
+}
+[data-theme-mode=dark] div.dtr-modal div.dtr-modal-display {
+  background-color: var(--custom-white);
+}
+
+.table > :not(caption) > * > * {
+  --bs-body-bg: var(--custom-white);
+  color: inherit;
+}
+
+.table-striped-columns > :not(caption) > tr > :nth-child(2n) {
+  --bs-table-bg-type: rgba(var(--light-rgb), 0.5);
+}
