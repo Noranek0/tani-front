@@ -1,0 +1,1025 @@
+:root {
+  --body-bg-rgb: 242, 244, 249;
+  --primary-rgb: 3, 181, 98;
+  --secondary-rgb: 127, 103, 257;
+  --warning-rgb: 255, 169, 9;
+  --info-rgb: 15, 188, 249;
+  --success-rgb: 83, 196, 5;
+  --danger-rgb: 253, 73, 99;
+  --light-rgb: 246, 249, 249;
+  --dark-rgb: 10, 10, 10;
+  --orange-rgb: 254, 124, 88;
+  --pink-rgb: 254, 84, 155;
+  --teal-rgb: 0, 216, 216;
+  --purple-rgb: 123, 118, 254;
+  --green-rgb: 1, 239, 140;
+  --default-body-bg-color: rgb(var(--body-bg-rgb));
+  --primary-color: rgb(var(--primary-rgb));
+  --primary-border: rgb(var(--primary-rgb));
+  --primary01: rgba(var(--primary-rgb), 0.1);
+  --primary02: rgba(var(--primary-rgb), 0.2);
+  --primary03: rgba(var(--primary-rgb), 0.3);
+  --primary04: rgba(var(--primary-rgb), 0.4);
+  --primary05: rgba(var(--primary-rgb), 0.5);
+  --primary06: rgba(var(--primary-rgb), 0.6);
+  --primary07: rgba(var(--primary-rgb), 0.7);
+  --primary08: rgba(var(--primary-rgb), 0.8);
+  --primary09: rgba(var(--primary-rgb), 0.9);
+  --primary005: rgba(var(--primary-rgb), 0.05);
+  --default-font-family: "Plus Jakarta Sans", sans-serif;
+  --default-font-weight: 400;
+  --default-text-color: #010101;
+  --default-border: #eeedf3;
+  --default-background: #f9fafb;
+  --menu-bg: #fff;
+  --menu-prime-color: #61748f;
+  --menu-border-color: #e2e5e7;
+  --header-bg: #fff;
+  --header-prime-color: #61748f;
+  --header-border-color: #e2e5e7;
+  --custom-white: #fff;
+  --custom-black: #000;
+  --bootstrap-card-border: #e2e5e7;
+  --list-hover-focus-bg: #f5f6f7;
+  --text-muted: #8d9eb5;
+  --input-border: #e2e6f1;
+  --form-control-bg: #ffffff;
+  --bs-link-color-rgb: var(--default-text-color);
+  /* Gray set */
+  --gray-1: #f9fafb;
+  --gray-2: #f2f4f5;
+  --gray-3: #e6eaeb;
+  --gray-4: #dbdfe1;
+  --gray-5: #949eb7;
+  --gray-6: #7987a1;
+  --gray-7: #4d5875;
+  --gray-8: #383853;
+  --gray-9: #323251;
+  /* White set */
+  --white-1: rgba(255, 255, 255, 0.1);
+  --white-2: rgba(255, 255, 255, 0.2);
+  --white-3: rgba(255, 255, 255, 0.3);
+  --white-4: rgba(255, 255, 255, 0.4);
+  --white-5: rgba(255, 255, 255, 0.5);
+  --white-6: rgba(255, 255, 255, 0.6);
+  --white-7: rgba(255, 255, 255, 0.7);
+  --white-8: rgba(255, 255, 255, 0.8);
+  --white-9: rgba(255, 255, 255, 0.9);
+  /* Black set */
+  --black-1: rgba(0, 0, 0, 0.1);
+  --black-2: rgba(0, 0, 0, 0.2);
+  --black-3: rgba(0, 0, 0, 0.3);
+  --black-4: rgba(0, 0, 0, 0.4);
+  --black-5: rgba(0, 0, 0, 0.5);
+  --black-6: rgba(0, 0, 0, 0.6);
+  --black-7: rgba(0, 0, 0, 0.7);
+  --black-8: rgba(0, 0, 0, 0.8);
+  --black-9: rgba(0, 0, 0, 0.9);
+}
+
+/*Font Family*/
+/*Font Size*/
+/*Font Weight*/
+/*Body & Text colors*/
+/*Default Background Color*/
+/*Border Color*/
+/*Border Radius*/
+/*Box Shadow*/
+/* Header Variables */
+/*Menu Variables*/
+/*Color Variables*/
+/* social icons colors */
+/*gradient variables*/
+/*gray set*/
+/*white set*/
+/*black set*/
+/* dark mode */
+[data-theme-mode=dark] {
+  --body-bg-rgb: 25, 25, 28;
+  --body-bg-rgb2: 45, 45, 48;
+  --menu-bg: rgb(var(--body-bg-rgb));
+  --menu-border-color: rgba(255, 255, 255, 0.1);
+  --menu-prime-color: rgba(255,255,255,0.4);
+  --header-bg: rgb(var(--body-bg-rgb));
+  --header-prime-color: rgba(255,255,255,0.4);
+  --header-border-color: rgba(255, 255, 255, 0.1);
+  --custom-white: rgb(var(--body-bg-rgb));
+  --custom-black: #fff;
+  --default-border: rgba(255, 255, 255, 0.1);
+  --default-text-color: rgba(255, 255, 255, 0.8);
+  --light-rgb: 43, 46, 49;
+  --dark-rgb: 240, 245, 248;
+  --bootstrap-card-border: rgba(255, 255, 255, 0.1);
+  --list-hover-focus-bg: rgba(255, 255, 255, 0.1);
+  --default-background: rgb(var(--body-bg-rgb2));
+  --default-body-bg-color: rgb(var(--body-bg-rgb2));
+  --text-muted: rgba(255, 255, 255, 0.5);
+  --input-border: rgba(255, 255, 255, 0.1);
+  --form-control-bg: rgb(var(--body-bg-rgb));
+  color-scheme: dark;
+  /* Gray Set */
+  --gray-1: #110f0f;
+  --gray-2: #17171c;
+  --gray-3: #393946;
+  --gray-4: #505062;
+  --gray-5: #73738c;
+  --gray-6: #8f8fa3;
+  --gray-7: #ababba;
+  --gray-8: #c7c7d1;
+  --gray-9: #e3e3e8;
+  /* white set */
+  --white-1: rgba(0, 0, 0, 0.1);
+  --white-2: rgba(0, 0, 0, 0.2);
+  --white-3: rgba(0, 0, 0, 0.3);
+  --white-4: rgba(0, 0, 0, 0.4);
+  --white-5: rgba(0, 0, 0, 0.5);
+  --white-6: rgba(0, 0, 0, 0.6);
+  --white-7: rgba(0, 0, 0, 0.7);
+  --white-8: rgba(0, 0, 0, 0.8);
+  --white-9: rgba(0, 0, 0, 0.9);
+  /* black set */
+  --black-1: rgba(255, 255, 255, 0.1);
+  --black-2: rgba(255, 255, 255, 0.2);
+  --black-3: rgba(255, 255, 255, 0.3);
+  --black-4: rgba(255, 255, 255, 0.4);
+  --black-5: rgba(255, 255, 255, 0.5);
+  --black-6: rgba(255, 255, 255, 0.6);
+  --black-7: rgba(255, 255, 255, 0.7);
+  --black-8: rgba(255, 255, 255, 0.8);
+  --black-9: rgba(255, 255, 255, 0.9);
+}
+
+.custom-date-picker .dp__input_wrap {
+  border: 0px !important;
+}
+
+.custom-date-picker input {
+  padding: -1px !important;
+}
+
+.custom-date-picker svg {
+  display: none !important;
+}
+
+.custom-date-picker .dp--tp-wrap svg {
+  display: block !important;
+}
+
+.grid-card-table {
+  white-space: nowrap;
+  overflow: scroll;
+}
+
+.custom-vuemulti-select {
+  padding: 0px !important;
+}
+
+.custom-crypto1 {
+  width: 81px !important;
+}
+
+.vue-slider-process {
+  background-color: var(--primary-color) !important;
+}
+
+.vue-slider-dot-tooltip-inner {
+  border-color: var(--primary-color) !important;
+  background-color: var(--primary-color) !important;
+}
+
+.custom-code-tab .btn {
+  border-color: var(--default-border) !important;
+}
+
+.custom-group {
+  border-left: 0px !important;
+}
+
+pre[class*=language-] > code {
+  background-color: transparent !important;
+  border-inline-start: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.header-search-bar {
+  min-width: 20rem !important;
+}
+
+.salesDatePicker .custom-date-picker {
+  padding: 0px !important;
+}
+.salesDatePicker .custom-date-picker input {
+  border: 0px !important;
+  padding-inline-start: 14px;
+}
+.salesDatePicker .custom-date-picker svg {
+  display: none !important;
+}
+
+.team-member .team-profile {
+  width: 11rem;
+  height: 5rem;
+  margin-inline: auto;
+  position: absolute;
+  inset-block-start: 30px;
+  inset-inline-start: 70px;
+  border-radius: 80px 27px 81px 10px;
+  rotate: 159deg;
+  margin-block-start: 40px;
+}
+
+.team-member.primary .team-profile {
+  background-image: linear-gradient(45deg, var(--primary02), var(--primary005));
+}
+
+.team-member.secondary .team-profile {
+  background-image: linear-gradient(45deg, rgba(var(--secondary-rgb), 0.2), rgba(var(--secondary-rgb), 0.05));
+}
+
+.team-member.danger .team-profile {
+  background-image: linear-gradient(45deg, rgba(var(--danger-rgb), 0.2), rgba(var(--danger-rgb), 0.05));
+}
+
+.team-member.warning .team-profile {
+  background-image: linear-gradient(45deg, rgba(var(--warning-rgb), 0.2), rgba(var(--warning-rgb), 0.05));
+}
+
+.team-member.orange .team-profile {
+  background-image: linear-gradient(45deg, rgba(var(--orange-rgb), 0.2), rgba(var(--orange-rgb), 0.05));
+}
+
+.team-member.info .team-profile {
+  background-image: linear-gradient(45deg, rgba(var(--info-rgb), 0.2), rgba(var(--info-rgb), 0.05));
+}
+
+.team-member.pink .team-profile {
+  background-image: linear-gradient(45deg, rgba(var(--pink-rgb), 0.2), rgba(var(--pink-rgb), 0.05));
+}
+
+.team-member.teal .team-profile {
+  background-image: linear-gradient(45deg, rgba(var(--teal-rgb), 0.2), rgba(var(--teal-rgb), 0.05));
+}
+
+.upcoming-activities .list-group-item {
+  padding: 0.9rem !important;
+}
+
+.task-list {
+  margin-bottom: 0px;
+}
+.task-list li:last-child {
+  margin-bottom: 0px;
+}
+
+#buy-crypto .input-group .multiselect {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+.recent-employee-table, .all-courses-table {
+  white-space: nowrap;
+}
+
+.exam-timer {
+  background-color: rgba(var(--primary-rgb), 0.2);
+}
+
+.vtl-table thead th {
+  background-color: var(--custom-white) !important;
+  border: 1px solid var(--default-border) !important;
+  color: var(--default-text-color) !important;
+}
+
+.vtl.vtl-card {
+  background-color: var(--custom-white) !important;
+}
+
+.vtl-table-hover tbody tr:hover {
+  background-color: rgb(var(--light-rgb)) !important;
+  color: var(--default-text-color) !important;
+}
+
+.vtl-table-bordered td, .vtl-table-bordered th {
+  border: 1px solid var(--default-border) !important;
+  color: var(--default-text-color) !important;
+}
+
+.vtl-paging-count-dropdown, .vtl-paging-page-dropdown {
+  background-color: var(--custom-white) !important;
+  border: 1px solid var(--default-border) !important;
+  padding: 5px !important;
+  border-radius: 0.35rem;
+  margin-inline: 0.5rem;
+}
+
+.page-item.disabled .page-link {
+  color: var(--default-text-color) !important;
+  background-color: rgb(var(--light-rgb)) !important;
+  border: 1px solid var(--default-border) !important;
+}
+
+.order-list-sort .multiselect {
+  min-width: 12rem;
+}
+
+.grid-card-table .card {
+  border: 0px !important;
+}
+
+.vtl-paging {
+  row-gap: 0.5rem;
+}
+
+.fc .fc-button .fc-icon {
+  vertical-align: top !important;
+}
+
+.btn.btn-info:active {
+  color: #fff !important;
+}
+
+.multiselect__tags {
+  font-size: 13px !important;
+}
+
+.multiselect__tag-icon {
+  top: -3px !important;
+}
+
+.dp__main.dp__theme_light .dp__input {
+  padding: 0px;
+  font-family: var(--default-font-family) !important;
+  font-size: 13px;
+}
+
+.salesDatePicker .dp__main.dp__theme_light .dp__input {
+  padding: 6px 10px;
+}
+
+.tagify__tag {
+  border-radius: 0.25rem;
+  background-color: var(--primary-color);
+  height: 20px;
+}
+
+.tagify__tag > div {
+  color: #fff !important;
+}
+
+.tagify__tag-text {
+  padding: 0px !important;
+  font-size: 11px !important;
+}
+
+.tagify__tag__removeBtn {
+  color: #fff !important;
+}
+
+@media screen and (min-width: 850px) {
+  .companies-search-input .multiselect {
+    border-radius: 0px !important;
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .companies-search-input .multiselect {
+    margin-bottom: 0.5rem;
+  }
+}
+.currency-exchange-area .multiselect {
+  max-width: 6rem;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+[dir=rtl] .currency-exchange-area .multiselect {
+  max-width: 6rem;
+  border-top-left-radius: 3px !important;
+  border-bottom-left-radius: 3px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.crypto-but-sell-card .multiselect {
+  max-width: 6rem;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
+
+[dir=rtl] .crypto-but-sell-card .multiselect {
+  max-width: 6rem;
+  border-top-left-radius: 3px !important;
+  border-bottom-left-radius: 3px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.blog-card .carousel__slide {
+  display: block;
+}
+
+.btn.btn-warning:active {
+  color: #fff !important;
+}
+
+.btn.btn-secondary-transparent:active {
+  color: #fff !important;
+}
+
+.language-html {
+  border: 1px solid var(--default-border);
+  padding: 1.5rem;
+}
+
+.tab-button {
+  margin-bottom: 0.5rem;
+}
+
+.btn.btn-primary-transparent:active {
+  color: #fff !important;
+}
+
+.option__image {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  margin-inline-end: 0.5rem;
+}
+
+[dir=rtl] .form-select {
+  padding: 0.375rem 0.75rem 0.375rem 0.75rem !important;
+  background-position: left 0.75rem center !important;
+}
+[dir=rtl] .dp__inner_nav svg {
+  rotate: 180deg;
+}
+
+[dir=rtl] .form-control.is-invalid, [dir=rtl] .was-validated .form-control:invalid {
+  background-position: left calc(0.375em + 0.1875rem) center;
+}
+[dir=rtl] .form-control.is-valid, [dir=rtl] .was-validated .form-control:valid {
+  background-position: left calc(0.375em + 0.1875rem) center;
+}
+[dir=rtl] .form-wizard-vue .fw-body-list .fw-list-progress {
+  right: 80%;
+}
+
+.fw-btn i {
+  margin-inline: 0.25rem;
+}
+
+@media screen and (max-width: 475px) {
+  .form-wizard-vue .fw-body-content {
+    padding: 20px !important;
+  }
+}
+.form-wizard-vue .fw-body-list {
+  flex-wrap: wrap;
+  padding: 0px !important;
+}
+
+@media screen and (max-width: 657px) {
+  .form-wizard-vue .fw-body-list .fw-list-progress {
+    display: none !important;
+  }
+}
+.valid-username {
+  position: relative;
+}
+.valid-username .invalid-feedback {
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: 35px;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+  background-color: rgb(var(--light-rgb)) !important;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: rgba(var(--primary-rgb), 1) !important;
+}
+
+.toast-header .bd-placeholder-img {
+  width: 1.5rem;
+  height: auto;
+}
+
+.Toastify__toast {
+  background-color: var(--custom-white) !important;
+  color: var(--default-text-color) !important;
+}
+
+[data-theme-mode=dark] .Toastify__toast {
+  box-shadow: 1px 1px 20px 0px rgba(255, 255, 255, 0.05);
+}
+[data-theme-mode=dark] .Toastify__toast svg {
+  fill: success !important;
+}
+
+.carousel__icon {
+  fill: #fff !important;
+}
+
+.swiper-thumbs .swiper-slide {
+  opacity: 0.3;
+}
+.swiper-thumbs .swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+
+.v-tour .v-step {
+  background-color: var(--custom-white);
+  color: var(--default-text-color);
+  border: 1px solid var(--default-border);
+}
+.v-tour .v-step .v-step__header {
+  background-color: rgb(var(--light-rgb));
+}
+.v-tour .v-step .v-step__arrow--dark:before {
+  background-color: rgb(var(--light-rgb));
+}
+.v-tour .v-step__button.v-step__button-skip {
+  background-color: rgba(var(--primary-rgb), 1);
+  color: #fff;
+  border-radius: 0.25rem;
+  border-color: transparent !important;
+}
+.v-tour .v-step__button.v-step__button-next {
+  background-color: rgb(var(--light-rgb));
+  color: var(--default-text-color);
+  border-radius: 0.25rem;
+  border-color: transparent !important;
+}
+.v-tour .v-step__button.v-step__button-previous {
+  background-color: rgba(var(--secondary-rgb), 1);
+  color: #fff;
+  border-radius: 0.25rem;
+  border-color: transparent !important;
+}
+.v-tour .v-step__button.v-step__button-stop {
+  background-color: rgba(var(--primary-rgb), 1);
+  color: #fff;
+  border-radius: 0.25rem;
+  border-color: transparent !important;
+}
+
+.select-items {
+  margin-block-start: 20px;
+}
+
+@media screen and (max-width: 446px) {
+  #donut-pattern .apexcharts-legend {
+    transform: translateY(-40px);
+  }
+}
+@media (min-width: 446px) and (max-width: 480px) {
+  #donut-pattern .apexcharts-legend {
+    transform: translateY(-68px);
+  }
+}
+.flip-clock {
+  margin: 0px !important;
+}
+
+.flip-clock__slot {
+  color: var(--default-text-color) !important;
+}
+
+.flip-card__back-bottom, .flip-card__back-bottom-4digits, .flip-card__bottom, .flip-card__bottom-4digits {
+  color: #ffffff !important;
+  border-top: 0px solid rgba(var(--primary-rgb), 1) !important;
+  background: rgba(var(--primary-rgb), 1) !important;
+}
+
+.flip-card__back-bottom, .flip-card__back:after, .flip-card__back:before, .flip-card__bottom, .flip-card__top {
+  color: #ffffff !important;
+  background: rgba(var(--primary-rgb), 1) !important;
+}
+
+.landing-body .app-sidebar .main-sidebar .main-menu {
+  align-items: center;
+}
+
+#header-cart-items-scroll li:last-of-type, #header-notification-scroll li:last-of-type {
+  border-bottom: 0px !important;
+}
+
+.multiselect__content-wrapper .multiselect__option {
+  display: flex !important;
+  align-items: center;
+}
+
+@media screen and (max-width: 850px) {
+  .companies-search-input .multiselect {
+    border-radius: 0.25rem !important;
+  }
+}
+.ql-snow .ql-toolbar button svg, .quillWrapper .ql-snow.ql-toolbar button svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+[data-width=boxed] .swiper-related-profiles .swiper-slide {
+  margin-bottom: 100px !important;
+}
+
+[data-nav-layout=horizontal] .ps__thumb-x,
+[data-nav-layout=horizontal] .ps__rail-x,
+[data-nav-layout=horizontal] .ps__thumb-y {
+  background-color: transparent !important;
+}
+@media (min-width: 992px) {
+  [data-nav-layout=horizontal] [data-nav-layout=horizontal] .hor-scroll {
+    overflow: hidden;
+  }
+}
+
+.vue-slider-mark-label {
+  display: none;
+}
+
+[data-width=boxed] .med-banner-card .dash-img {
+  width: 200px;
+  height: 250px;
+  position: absolute;
+  inset-inline-end: 0px;
+  inset-block-start: 0px;
+}
+
+.custom-button-class {
+  padding: 8px;
+}
+
+.custom-currency-select .multiselect__single {
+  width: 74px !important;
+}
+
+@media (min-width: 320px) {
+  [dir=rtl] .custom-blog-class {
+    display: inline !important;
+  }
+}
+.carousel__pagination-button {
+  background-color: var(--custom-white) !important;
+}
+
+.custom-maps .leaflet-marker-icon {
+  width: 127px !important;
+  height: 47px !important;
+}
+
+.landing-body .offcanvas-body {
+  overflow: hidden !important;
+}
+
+[data-menu-styles=light][data-header-styles=light][data-page-style=classic][data-nav-layout=horizontal] .app-header {
+  border-bottom: 0.5px solid #e8d8d8 !important;
+}
+
+.custom-search-input {
+  padding-right: 31px !important;
+}
+
+#mail-reply-editor .ql-snow .ql-picker.ql-expanded .ql-picker-options {
+  left: 5px;
+  width: min-content !important;
+}
+
+.custom-range-slider .vue-slider-dot-handle {
+  background-color: var(--primary-color) !important;
+}
+
+.pos-qty-class .btn:active {
+  border: 1px solid var(--default-border) !important;
+}
+.pos-qty-class .btn:hover {
+  border: 1px solid var(--default-border) !important;
+}
+
+#product-table input[type=checkbox i] {
+  border: 1px solid red !important;
+}
+
+.create-nft-item .filepond--root[data-style-panel-layout~=circle] .filepond--image-preview-wrapper, .create-nft-item .filepond--file {
+  height: 13.75rem;
+  width: 14rem !important;
+  transform: translateX(-7px);
+}
+
+.ps__rail-x:hover .ps__thumb-x {
+  background-color: transparent !important;
+}
+
+.custom-showcode-class .btn:hover {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+  border: 1px solid var(--default-border) !important;
+}
+.custom-showcode-class .btn.active {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+  border: 1px solid var(--default-border) !important;
+}
+.custom-showcode-class .btn {
+  border: 1px solid var(--default-border) !important;
+}
+
+.easy-data-table__rows-selector ul.select-items[data-v-4ca5de3a] {
+  top: 32px !important;
+}
+
+.vtl-paging-page-dropdown:active {
+  border: 1px solid var(--default-border) !important;
+}
+.vtl-paging-page-dropdown:focus-visible {
+  outline: 1px solid rgba(204, 204, 204, 0.2509803922);
+}
+
+.fw-step-active .fw-step-container {
+  color: #fff !important;
+}
+
+.progress-bar-striped {
+  background-repeat: repeat;
+}
+
+[dir=rtl] .vue3-easy-data-table__main.fixed-header .expand-icon {
+  transform: rotate(134deg);
+}
+
+.btn.btn-primary:hover {
+  background-color: rgb(var(--primary-rgb)) !important;
+}
+
+.ps {
+  overflow: scroll hidden !important;
+}
+
+[data-header-position=scrollable][data-nav-layout=horizontal] .app-sidebar.sticky.sticky-pin {
+  position: fixed !important;
+  top: 0px !important;
+}
+
+#top-category .apexcharts-datalabels-group text {
+  fill: var(--default-text-color);
+}
+
+@media (min-width: 320px) {
+  .vue3-easy-data-table__footer {
+    padding-bottom: 20px !important;
+  }
+}
+@media (min-width: 992px) {
+  .faq-img {
+    inset-inline-end: -5px;
+    inset-block-start: 5px;
+    height: 200px;
+    width: 254px;
+  }
+}
+.custom-header .li-Class:hover {
+  background-color: var(--primary005);
+  color: var(--primary-color);
+}
+.custom-header .li-Class .search-result-item:hover {
+  color: var(--primary-color) !important;
+}
+
+.custom-header-dropdown {
+  margin-top: 2px !important;
+}
+
+.custom-crypto-select .multiselect__single {
+  width: 45px !important;
+}
+
+[data-theme-mode=dark] .custom-page-dropdown:active {
+  border: 1px solid rgba(204, 204, 204, 0.2509803922) !important;
+}
+[data-theme-mode=dark] .custom-page-dropdown:focus-visible {
+  outline: 1px solid rgba(204, 204, 204, 0.2509803922);
+}
+
+.vtl-paging-info {
+  color: var(--default-text-color) !important;
+}
+
+[dir=rtl] .dataTables_paginate {
+  margin-left: 1px;
+}
+
+.swal2-validation-message {
+  background-color: var(--custom-white);
+}
+
+.fw-step-title {
+  color: var(--default-text-color);
+}
+
+.quillWrapper .ql-editor ul[data-checked=false] > li:before,
+.quillWrapper .ql-editor ul[data-checked=true] > li:before {
+  color: var(--default-text-color) !important;
+}
+
+.custom-outline {
+  color: var(--default-text-color) !important;
+  border-color: rgb(222, 228, 228) !important;
+}
+
+.vtl-paging-page-dropdown {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.flip-clock__piece {
+  margin-inline-end: 5px !important;
+}
+
+.custom-verify {
+  width: 60px !important;
+}
+
+[data-width=boxed] .custom-value-calss {
+  margin-left: -12px;
+}
+
+.vtl-empty-msg.col-sm-12 {
+  margin-bottom: 15px;
+}
+
+#radar-multiple .apexcharts-legend {
+  top: 285px !important;
+}
+
+.custom-readonly-text input[type=text] {
+  padding: 7px 0px !important;
+}
+
+.search-images-card img {
+  border-radius: 0px !important;
+}
+
+[dir=rtl] .ri-arrow-right-double-line {
+  rotate: 0deg;
+}
+
+.custom-leave-requests {
+  padding-bottom: 13px !important;
+}
+
+.custom-podcast-recently {
+  padding-bottom: 15px !important;
+}
+
+.multiselect__placeholder {
+  padding-left: 5px !important;
+}
+
+.custom-payment-cards {
+  margin-top: 11px !important;
+}
+
+.vtl-thead-checkbox:checked {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+[dir=rtl] .vue3-star-ratings {
+  direction: ltr !important;
+}
+
+.landing-body .fe.fe-chevron-right.side-menu__angle {
+  margin-top: 6px;
+}
+
+[data-menu-styles=dark][data-nav-layout=horizontal] .landing-body .app-sidebar .side-menu__item.active {
+  background-color: none !important;
+}
+
+.current-color {
+  background-color: var(--primary-color) !important;
+}
+
+.swal2-confirm {
+  margin-right: 4px !important;
+}
+
+.multiselect__tag:first-child {
+  margin-right: 9px !important;
+}
+
+@media (max-width: 1399px) {
+  .custom-authentication-cover {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+}
+.bg-info-custome {
+  background-color: rgba(var(--info-rgb), 0.1) !important;
+}
+
+.ql-snow .ql-color-picker .ql-picker-label, .ql-snow .ql-icon-picker .ql-picker-label {
+  padding: 0 !important;
+}
+
+.max-limit-select .multiselect {
+  width: 165px;
+}
+
+.landing-accordion {
+  background-color: rgba(var(--primary-rgb), 0.1) !important;
+}
+
+@media (min-width: 992px) {
+  [data-vertical-style=doublemenu][data-theme-mode=dark][data-page-style=classic][data-menu-styles=light] .app-sidebar .main-sidebar-header {
+    border-block-end: 1px solid #f3f3f3;
+    border-inline-end: 1px solid #f3f3f3;
+  }
+  [data-vertical-style=doublemenu][data-theme-mode=dark][data-page-style=classic][data-menu-styles=light] .app-sidebar {
+    border-inline-end: 1px solid #f3f3f3;
+  }
+}
+.two-step-auth.authentication input[type=text].form-control {
+  padding-inline: 1rem !important;
+}
+
+.max-freeze-select .multiselect {
+  width: 115px;
+}
+
+[dir=rtl] .custom-vuemulti-select {
+  border-top-left-radius: 3px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 3px !important;
+}
+
+.dp__active_date {
+  color: #fff !important;
+}
+
+.dp__date_hover:hover {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+}
+
+.header-search-bar {
+  padding-right: 30px !important;
+}
+
+#polararea-basic .apexcharts-legend {
+  top: 200px !important;
+}
+
+.Toastify__close-button > svg {
+  fill: var(--default-text-color) !important;
+}
+
+.custom-link.btn:active {
+  color: blue;
+}
+
+.input-group.salesDatePicker .dp__instance_calendar .dp__overlay_container {
+  height: 70px !important;
+}
+
+[data-theme-mode=dark][data-menu-styles=light] .app-sidebar .side-menu__item.active .side-menu__angle {
+  color: var(--primary-color) !important;
+}
+
+[data-menu-styles=light][data-nav-layout=horizontal] .app-sidebar .main-menu .slide.has-sub .slide-menu.double-menu-active {
+  border-top: 1px solid var(--menu-border-color);
+}
+
+@media (max-width: 360px) {
+  .custom-date-picker .dp__outer_menu_wrap {
+    left: -44px !important;
+  }
+  .custom-upload .dropzone .dropzone__item-controls {
+    z-index: 0 !important;
+  }
+}
+.custom-last-contacte .form-control.custom-date-picker .dp__outer_menu_wrap.dp--menu-wrapper,
+.custom-last-contacte .form-control.custom-date-picker .dp__calendar_row,
+.custom-last-contacte .form-control.custom-date-picker .custom-last-contacte .dp__pointer {
+  width: 10rem !important;
+}
+.custom-last-contacte .dp__calendar_row {
+  justify-content: normal !important;
+}
+.custom-last-contacte .dp__outer_menu_wrap.dp--menu-wrapper {
+  left: auto !important;
+}
+.custom-last-contacte .dp__arrow_bottom {
+  left: auto !important;
+  right: 0px !important;
+}
+
+[data-nav-style=icon-hover][data-toggled=icon-hover-closed] .slide-menu.child1 {
+  min-width: 12rem;
+  display: none !important;
+}

@@ -1,3 +1,5 @@
+@reference "../base.css";
+
 @layer components {
   .apexcharts-tooltip.apexcharts-theme-light,
   .apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title,

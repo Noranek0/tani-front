@@ -1,0 +1,18 @@
+/* Global */
+@import "./global/_customstyles";
+@import "./global/_select2";
+@import "./global/_vue3colorpicker";
+@import "./global/_tables";
+@import "./global/_vue3-slider-component";
+@import "./global/_vue-multiselect";
+@import "./global/_dropzone";
+@import "./global/_vuepic_vue-datepicker";
+@import "./global/_vue3-datepicker";
+@import "./global/_v-color-picker";
+@import "./global/_vuetify";
+@import "./global/_vue3-easy-data-table";
+@import "./global/_charts";
+@import "./global/_pscroll";
+@import "./global/_range-slider";
+@import "./global/_jsVector";
+@import "./global/_custom";
