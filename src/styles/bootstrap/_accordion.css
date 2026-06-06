@@ -1,349 +1,619 @@
-@reference "../base.css";
-@layer components {
-  .accordion-button {
-    @apply bg-white text-dark py-3 px-4;
-    @apply text-sm font-medium;
-
-    @apply after:flex after:justify-center after:items-center;
-    @apply after:text-base after:leading-none after:text-dark;
-    @apply after:bg-gray-1 after:bg-none;
-
-    @apply focus:border-primary/30 focus:shadow-none;
-    @apply not-[.collapsed]:text-dark not-[.collapsed]:bg-bs3-background not-[.collapsed]:shadow-none;
-    @apply not-[.collapsed]:after:bg-none;
-
-    &:after {
-      content: "\EA78";
-      font-family: remixicon !important;
-      border-radius: 3.125rem;
-    }
-  }
-
-  .accordion-body {
-    @apply py-3 px-4 text-bs3-muted;
-    font-size: 0.8125rem;
-  }
-
-  .accordion-item {
-    @apply text-dark bg-white border border-bs3-border;
-
-    @apply last-of-type:rounded-b-md;
-    @apply first-of-type:rounded-t-md;
-  }
-
-  .accordions-items-seperate {
-    .accordion-item {
-      @apply not-first-of-type:mbs-2;
-      @apply overflow-hidden rounded-lg border-bs border-bs-bs3-border;
-    }
-  }
-
-  .accordion {
-    &.accordion-primary {
-      .accordion-button {
-        @apply bg-primary/10 text-primary;
-        @apply after:bg-primary after:text-white;
-
-        &.collapsed {
-          @apply bg-white text-dark;
-          @apply after:bg-bs3-background after:text-dark;
-        }
-      }
-    }
-    &.accordion-secondary {
-      .accordion-button {
-        @apply bg-secondary/10 text-secondary;
-        @apply after:bg-secondary after:text-white;
-
-        &.collapsed {
-          @apply bg-white text-dark;
-          @apply after:bg-bs3-background after:text-dark;
-        }
-      }
-    }
-    &.accordion-success {
-      .accordion-button {
-        @apply bg-success/10 text-success;
-        @apply after:bg-success after:text-white;
-
-        &.collapsed {
-          @apply bg-white text-dark;
-          @apply after:bg-bs3-background after:text-dark;
-        }
-      }
-    }
-    &.accordion-danger {
-      .accordion-button {
-        @apply bg-danger/10 text-danger;
-        @apply after:bg-danger after:text-white;
-
-        &.collapsed {
-          @apply bg-white text-dark;
-          @apply after:bg-bs3-background after:text-dark;
-        }
-      }
-    }
-    &.accordion-warning {
-      .accordion-button {
-        @apply bg-warning/10 text-warning;
-        @apply after:bg-warning after:text-white;
-
-        &.collapsed {
-          @apply bg-white text-dark;
-          @apply after:bg-bs3-background after:text-dark;
-        }
-      }
-    }
-    &.accordion-info {
-      .accordion-button {
-        @apply bg-info/10 text-info;
-        @apply after:bg-info after:text-white;
-
-        &.collapsed {
-          @apply bg-white text-dark;
-          @apply after:bg-bs3-background after:text-dark;
-        }
-      }
-    }
-  }
-
-  .accordion {
-    &.accordion-solid-primary {
-      .accordion-button {
-        @apply bg-primary text-white;
-        @apply after:bg-white text-primary;
-
-        &.collapsed {
-          @apply bg-white text-dark;
-          @apply after:bg-bs3-background after:text-dark;
-        }
-      }
-    }
-    &.accordion-solid-secondary {
-      .accordion-button {
-        @apply bg-secondary text-white;
-        @apply after:bg-white text-secondary;
-
-        &.collapsed {
-          @apply bg-white text-dark;
-          @apply after:bg-bs3-background after:text-dark;
-        }
-      }
-    }
-    &.accordion-solid-success {
-      .accordion-button {
-        @apply bg-success text-white;
-        @apply after:bg-white text-success;
-
-        &.collapsed {
-          @apply bg-white text-dark;
-          @apply after:bg-bs3-background after:text-dark;
-        }
-      }
-    }
-    &.accordion-solid-danger {
-      .accordion-button {
-        @apply bg-danger text-white;
-        @apply after:bg-white text-danger;
-
-        &.collapsed {
-          @apply bg-white text-dark;
-          @apply after:bg-bs3-background after:text-dark;
-        }
-      }
-    }
-    &.accordion-solid-warning {
-      .accordion-button {
-        @apply bg-warning text-white;
-        @apply after:bg-white text-warning;
-
-        &.collapsed {
-          @apply bg-white text-dark;
-          @apply after:bg-bs3-background after:text-dark;
-        }
-      }
-    }
-    &.accordion-solid-info {
-      .accordion-button {
-        @apply bg-info text-white;
-        @apply after:bg-white text-info;
-
-        &.collapsed {
-          @apply bg-white text-dark;
-          @apply after:bg-bs3-background after:text-dark;
-        }
-      }
-    }
-  }
-
-  .accordion {
-    &.accordion-border-primary {
-      .accordion-item {
-        @apply border border-primary;
-      }
-      .accordion-button {
-        @apply bg-white text-primary border-be-0;
-        @apply after:bg-white after:text-primary after:border;
-        @apply after:border-primary;
-
-        @apply not-[.collapsed]:border-be;
-        @apply not-[.collapsed]:border-be-primary;
-      }
-    }
-    &.accordion-border-secondary {
-      .accordion-item {
-        @apply border border-secondary;
-      }
-      .accordion-button {
-        @apply bg-white text-secondary border-be-0;
-        @apply after:bg-white after:text-secondary after:border;
-        @apply after:border-secondary;
-
-        @apply not-[.collapsed]:border-be;
-        @apply not-[.collapsed]:border-be-secondary;
-      }
-    }
-    &.accordion-border-success {
-      .accordion-item {
-        @apply border border-success;
-      }
-      .accordion-button {
-        @apply bg-white text-success border-be-0;
-        @apply after:bg-white after:text-success after:border;
-        @apply after:border-success;
-
-        @apply not-[.collapsed]:border-be;
-        @apply not-[.collapsed]:border-be-success;
-      }
-    }
-    &.accordion-border-danger {
-      .accordion-item {
-        @apply border border-danger;
-      }
-      .accordion-button {
-        @apply bg-white text-danger border-be-0;
-        @apply after:bg-white after:text-danger after:border;
-        @apply after:border-danger;
-
-        @apply not-[.collapsed]:border-be;
-        @apply not-[.collapsed]:border-be-danger;
-      }
-    }
-    &.accordion-border-warning {
-      .accordion-item {
-        @apply border border-warning;
-      }
-      .accordion-button {
-        @apply bg-white text-warning border-be-0;
-        @apply after:bg-white after:text-warning after:border;
-        @apply after:border-warning;
-
-        @apply not-[.collapsed]:border-be;
-        @apply not-[.collapsed]:border-be-warning;
-      }
-    }
-    &.accordion-border-info {
-      .accordion-item {
-        @apply border border-info;
-      }
-      .accordion-button {
-        @apply bg-white text-info border-be-0;
-        @apply after:bg-white after:text-info after:border;
-        @apply after:border-info;
-
-        @apply not-[.collapsed]:border-be;
-        @apply not-[.collapsed]:border-be-info;
-      }
-    }
-  }
-
-  .accordion {
-    &.accordionicon-none {
-      .accordion-button {
-        @apply after:hidden;
-      }
-    }
-  }
-
-  .accordion {
-    &.accordionicon-left {
-      .accordion-button {
-        @apply ps-10 after:absolute after:inset-s-2.5;
-      }
-    }
-  }
-
-  .accordion {
-    &.accordion-customicon1 {
-      .accordion-button {
-        &:after {
-          content: "\EA13";
-          font-family: remixicon !important;
-        }
-        &:not(.collapsed)::after {
-          content: "\F1AF";
-          font-family: remixicon !important;
-        }
-      }
-    }
-  }
-
-  .customized-accordion {
-    .accordion-item {
-      &.custom-accordion-primary {
-        .accordion-button {
-          @apply bg-primary/10 border-s-4 border-s-primary/60;
-          @apply after:bg-primary/60 after:text-white;
-        }
-        .accordion-body {
-          @apply bg-primary/10 pbs-0 border-s-4 border-s-primary/60;
-        }
-      }
-      &.custom-accordion-secondary {
-        .accordion-button {
-          @apply bg-secondary/10 border-s-4 border-s-secondary/60;
-          @apply after:bg-secondary/60 after:text-white;
-        }
-        .accordion-body {
-          @apply bg-secondary/10 pbs-0 border-s-4 border-s-secondary/60;
-        }
-      }
-      &.custom-accordion-warning {
-        .accordion-button {
-          @apply bg-warning/10 border-s-4 border-s-warning/60;
-          @apply after:bg-warning/60 after:text-white;
-        }
-        .accordion-body {
-          @apply bg-warning/10 pbs-0 border-s-4 border-s-warning/60;
-        }
-      }
-      &.custom-accordion-info {
-        .accordion-button {
-          @apply bg-info/10 border-s-4 border-s-info/60;
-          @apply after:bg-info/60 after:text-white;
-        }
-        .accordion-body {
-          @apply bg-info/10 pbs-0 border-s-4 border-s-info/60;
-        }
-      }
-      &.custom-accordion-success {
-        .accordion-button {
-          @apply bg-success/10 border-s-4 border-s-success/60;
-          @apply after:bg-success/60 after:text-white;
-        }
-        .accordion-body {
-          @apply bg-success/10 pbs-0 border-s-4 border-s-success/60;
-        }
-      }
-      &.custom-accordion-danger {
-        .accordion-button {
-          @apply bg-danger/10 border-s-4 border-s-danger/60;
-          @apply after:bg-danger/60 after:text-white;
-        }
-        .accordion-body {
-          @apply bg-danger/10 pbs-0 border-s-4 border-s-danger/60;
-        }
-      }
-    }
-  }
+:root {
+  --body-bg-rgb: 242, 244, 249;
+  --primary-rgb: 3, 181, 98;
+  --secondary-rgb: 127, 103, 257;
+  --warning-rgb: 255, 169, 9;
+  --info-rgb: 15, 188, 249;
+  --success-rgb: 83, 196, 5;
+  --danger-rgb: 253, 73, 99;
+  --light-rgb: 246, 249, 249;
+  --dark-rgb: 10, 10, 10;
+  --orange-rgb: 254, 124, 88;
+  --pink-rgb: 254, 84, 155;
+  --teal-rgb: 0, 216, 216;
+  --purple-rgb: 123, 118, 254;
+  --green-rgb: 1, 239, 140;
+  --default-body-bg-color: rgb(var(--body-bg-rgb));
+  --primary-color: rgb(var(--primary-rgb));
+  --primary-border: rgb(var(--primary-rgb));
+  --primary01: rgba(var(--primary-rgb), 0.1);
+  --primary02: rgba(var(--primary-rgb), 0.2);
+  --primary03: rgba(var(--primary-rgb), 0.3);
+  --primary04: rgba(var(--primary-rgb), 0.4);
+  --primary05: rgba(var(--primary-rgb), 0.5);
+  --primary06: rgba(var(--primary-rgb), 0.6);
+  --primary07: rgba(var(--primary-rgb), 0.7);
+  --primary08: rgba(var(--primary-rgb), 0.8);
+  --primary09: rgba(var(--primary-rgb), 0.9);
+  --primary005: rgba(var(--primary-rgb), 0.05);
+  --default-font-family: "Plus Jakarta Sans", sans-serif;
+  --default-font-weight: 400;
+  --default-text-color: #010101;
+  --default-border: #eeedf3;
+  --default-background: #f9fafb;
+  --menu-bg: #fff;
+  --menu-prime-color: #61748f;
+  --menu-border-color: #e2e5e7;
+  --header-bg: #fff;
+  --header-prime-color: #61748f;
+  --header-border-color: #e2e5e7;
+  --custom-white: #fff;
+  --custom-black: #000;
+  --bootstrap-card-border: #e2e5e7;
+  --list-hover-focus-bg: #f5f6f7;
+  --text-muted: #8d9eb5;
+  --input-border: #e2e6f1;
+  --form-control-bg: #ffffff;
+  --bs-link-color-rgb: var(--default-text-color);
+  /* Gray set */
+  --gray-1: #f9fafb;
+  --gray-2: #f2f4f5;
+  --gray-3: #e6eaeb;
+  --gray-4: #dbdfe1;
+  --gray-5: #949eb7;
+  --gray-6: #7987a1;
+  --gray-7: #4d5875;
+  --gray-8: #383853;
+  --gray-9: #323251;
+  /* White set */
+  --white-1: rgba(255, 255, 255, 0.1);
+  --white-2: rgba(255, 255, 255, 0.2);
+  --white-3: rgba(255, 255, 255, 0.3);
+  --white-4: rgba(255, 255, 255, 0.4);
+  --white-5: rgba(255, 255, 255, 0.5);
+  --white-6: rgba(255, 255, 255, 0.6);
+  --white-7: rgba(255, 255, 255, 0.7);
+  --white-8: rgba(255, 255, 255, 0.8);
+  --white-9: rgba(255, 255, 255, 0.9);
+  /* Black set */
+  --black-1: rgba(0, 0, 0, 0.1);
+  --black-2: rgba(0, 0, 0, 0.2);
+  --black-3: rgba(0, 0, 0, 0.3);
+  --black-4: rgba(0, 0, 0, 0.4);
+  --black-5: rgba(0, 0, 0, 0.5);
+  --black-6: rgba(0, 0, 0, 0.6);
+  --black-7: rgba(0, 0, 0, 0.7);
+  --black-8: rgba(0, 0, 0, 0.8);
+  --black-9: rgba(0, 0, 0, 0.9);
 }
+
+/*Font Family*/
+/*Font Size*/
+/*Font Weight*/
+/*Body & Text colors*/
+/*Default Background Color*/
+/*Border Color*/
+/*Border Radius*/
+/*Box Shadow*/
+/* Header Variables */
+/*Menu Variables*/
+/*Color Variables*/
+/* social icons colors */
+/*gradient variables*/
+/*gray set*/
+/*white set*/
+/*black set*/
+/* dark mode */
+[data-theme-mode=dark] {
+  --body-bg-rgb: 25, 25, 28;
+  --body-bg-rgb2: 45, 45, 48;
+  --menu-bg: rgb(var(--body-bg-rgb));
+  --menu-border-color: rgba(255, 255, 255, 0.1);
+  --menu-prime-color: rgba(255,255,255,0.4);
+  --header-bg: rgb(var(--body-bg-rgb));
+  --header-prime-color: rgba(255,255,255,0.4);
+  --header-border-color: rgba(255, 255, 255, 0.1);
+  --custom-white: rgb(var(--body-bg-rgb));
+  --custom-black: #fff;
+  --default-border: rgba(255, 255, 255, 0.1);
+  --default-text-color: rgba(255, 255, 255, 0.8);
+  --light-rgb: 43, 46, 49;
+  --dark-rgb: 240, 245, 248;
+  --bootstrap-card-border: rgba(255, 255, 255, 0.1);
+  --list-hover-focus-bg: rgba(255, 255, 255, 0.1);
+  --default-background: rgb(var(--body-bg-rgb2));
+  --default-body-bg-color: rgb(var(--body-bg-rgb2));
+  --text-muted: rgba(255, 255, 255, 0.5);
+  --input-border: rgba(255, 255, 255, 0.1);
+  --form-control-bg: rgb(var(--body-bg-rgb));
+  color-scheme: dark;
+  /* Gray Set */
+  --gray-1: #110f0f;
+  --gray-2: #17171c;
+  --gray-3: #393946;
+  --gray-4: #505062;
+  --gray-5: #73738c;
+  --gray-6: #8f8fa3;
+  --gray-7: #ababba;
+  --gray-8: #c7c7d1;
+  --gray-9: #e3e3e8;
+  /* white set */
+  --white-1: rgba(0, 0, 0, 0.1);
+  --white-2: rgba(0, 0, 0, 0.2);
+  --white-3: rgba(0, 0, 0, 0.3);
+  --white-4: rgba(0, 0, 0, 0.4);
+  --white-5: rgba(0, 0, 0, 0.5);
+  --white-6: rgba(0, 0, 0, 0.6);
+  --white-7: rgba(0, 0, 0, 0.7);
+  --white-8: rgba(0, 0, 0, 0.8);
+  --white-9: rgba(0, 0, 0, 0.9);
+  /* black set */
+  --black-1: rgba(255, 255, 255, 0.1);
+  --black-2: rgba(255, 255, 255, 0.2);
+  --black-3: rgba(255, 255, 255, 0.3);
+  --black-4: rgba(255, 255, 255, 0.4);
+  --black-5: rgba(255, 255, 255, 0.5);
+  --black-6: rgba(255, 255, 255, 0.6);
+  --black-7: rgba(255, 255, 255, 0.7);
+  --black-8: rgba(255, 255, 255, 0.8);
+  --black-9: rgba(255, 255, 255, 0.9);
+}
+
+.accordion-button {
+  background-color: var(--custom-white);
+  color: var(--default-text-color);
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--default-text-color);
+  background-color: var(--default-background);
+  box-shadow: none;
+}
+.accordion-button:focus {
+  border-color: var(--primary03);
+  box-shadow: none;
+}
+.accordion-button:after, .accordion-button:not(.collapsed)::after {
+  background-image: none;
+}
+.accordion-button:after {
+  content: "\ea78";
+  font-family: remixicon !important;
+  font-size: 1rem;
+  line-height: 1;
+  background-color: var(--default-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3.125rem;
+  color: var(--default-text-color);
+}
+
+.accordion-body {
+  padding: 0.75rem 1rem;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.accordion-item {
+  color: var(--default-text-color);
+  background-color: var(--custom-white);
+  border: 1px solid var(--default-border);
+}
+
+.accordions-items-seperate .accordion-item:not(:first-of-type) {
+  margin-block-start: 0.5rem;
+}
+.accordions-items-seperate .accordion-item {
+  border-block-start: 1px solid var(--default-border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.accordion-item:last-of-type {
+  border-bottom-right-radius: 0.35rem;
+  border-bottom-left-radius: 0.35rem;
+}
+
+.accordion-item:first-of-type {
+  border-top-left-radius: 0.35rem;
+  border-top-right-radius: 0.35rem;
+}
+
+/* Start:: light colored accordions */
+.accordion.accordion-primary .accordion-button {
+  background-color: var(--primary01);
+  color: var(--primary-color);
+}
+.accordion.accordion-primary .accordion-button:after {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.accordion.accordion-primary .accordion-button.collapsed {
+  background-color: var(--custom-white);
+  color: var(--default-text-color);
+}
+.accordion.accordion-primary .accordion-button.collapsed:after {
+  background-color: var(--default-background);
+  color: var(--default-text-color);
+}
+.accordion.accordion-secondary .accordion-button {
+  background-color: rgba(var(--secondary-rgb), 0.1);
+  color: rgb(var(--secondary-rgb));
+}
+.accordion.accordion-secondary .accordion-button:after {
+  background-color: rgb(var(--secondary-rgb));
+  color: #fff;
+}
+.accordion.accordion-secondary .accordion-button.collapsed {
+  background-color: var(--custom-white);
+  color: var(--default-text-color);
+}
+.accordion.accordion-secondary .accordion-button.collapsed:after {
+  background-color: var(--default-background);
+  color: var(--default-text-color);
+}
+.accordion.accordion-success .accordion-button {
+  background-color: rgba(var(--success-rgb), 0.1);
+  color: rgb(var(--success-rgb));
+}
+.accordion.accordion-success .accordion-button:after {
+  background-color: rgb(var(--success-rgb));
+  color: #fff;
+}
+.accordion.accordion-success .accordion-button.collapsed {
+  background-color: var(--custom-white);
+  color: var(--default-text-color);
+}
+.accordion.accordion-success .accordion-button.collapsed:after {
+  background-color: var(--default-background);
+  color: var(--default-text-color);
+}
+.accordion.accordion-danger .accordion-button {
+  background-color: rgba(var(--danger-rgb), 0.1);
+  color: rgb(var(--danger-rgb));
+}
+.accordion.accordion-danger .accordion-button:after {
+  background-color: rgb(var(--danger-rgb));
+  color: #fff;
+}
+.accordion.accordion-danger .accordion-button.collapsed {
+  background-color: var(--custom-white);
+  color: var(--default-text-color);
+}
+.accordion.accordion-danger .accordion-button.collapsed:after {
+  background-color: var(--default-background);
+  color: var(--default-text-color);
+}
+.accordion.accordion-warning .accordion-button {
+  background-color: rgba(var(--warning-rgb), 0.1);
+  color: rgb(var(--warning-rgb));
+}
+.accordion.accordion-warning .accordion-button:after {
+  background-color: rgb(var(--warning-rgb));
+  color: #fff;
+}
+.accordion.accordion-warning .accordion-button.collapsed {
+  background-color: var(--custom-white);
+  color: var(--default-text-color);
+}
+.accordion.accordion-warning .accordion-button.collapsed:after {
+  background-color: var(--default-background);
+  color: var(--default-text-color);
+}
+.accordion.accordion-info .accordion-button {
+  background-color: rgba(var(--info-rgb), 0.1);
+  color: rgb(var(--info-rgb));
+}
+.accordion.accordion-info .accordion-button:after {
+  background-color: rgb(var(--info-rgb));
+  color: #fff;
+}
+.accordion.accordion-info .accordion-button.collapsed {
+  background-color: var(--custom-white);
+  color: var(--default-text-color);
+}
+.accordion.accordion-info .accordion-button.collapsed:after {
+  background-color: var(--default-background);
+  color: var(--default-text-color);
+}
+
+/* End:: light colored accordions */
+/* Start:: solid colored accordions */
+.accordion.accordion-solid-primary .accordion-button {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.accordion.accordion-solid-primary .accordion-button:after {
+  background-color: var(--custom-white);
+  color: var(--primary-color);
+}
+.accordion.accordion-solid-primary .accordion-button.collapsed {
+  background-color: var(--custom-white);
+  color: var(--default-text-color);
+}
+.accordion.accordion-solid-primary .accordion-button.collapsed:after {
+  background-color: var(--default-background);
+  color: var(--default-text-color);
+}
+.accordion.accordion-solid-secondary .accordion-button {
+  background-color: rgb(var(--secondary-rgb));
+  color: #fff;
+}
+.accordion.accordion-solid-secondary .accordion-button:after {
+  background-color: var(--custom-white);
+  color: rgb(var(--secondary-rgb));
+}
+.accordion.accordion-solid-secondary .accordion-button.collapsed {
+  background-color: var(--custom-white);
+  color: var(--default-text-color);
+}
+.accordion.accordion-solid-secondary .accordion-button.collapsed:after {
+  background-color: var(--default-background);
+  color: var(--default-text-color);
+}
+.accordion.accordion-solid-success .accordion-button {
+  background-color: rgb(var(--success-rgb));
+  color: #fff;
+}
+.accordion.accordion-solid-success .accordion-button:after {
+  background-color: var(--custom-white);
+  color: rgb(var(--success-rgb));
+}
+.accordion.accordion-solid-success .accordion-button.collapsed {
+  background-color: var(--custom-white);
+  color: var(--default-text-color);
+}
+.accordion.accordion-solid-success .accordion-button.collapsed:after {
+  background-color: var(--default-background);
+  color: var(--default-text-color);
+}
+.accordion.accordion-solid-danger .accordion-button {
+  background-color: rgb(var(--danger-rgb));
+  color: #fff;
+}
+.accordion.accordion-solid-danger .accordion-button:after {
+  background-color: var(--custom-white);
+  color: rgb(var(--danger-rgb));
+}
+.accordion.accordion-solid-danger .accordion-button.collapsed {
+  background-color: var(--custom-white);
+  color: var(--default-text-color);
+}
+.accordion.accordion-solid-danger .accordion-button.collapsed:after {
+  background-color: var(--default-background);
+  color: var(--default-text-color);
+}
+.accordion.accordion-solid-warning .accordion-button {
+  background-color: rgb(var(--warning-rgb));
+  color: #fff;
+}
+.accordion.accordion-solid-warning .accordion-button:after {
+  background-color: var(--custom-white);
+  color: rgb(var(--warning-rgb));
+}
+.accordion.accordion-solid-warning .accordion-button.collapsed {
+  background-color: var(--custom-white);
+  color: var(--default-text-color);
+}
+.accordion.accordion-solid-warning .accordion-button.collapsed:after {
+  background-color: var(--default-background);
+  color: var(--default-text-color);
+}
+.accordion.accordion-solid-info .accordion-button {
+  background-color: rgb(var(--info-rgb));
+  color: #fff;
+}
+.accordion.accordion-solid-info .accordion-button:after {
+  background-color: var(--custom-white);
+  color: rgb(var(--info-rgb));
+}
+.accordion.accordion-solid-info .accordion-button.collapsed {
+  background-color: var(--custom-white);
+  color: var(--default-text-color);
+}
+.accordion.accordion-solid-info .accordion-button.collapsed:after {
+  background-color: var(--default-background);
+  color: var(--default-text-color);
+}
+
+/* End:: solid colored accordions */
+/* Start:: border colors */
+.accordion.accordion-border-primary .accordion-item {
+  border: 1px solid var(--primary-color);
+}
+.accordion.accordion-border-primary .accordion-button {
+  background-color: var(--custom-white);
+  color: var(--primary-color);
+  border-block-end: 0px;
+}
+.accordion.accordion-border-primary .accordion-button:after {
+  background-color: var(--custom-white);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.accordion.accordion-border-primary .accordion-button:not(.collapsed) {
+  border-block-end: 1px solid var(--primary-color);
+}
+.accordion.accordion-border-secondary .accordion-item {
+  border: 1px solid rgb(var(--secondary-rgb));
+}
+.accordion.accordion-border-secondary .accordion-button {
+  background-color: var(--custom-white);
+  color: rgb(var(--secondary-rgb));
+  border-block-end: 0px;
+}
+.accordion.accordion-border-secondary .accordion-button:after {
+  background-color: var(--custom-white);
+  color: rgb(var(--secondary-rgb));
+  border: 1px solid rgb(var(--secondary-rgb));
+}
+.accordion.accordion-border-secondary .accordion-button:not(.collapsed) {
+  border-block-end: 1px solid rgb(var(--secondary-rgb));
+}
+.accordion.accordion-border-success .accordion-item {
+  border: 1px solid rgb(var(--success-rgb));
+}
+.accordion.accordion-border-success .accordion-button {
+  background-color: var(--custom-white);
+  color: rgb(var(--success-rgb));
+  border-block-end: 0px;
+}
+.accordion.accordion-border-success .accordion-button:after {
+  background-color: var(--custom-white);
+  color: rgb(var(--success-rgb));
+  border: 1px solid rgb(var(--success-rgb));
+}
+.accordion.accordion-border-success .accordion-button:not(.collapsed) {
+  border-block-end: 1px solid rgb(var(--success-rgb));
+}
+.accordion.accordion-border-danger .accordion-item {
+  border: 1px solid rgb(var(--danger-rgb));
+}
+.accordion.accordion-border-danger .accordion-button {
+  background-color: var(--custom-white);
+  color: rgb(var(--danger-rgb));
+  border-block-end: 0px;
+}
+.accordion.accordion-border-danger .accordion-button:after {
+  background-color: var(--custom-white);
+  color: rgb(var(--danger-rgb));
+  border: 1px solid rgb(var(--danger-rgb));
+}
+.accordion.accordion-border-danger .accordion-button:not(.collapsed) {
+  border-block-end: 1px solid rgb(var(--danger-rgb));
+}
+.accordion.accordion-border-warning .accordion-item {
+  border: 1px solid rgb(var(--warning-rgb));
+}
+.accordion.accordion-border-warning .accordion-button {
+  background-color: var(--custom-white);
+  color: rgb(var(--warning-rgb));
+  border-block-end: 0px;
+}
+.accordion.accordion-border-warning .accordion-button:after {
+  background-color: var(--custom-white);
+  color: rgb(var(--warning-rgb));
+  border: 1px solid rgb(var(--warning-rgb));
+}
+.accordion.accordion-border-warning .accordion-button:not(.collapsed) {
+  border-block-end: 1px solid rgb(var(--warning-rgb));
+}
+.accordion.accordion-border-info .accordion-item {
+  border: 1px solid rgb(var(--info-rgb));
+}
+.accordion.accordion-border-info .accordion-button {
+  background-color: var(--custom-white);
+  color: rgb(var(--info-rgb));
+  border-block-end: 0px;
+}
+.accordion.accordion-border-info .accordion-button:after {
+  background-color: var(--custom-white);
+  color: rgb(var(--info-rgb));
+  border: 1px solid rgb(var(--info-rgb));
+}
+.accordion.accordion-border-info .accordion-button:not(.collapsed) {
+  border-block-end: 1px solid rgb(var(--info-rgb));
+}
+
+/* End:: border colors */
+/* Start:: no icon */
+.accordion.accordionicon-none .accordion-button:after {
+  display: none;
+}
+
+/* Start:: no icon */
+/* Start:: left aligned icon */
+.accordion.accordionicon-left .accordion-button {
+  padding-inline-start: 2.5rem;
+}
+.accordion.accordionicon-left .accordion-button:after {
+  position: absolute;
+  inset-inline-start: 0.625rem;
+}
+
+/* End:: left aligned icon */
+/* Start:: custom icons */
+.accordion.accordion-customicon1 .accordion-button:after {
+  content: "\ea13";
+  font-family: remixicon !important;
+}
+.accordion.accordion-customicon1 .accordion-button:not(.collapsed)::after {
+  content: "\f1af";
+  font-family: remixicon !important;
+}
+
+/* End:: custom icons */
+/* Start:: customized accordion */
+.customized-accordion .accordion-item.custom-accordion-primary .accordion-button {
+  background-color: var(--primary01);
+  border-inline-start: 0.25rem solid var(--primary06);
+}
+.customized-accordion .accordion-item.custom-accordion-primary .accordion-button:after {
+  background-color: var(--primary06);
+  color: #fff;
+}
+.customized-accordion .accordion-item.custom-accordion-primary .accordion-body {
+  background-color: var(--primary01);
+  padding-block-start: 0;
+  border-inline-start: 0.25rem solid var(--primary06);
+}
+.customized-accordion .accordion-item.custom-accordion-secondary .accordion-button {
+  background-color: rgba(var(--secondary-rgb), 0.1);
+  border-inline-start: 0.25rem solid rgba(var(--secondary-rgb), 0.6);
+}
+.customized-accordion .accordion-item.custom-accordion-secondary .accordion-button:after {
+  background-color: rgba(var(--secondary-rgb), 0.6);
+  color: #fff;
+}
+.customized-accordion .accordion-item.custom-accordion-secondary .accordion-body {
+  background-color: rgba(var(--secondary-rgb), 0.1);
+  padding-block-start: 0;
+  border-inline-start: 0.25rem solid rgba(var(--secondary-rgb), 0.6);
+}
+.customized-accordion .accordion-item.custom-accordion-warning .accordion-button {
+  background-color: rgba(var(--warning-rgb), 0.1);
+  border-inline-start: 0.25rem solid rgba(var(--warning-rgb), 0.6);
+}
+.customized-accordion .accordion-item.custom-accordion-warning .accordion-button:after {
+  background-color: rgba(var(--warning-rgb), 0.6);
+  color: #fff;
+}
+.customized-accordion .accordion-item.custom-accordion-warning .accordion-body {
+  background-color: rgba(var(--warning-rgb), 0.1);
+  padding-block-start: 0;
+  border-inline-start: 0.25rem solid rgba(var(--warning-rgb), 0.6);
+}
+.customized-accordion .accordion-item.custom-accordion-info .accordion-button {
+  background-color: rgba(var(--info-rgb), 0.1);
+  border-inline-start: 0.25rem solid rgba(var(--info-rgb), 0.6);
+}
+.customized-accordion .accordion-item.custom-accordion-info .accordion-button:after {
+  background-color: rgba(var(--info-rgb), 0.6);
+  color: #fff;
+}
+.customized-accordion .accordion-item.custom-accordion-info .accordion-body {
+  background-color: rgba(var(--info-rgb), 0.1);
+  padding-block-start: 0;
+  border-inline-start: 0.25rem solid rgba(var(--info-rgb), 0.6);
+}
+.customized-accordion .accordion-item.custom-accordion-success .accordion-button {
+  background-color: rgba(var(--success-rgb), 0.1);
+  border-inline-start: 0.25rem solid rgba(var(--success-rgb), 0.6);
+}
+.customized-accordion .accordion-item.custom-accordion-success .accordion-button:after {
+  background-color: rgba(var(--success-rgb), 0.6);
+  color: #fff;
+}
+.customized-accordion .accordion-item.custom-accordion-success .accordion-body {
+  background-color: rgba(var(--success-rgb), 0.1);
+  padding-block-start: 0;
+  border-inline-start: 0.25rem solid rgba(var(--success-rgb), 0.6);
+}
+.customized-accordion .accordion-item.custom-accordion-danger .accordion-button {
+  background-color: rgba(var(--danger-rgb), 0.1);
+  border-inline-start: 0.25rem solid rgba(var(--danger-rgb), 0.6);
+}
+.customized-accordion .accordion-item.custom-accordion-danger .accordion-button:after {
+  background-color: rgba(var(--danger-rgb), 0.6);
+  color: #fff;
+}
+.customized-accordion .accordion-item.custom-accordion-danger .accordion-body {
+  background-color: rgba(var(--danger-rgb), 0.1);
+  padding-block-start: 0;
+  border-inline-start: 0.25rem solid rgba(var(--danger-rgb), 0.6);
+}
+
+/* End:: customized accordion */
