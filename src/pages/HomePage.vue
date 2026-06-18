@@ -24,10 +24,13 @@
         </div>
       </div>
     </div>
+
+    <CopyrightSection />
   </div>
 </template>
 
 <script setup lang="ts">
+import CopyrightSection from "~/components/CopyrightSection.vue";
 import TopSidebar from "~/components/navigation/TopSidebar.vue";
 import { useSetHtmlAttr } from "~/hook/set-html-attr";
 
