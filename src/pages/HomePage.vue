@@ -25,12 +25,17 @@
       </div>
     </div>
 
+    <div class="main-content landing-main" id="">
+      <FooterSection />
+    </div>
+
     <CopyrightSection />
   </div>
 </template>
 
 <script setup lang="ts">
 import CopyrightSection from "~/components/CopyrightSection.vue";
+import FooterSection from "~/components/navigation/FooterSection.vue";
 import TopSidebar from "~/components/navigation/TopSidebar.vue";
 import { useSetHtmlAttr } from "~/hook/set-html-attr";
 
