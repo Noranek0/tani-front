@@ -45,7 +45,7 @@
             >
               PAGES
             </h6>
-            <ul class="list-unstyled op-8 fw-normal landing-footer-list">
+            <ul class="list-unstyled opacity-80 fw-normal landing-footer-list">
               <li v-for="item in pageMenus">
                 <a :href="item.href" class="text-fixed-white">{{
                   item.title
@@ -61,7 +61,7 @@
             >
               INFO
             </h6>
-            <ul class="list-unstyled op-8 fw-normal landing-footer-list">
+            <ul class="list-unstyled opacity-80 fw-normal landing-footer-list">
               <li v-for="item in infoMenus">
                 <a :href="item.href" class="text-fixed-white">{{
                   item.title
@@ -80,19 +80,16 @@
                   class="landing-footer-logo"
               /></router-link>
             </p>
-            <p class="mb-2 op-6 fw-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reprehenderit et magnam,<br />
-              fuga est mollitia eius, quo illum illo inventore optio aut quas
-              omnis rem. Dolores accusan.
+            <p class="mb-2 opacity-60 fw-normal">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit unde illum voluptas voluptates deserunt perspiciatis. Beatae enim itaque optio animi dolores
             </p>
-            <div class="d-flex gap-4 op-9 mt-4">
+            <div class="d-flex gap-4 opacity-90 mt-4">
               <a
                 href="javascript:void(0);"
                 class="text-primary fw-medium fs-14 text-decoration-underline link-offset-1"
                 >Contact Us</a
               >
-              <span class="op-3">|</span>
+              <span class="opacity-30">|</span>
               <a
                 href="javascript:void(0);"
                 class="text-primary fw-medium fs-14 text-decoration-underline link-offset-1"
