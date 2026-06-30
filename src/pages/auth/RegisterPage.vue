@@ -1,72 +1,51 @@
 <template>
   <div class="card custom-card my-4">
     <div class="card-body p-5">
-      <p class="h4 mb-2 fw-semibold">Sign In</p>
-      <p class="mb-4 text-muted fw-normal">
-        Welcome back, We're glad to see you again!
+      <p class="h4 mb-2 fw-semibold">Sign Up</p>
+      <p class="mb-4 text-muted">
+        Sign up now to create a free account and join us!
       </p>
       <div class="row gy-3">
         <div class="col-xl-12">
-          <label for="signin-username" class="form-label text-default"
-            >User Name</label
+          <label for="signup-firstname" class="form-label text-default"
+            >Email Address</label
           >
           <input
-            type="text"
+            type="email"
             class="form-control form-control-lg"
-            id="signin-username"
-            placeholder="user name"
+            id="signup-firstname"
+            placeholder="Enter Email ID"
           />
         </div>
-        <div class="col-xl-12 mb-2">
-          <label for="signin-password" class="form-label text-default d-block"
-            >Password<router-link
-              to="/authentication/reset-password/reset-basic"
-              class="float-end link-danger op-5 fw-medium fs-12"
-              >Forget password ?</router-link
-            ></label
+        <div class="col-xl-12">
+          <label for="signup-password" class="form-label text-default"
+            >Password</label
           >
           <div class="position-relative">
             <PasswordInput
               initialValue=""
-              name="Confirmpassword"
-              id="Confirmpassword"
+              name="newpassword"
+              id="newpassword"
               placeholder="password"
             />
-          </div>
-          <div class="mt-2">
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="defaultCheck1"
-              />
-              <label
-                class="form-check-label fw-normal fs-13"
-                for="defaultCheck1"
-              >
-                Remember password ?
-              </label>
-            </div>
           </div>
         </div>
       </div>
       <div class="d-grid mt-4">
         <router-link to="/dashboard/sales" class="btn btn-lg btn-primary"
-          >Sign In</router-link
+          >Create Account</router-link
         >
       </div>
       <div class="text-center">
-        <p class="text-muted mt-3 mb-0">
-          Dont have an account?
+        <p class="mt-3 mb-0">
+          Already have an account?
           <router-link
-            to="/authentication/sign-up/sign-up-basic"
-            class="text-primary fw-medium"
-            >Sign Up</router-link
+            to="/authentication/sign-in/sign-in-basic"
+            class="fw-medium text-primary"
+            >Sign In</router-link
           >
         </p>
       </div>
-      
       <!--
       <div class="text-center my-4 authentication-barrier">
         <span class="text-muted fs-12">Or SignIn With</span>
