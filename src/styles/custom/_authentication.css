@@ -233,6 +233,7 @@
 
 .authentication-background {
   position: relative;
+  z-index: 0;
   background-image: linear-gradient(to right top, rgba(var(--primary-rgb), 0.2), transparent, rgba(var(--primary-rgb), 0.1), transparent, rgba(var(--primary-rgb), 0.2));
 }
 .authentication-background:before {

@@ -15,6 +15,16 @@ const routes: RouteRecordRaw[] = [
       },
     ],
   },
+  {
+    path: "/auth",
+    component: () => import("~/layouts/AuthLayout.vue"),
+    children: [
+      {
+        path: "login",
+        component: () => import("~/pages/auth/LoginPage.vue"),
+      }
+    ],
+  },
 ];
 
 const router = createRouter({
